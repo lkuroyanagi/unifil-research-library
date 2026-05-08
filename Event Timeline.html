@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Event Timeline — UNIFIL Research Library</title>
+<template id="__bundler_thumbnail" data-bg-color="#1e2d50">
+  <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Header bar -->
+    <rect width="800" height="72" fill="#1e2d50"/>
+    <rect x="40" y="24" width="180" height="14" rx="3" fill="#ffffff" opacity="0.9"/>
+    <rect x="40" y="44" width="100" height="8" rx="2" fill="#ffffff" opacity="0.35"/>
+    <!-- Spine line -->
+    <rect x="220" y="100" width="2" height="370" fill="#c8d0dc"/>
+    <!-- Decade labels -->
+    <rect x="40" y="108" width="60" height="12" rx="2" fill="#7a8fa8"/>
+    <rect x="40" y="180" width="44" height="12" rx="2" fill="#7a8fa8"/>
+    <rect x="40" y="260" width="44" height="12" rx="2" fill="#7a8fa8"/>
+    <rect x="40" y="340" width="44" height="12" rx="2" fill="#7a8fa8"/>
+    <!-- Event dots + cards -->
+    <circle cx="221" cy="130" r="5" fill="#5577bb"/>
+    <rect x="240" y="118" width="440" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="118" width="3" height="28" rx="1" fill="#5577bb"/>
+    <circle cx="221" cy="170" r="5" fill="#c0532a"/>
+    <rect x="240" y="158" width="440" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="158" width="3" height="28" rx="1" fill="#c0532a"/>
+    <circle cx="221" cy="210" r="5" fill="#2a8a6e"/>
+    <rect x="240" y="198" width="440" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="198" width="3" height="28" rx="1" fill="#2a8a6e"/>
+    <circle cx="221" cy="250" r="5" fill="#5577bb"/>
+    <rect x="240" y="238" width="360" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="238" width="3" height="28" rx="1" fill="#5577bb"/>
+    <circle cx="221" cy="290" r="5" fill="#a04488"/>
+    <rect x="240" y="278" width="440" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="278" width="3" height="28" rx="1" fill="#a04488"/>
+    <circle cx="221" cy="330" r="5" fill="#c0532a"/>
+    <rect x="240" y="318" width="400" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="318" width="3" height="28" rx="1" fill="#c0532a"/>
+    <circle cx="221" cy="370" r="5" fill="#2a8a6e"/>
+    <rect x="240" y="358" width="440" height="28" rx="3" fill="#f2f4f8" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="240" y="358" width="3" height="28" rx="1" fill="#2a8a6e"/>
+    <!-- Density chart bar area -->
+    <rect x="240" y="430" width="440" height="36" rx="3" fill="#eef0f4" stroke="#dde2ea" stroke-width="1"/>
+    <rect x="250" y="440" width="18" height="18" rx="1" fill="#7a8fa8" opacity="0.5"/>
+    <rect x="272" y="434" width="18" height="24" rx="1" fill="#7a8fa8" opacity="0.7"/>
+    <rect x="294" y="438" width="18" height="20" rx="1" fill="#7a8fa8" opacity="0.5"/>
+    <rect x="316" y="432" width="18" height="26" rx="1" fill="#1e2d50" opacity="0.7"/>
+    <rect x="338" y="436" width="18" height="22" rx="1" fill="#7a8fa8" opacity="0.5"/>
+    <rect x="360" y="440" width="18" height="18" rx="1" fill="#7a8fa8" opacity="0.4"/>
+  </svg>
+</template>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: oklch(96.5% 0.006 245);
+    --bg-card: oklch(98.5% 0.004 245);
+    --navy: oklch(24% 0.09 252);
+    --navy-mid: oklch(35% 0.08 252);
+    --muted: oklch(52% 0.03 245);
+    --divider: oklch(88% 0.015 245);
+    --spine: oklch(78% 0.025 248);
+
+    /* Category colors — same chroma 0.13, lightness 0.50, varied hue */
+    --c-un:        oklch(50% 0.13 255);
+    --c-military:  oklch(50% 0.13 28);
+    --c-attack:    oklch(50% 0.13 8);
+    --c-ceasefire: oklch(50% 0.13 168);
+    --c-unifil:    oklch(50% 0.13 202);
+    --c-politics:  oklch(50% 0.13 292);
+
+    --c-un-bg:        oklch(94% 0.04 255);
+    --c-military-bg:  oklch(94% 0.04 28);
+    --c-attack-bg:    oklch(94% 0.04 8);
+    --c-ceasefire-bg: oklch(94% 0.04 168);
+    --c-unifil-bg:    oklch(94% 0.04 202);
+    --c-politics-bg:  oklch(94% 0.04 292);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--navy);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    background: var(--navy);
+    color: oklch(95% 0.015 245);
+    padding: 36px 48px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid oklch(38% 0.10 252);
+  }
+  .header-top {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .header-eyebrow {
+    font-family: 'Source Serif 4', serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: oklch(65% 0.06 245);
+    margin-bottom: 4px;
+  }
+  .header-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: oklch(97% 0.008 245);
+    line-height: 1.1;
+  }
+  .header-stats {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+  }
+  .stat-item { text-align: right; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: oklch(95% 0.01 245);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: oklch(60% 0.05 245);
+    margin-top: 2px;
+  }
+
+  /* ── Controls bar ── */
+  .controls-bar {
+    background: oklch(98% 0.005 245);
+    border-bottom: 1px solid var(--divider);
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 113px;
+    z-index: 90;
+  }
+
+  .controls-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .controls-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  /* Dual range slider */
+  .range-wrap {
+    position: relative;
+    width: 240px;
+    max-width: 240px;
+    flex-shrink: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+  .range-track {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--divider);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .range-fill {
+    position: absolute;
+    height: 3px;
+    background: var(--navy);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .range-input {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+  }
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid var(--bg-card);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    pointer-events: all;
+    cursor: pointer;
+  }
+  .range-input::-moz-range-thumb {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid var(--bg-card);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    pointer-events: all;
+    cursor: pointer;
+  }
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    gap: 6px;
+    align-items: center;
+  }
+  .range-val {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    min-width: 32px;
+    text-align: center;
+  }
+
+  /* Category pills */
+  .pill-wrap { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pill {
+    display: flex; align-items: center; gap: 5px;
+    padding: 3px 10px 3px 7px;
+    border-radius: 20px;
+    border: 1.5px solid transparent;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    background: var(--bg-card);
+    color: var(--muted);
+  }
+  .pill:hover { border-color: currentColor; }
+  .pill.active { color: var(--bg-card); border-color: transparent; }
+  .pill-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .result-count {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  /* ── Main layout ── */
+  .main-wrap {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 32px 32px 80px;
+    gap: 0;
+  }
+
+  /* ── Left nav ── */
+  .decade-nav {
+    padding-top: 8px;
+    padding-right: 24px;
+    position: sticky;
+    top: 180px;
+    align-self: start;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  .decade-nav-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .decade-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    transition: all 0.15s;
+  }
+  .decade-nav-item:hover .decade-nav-year { color: var(--navy); }
+  .decade-nav-year {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--spine);
+    transition: color 0.15s;
+    min-width: 36px;
+  }
+  .decade-nav-item.active .decade-nav-year { color: var(--navy); }
+  .decade-nav-bar {
+    height: 3px;
+    background: var(--divider);
+    border-radius: 2px;
+    flex: 1;
+    transition: background 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .decade-nav-item.active .decade-nav-bar { background: var(--navy-mid); }
+  .decade-nav-fill {
+    position: absolute;
+    left: 0; top: 0; height: 100%;
+    background: var(--navy);
+    border-radius: 2px;
+  }
+  .decade-nav-count {
+    font-size: 10px;
+    color: var(--muted);
+    min-width: 20px;
+    text-align: right;
+  }
+
+  /* ── Density chart ── */
+  .density-wrap {
+    margin-bottom: 28px;
+    padding: 16px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+  }
+  .density-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .density-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 52px;
+  }
+  .density-bar-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    cursor: pointer;
+    gap: 3px;
+  }
+  .density-bar {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+    background: var(--spine);
+    transition: background 0.15s, transform 0.15s;
+    min-height: 2px;
+  }
+  .density-bar-wrap:hover .density-bar { background: var(--navy); transform: scaleY(1.05); transform-origin: bottom; }
+  .density-bar-wrap.active .density-bar { background: var(--navy); }
+  .density-bar-year {
+    font-size: 8px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  /* ── Timeline ── */
+  .timeline-wrap { position: relative; }
+
+  .decade-section { margin-bottom: 0; }
+
+  .decade-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0 16px;
+    position: sticky;
+    top: 178px;
+    z-index: 10;
+    background: var(--bg);
+  }
+  .decade-heading::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: var(--divider);
+  }
+  .decade-year-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .decade-pill {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--divider);
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+
+  /* Spine + events */
+  .events-column {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 4px;
+  }
+  .spine-line {
+    position: absolute;
+    left: 8px;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: var(--divider);
+  }
+
+  .event-row {
+    display: grid;
+    grid-template-columns: 108px 1fr;
+    gap: 0 16px;
+    padding: 10px 0;
+    align-items: start;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  .event-row.filtered-out { display: none; }
+
+  .event-date-col {
+    text-align: right;
+    padding-top: 2px;
+    position: relative;
+  }
+  .event-date {
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  /* Spine dot */
+  .spine-dot {
+    position: absolute;
+    right: -25px;
+    top: 5px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 0 1.5px var(--spine);
+    z-index: 2;
+    transition: box-shadow 0.15s, transform 0.15s;
+  }
+  .event-row:hover .spine-dot {
+    transform: scale(1.3);
+  }
+
+  .event-card {
+    background: var(--bg-card);
+    border: 1px solid var(--divider);
+    border-left: 3px solid var(--spine);
+    border-radius: 0 3px 3px 0;
+    padding: 10px 14px 9px;
+    transition: border-left-color 0.15s, box-shadow 0.15s;
+    cursor: default;
+  }
+  .event-row:hover .event-card {
+    box-shadow: 0 2px 12px rgba(30,45,80,0.08);
+  }
+  .event-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  .event-category-badge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .event-title {
+    font-family: 'Source Serif 4', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 3px;
+    letter-spacing: 0.01em;
+  }
+  .event-desc {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--navy);
+    font-style: normal;
+    text-wrap: pretty;
+  }
+  .event-source {
+    font-size: 11px;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 5px;
+  }
+
+  .no-results {
+    padding: 48px 0;
+    text-align: center;
+    color: var(--muted);
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  /* Edit button */
+  .edit-btn {
+    position: absolute;
+    top: 8px; right: 8px;
+    width: 26px; height: 26px;
+    border-radius: 4px;
+    border: 1px solid var(--divider);
+    background: var(--bg);
+    color: var(--muted);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0;
+    transition: opacity 0.15s, background 0.15s, color 0.15s;
+    flex-shrink: 0;
+  }
+  .event-row:hover .edit-btn { opacity: 1; }
+  .edit-btn:hover { background: var(--navy); color: white; border-color: var(--navy); }
+
+  /* Inline edit form */
+  .edit-form { display: flex; flex-direction: column; gap: 8px; }
+  .edit-textarea {
+    width: 100%;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--navy);
+    background: oklch(97% 0.008 245);
+    border: 1.5px solid var(--navy-mid);
+    border-radius: 3px;
+    padding: 8px 10px;
+    resize: vertical;
+    min-height: 80px;
+    outline: none;
+  }
+  .edit-textarea:focus { border-color: var(--navy); box-shadow: 0 0 0 2px oklch(85% 0.04 252); }
+  .edit-source-input {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--muted);
+    background: oklch(97% 0.008 245);
+    border: 1.5px solid var(--divider);
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    width: 100%;
+  }
+  .edit-source-input:focus { border-color: var(--navy-mid); }
+  .edit-actions { display: flex; gap: 6px; justify-content: flex-end; }
+  .edit-save-btn {
+    padding: 4px 14px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background 0.12s;
+  }
+  .edit-save-btn:hover { background: var(--navy-mid); }
+  .edit-cancel-btn {
+    padding: 4px 10px;
+    background: none;
+    color: var(--muted);
+    border: 1px solid var(--divider);
+    border-radius: 3px;
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .edit-cancel-btn:hover { border-color: var(--navy-mid); color: var(--navy); }
+  .edited-marker {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--c-ceasefire);
+    margin-left: auto;
+    align-self: center;
+  }
+
+  /* Tweaks panel */
+  .tweaks-panel {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    background: var(--navy);
+    color: oklch(90% 0.01 245);
+    border-radius: 6px;
+    padding: 18px 20px;
+    width: 240px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    z-index: 999;
+    font-size: 12px;
+    display: none;
+  }
+  .tweaks-panel.open { display: block; }
+  .tweaks-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: white;
+    letter-spacing: 0.02em;
+  }
+  .tweak-row {
+    margin-bottom: 12px;
+  }
+  .tweak-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: oklch(60% 0.04 245);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .tweak-options { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tweak-btn {
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid oklch(40% 0.06 245);
+    background: none;
+    color: oklch(80% 0.02 245);
+    font-size: 11px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.12s;
+  }
+  .tweak-btn:hover, .tweak-btn.active {
+    background: oklch(40% 0.08 245);
+    border-color: oklch(55% 0.08 245);
+    color: white;
+  }
+
+  @media (max-width: 700px) {
+    .page-header { padding: 20px 20px 16px; }
+    .header-stats { display: none; }
+    .controls-bar { padding: 12px 20px; top: 80px; }
+    .main-wrap { grid-template-columns: 1fr; padding: 16px; }
+    .decade-nav { display: none; }
+    .header-title { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useMemo, useCallback } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "cardStyle": "minimal",
+  "datePosition": "left",
+  "density": "comfortable"
+}/*EDITMODE-END*/;
+
+// Pencil SVG icon
+const PencilIcon = () => (
+  <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M11.5 2.5l2 2L5 13H3v-2L11.5 2.5z"/>
+    <path d="M9.5 4.5l2 2"/>
+  </svg>
+);
+
+// ── Data ────────────────────────────────────────────────────────────────────
+const CATEGORIES = [
+  { id: 'unifil',        label: 'UNIFIL',                  color: 'var(--c-unifil)',    bg: 'var(--c-unifil-bg)'    },
+  { id: 'israel-lb',     label: 'Israel–Lebanon',          color: 'var(--c-military)',  bg: 'var(--c-military-bg)'  },
+  { id: 'hezbollah',     label: 'Hezbollah',               color: 'var(--c-attack)',    bg: 'var(--c-attack-bg)'    },
+  { id: 'lb-politics',   label: 'Lebanese Politics',       color: 'var(--c-politics)',  bg: 'var(--c-politics-bg)'  },
+  { id: 'regional-intl', label: 'Regional / International',color: 'var(--c-un)',        bg: 'var(--c-un-bg)'        },
+];
+
+const EVENTS = [
+  {
+    "year": 1969,
+    "date": "1969",
+    "cat": "lb-politics",
+    "title": "Cairo Agreement",
+    "desc": "The Cairo Agreement legitimises the Palestinian armed presence in Lebanon following clashes with the Lebanese army. It enables the growth of a Palestinian state-within-a-state in the south.",
+    "source": ""
+  },
+  {
+    "year": 1970,
+    "date": "1970",
+    "cat": "regional-intl",
+    "title": "Black September – PLO expelled from Jordan",
+    "desc": "Civil war in Jordan results in the expulsion of PLO forces, accelerating their consolidation in southern Lebanon. This significantly increases cross-border tensions with Israel.",
+    "source": ""
+  },
+  {
+    "year": 1978,
+    "date": "Mar 1978",
+    "cat": "israel-lb",
+    "title": "Operation Litani",
+    "desc": "Israel invades and occupies South Lebanon up to the Litani River in response to PLO cross-border attacks. The operation marks the beginning of prolonged Israeli military engagement in Lebanese territory.",
+    "source": ""
+  },
+  {
+    "year": 1978,
+    "date": "19 Mar 1978",
+    "cat": "unifil",
+    "title": "UNSC Resolution 425 – UNIFIL established",
+    "desc": "The Security Council passes Resolution 425 (with abstentions from Czechoslovakia and the USSR), calling for Israeli withdrawal and establishing UNIFIL. The mission is mandated to confirm withdrawal, restore peace, and assist Lebanon in reasserting authority in the south.",
+    "source": ""
+  },
+  {
+    "year": 1978,
+    "date": "23 Mar 1978",
+    "cat": "unifil",
+    "title": "First UNIFIL troops arrive",
+    "desc": "The first contingent of UNIFIL peacekeepers deploys to southern Lebanon just days after Resolution 425. The force begins operating in an area still contested between Israeli forces and armed Palestinian groups.",
+    "source": ""
+  },
+  {
+    "year": 1978,
+    "date": "Oct 1978",
+    "cat": "israel-lb",
+    "title": "Israeli withdrawal – SLA handover",
+    "desc": "Israel withdraws its forces under US pressure but transfers the border zone to the right-wing South Lebanon Army (SLA) auxiliary. Israel is widely regarded as retaining effective control, leading to repeated renewal of UNIFIL's mandate.",
+    "source": ""
+  },
+  {
+    "year": 1981,
+    "date": "Jul 1981",
+    "cat": "israel-lb",
+    "title": "PLO–Israel ceasefire (Habib)",
+    "desc": "Intensifying cross-border exchanges between the PLO and Israel prompt US Ambassador Philip Habib to broker a ceasefire. The agreement holds temporarily but is later used by Israel as a pretext for the 1982 invasion.",
+    "source": ""
+  },
+  {
+    "year": 1982,
+    "date": "Jun 1982",
+    "cat": "israel-lb",
+    "title": "Operation Peace for Galilee",
+    "desc": "Following the wounding of Israeli Ambassador Argov in London by Abu Nidal gunmen (Iraqi-linked, not PLO), Israel launches its second invasion of Lebanon, advancing as far as Beirut. The invasion dramatically expands Israel's occupation and reshapes the Lebanese political landscape.",
+    "source": ""
+  },
+  {
+    "year": 1982,
+    "date": "Oct 1982",
+    "cat": "israel-lb",
+    "title": "Israeli partial withdrawal from Beirut",
+    "desc": "Israel pulls back from the Beirut region but retains occupation of the entire south up to the Awwali River north of Sidon. Full occupation of the south continues for a further three years.",
+    "source": ""
+  },
+  {
+    "year": 1983,
+    "date": "17 May 1983",
+    "cat": "israel-lb",
+    "title": "Israel-Lebanon 'peace' accord",
+    "desc": "A US-brokered accord between Israel and Lebanon is signed but quickly collapses. Syria, whose consent was not sought, effectively vetoes the agreement.",
+    "source": ""
+  },
+  {
+    "year": 1983,
+    "date": "Oct 1983",
+    "cat": "hezbollah",
+    "title": "Beirut barracks bombing",
+    "desc": "A Hezbollah-linked suicide bombing destroys the US Marine barracks in Beirut, killing over 240 Marines. The attack is one of the deadliest single-day losses for the US military since World War II.",
+    "source": ""
+  },
+  {
+    "year": 1983,
+    "date": "1983",
+    "cat": "hezbollah",
+    "title": "Ashura incident – fatwa for defensive jihad",
+    "desc": "Israeli forces violate the sanctity of Ashura, prompting senior Sunni and Shia clerics to issue a fatwa declaring a defensive jihad against the occupation. The incident radicalises previously moderate religious figures in the region.",
+    "source": ""
+  },
+  {
+    "year": 1985,
+    "date": "1985",
+    "cat": "hezbollah",
+    "title": "Hezbollah Open Letter",
+    "desc": "Hezbollah publishes its founding ideological manifesto, the 'Open Letter,' formally articulating its goals, identity, and resistance posture. The document establishes the organisation's ideological framework for decades to come.",
+    "source": ""
+  },
+  {
+    "year": 1985,
+    "date": "Jun 1985",
+    "cat": "israel-lb",
+    "title": "Israeli phased withdrawal – security belt retained",
+    "desc": "Israel completes a phased withdrawal from most of southern Lebanon but retains a 10–20 km 'security belt' along the border, including a salient around Jizzin — roughly 10% of Lebanese territory. The SLA continues to administer the zone under Israeli direction.",
+    "source": ""
+  },
+  {
+    "year": 1985,
+    "date": "1985",
+    "cat": "lb-politics",
+    "title": "War of the Camps begins",
+    "desc": "Amal launches a siege of Palestinian refugee camps in Beirut and the south, initiating the so-called 'War of the Camps.' The conflict lasts approximately two years and deepens sectarian and factional divisions.",
+    "source": ""
+  },
+  {
+    "year": 1988,
+    "date": "1988",
+    "cat": "hezbollah",
+    "title": "Amal–Hezbollah hostilities begin",
+    "desc": "Armed clashes break out between Amal and Hezbollah, reflecting growing competition for Shia political and military dominance in Lebanon. The conflict is eventually resolved by the 1990 Damascus Accord.",
+    "source": ""
+  },
+  {
+    "year": 1988,
+    "date": "1988",
+    "cat": "unifil",
+    "title": "Kidnapping of Lt. Col. William Higgins",
+    "desc": "Lt. Col. William Higgins, serving with the UN Observer Group Lebanon, is kidnapped by the Amal splinter group 'Believer's Resistance' led by Mustafa Dirani, with suspected Hezbollah sympathies. Higgins is later killed; responsibility is attributed to the 'Revolutionary Justice Organization.'",
+    "source": ""
+  },
+  {
+    "year": 1989,
+    "date": "1989",
+    "cat": "lb-politics",
+    "title": "Ta'if Agreement",
+    "desc": "The Ta'if Agreement ends Lebanon's civil war and mandates disarmament of all militias including Amal. Amal's entry into formal politics causes its militant cadres to migrate toward Hezbollah, strengthening the latter.",
+    "source": ""
+  },
+  {
+    "year": 1990,
+    "date": "1990",
+    "cat": "regional-intl",
+    "title": "Damascus Accord – Amal–Hezbollah peace",
+    "desc": "Iran and Syria sponsor the Damascus Accord, ending two years of armed hostilities between Amal and Hezbollah. The agreement consolidates Hezbollah's position as the dominant Shia armed movement.",
+    "source": ""
+  },
+  {
+    "year": 1993,
+    "date": "25 Jul 1993",
+    "cat": "israel-lb",
+    "title": "Operation Accountability",
+    "desc": "Israel launches Operation Accountability on 25 July, targeting Hezbollah bases north of the security zone with the aim of curtailing guerrilla operations. A US-brokered ceasefire is reached on 31 July through Secretary of State Warren Christopher.",
+    "source": ""
+  },
+  {
+    "year": 1996,
+    "date": "1996",
+    "cat": "israel-lb",
+    "title": "Operation Grapes of Wrath",
+    "desc": "Israel conducts Operation Grapes of Wrath against Hezbollah in southern Lebanon, the third major Israeli military campaign aimed at pressuring the Lebanese population against the group. The operation ends with a US-brokered understanding similar to the 1993 ceasefire.",
+    "source": ""
+  },
+  {
+    "year": 1997,
+    "date": "4 Jul 1997",
+    "cat": "hezbollah",
+    "title": "Tufayli 'revolt of the hungry'",
+    "desc": "Former Hezbollah Secretary-General Sheikh Subhi Tufayli launches a populist initiative demanding jobs, crop subsidies, free education, utilities, and state pensions for resistance fighters. The move represents a direct challenge to both Hezbollah's leadership and state authority.",
+    "source": ""
+  },
+  {
+    "year": 1998,
+    "date": "Jan 1998",
+    "cat": "hezbollah",
+    "title": "Tufayli expelled from Hezbollah",
+    "desc": "After months of defiance, Tufayli attempts to disrupt Hezbollah's Jerusalem Day commemoration in Baalbek and is expelled from the organisation within 24 hours. The episode underscores Hezbollah's intolerance of internal dissent.",
+    "source": ""
+  },
+  {
+    "year": 2000,
+    "date": "May 2000",
+    "cat": "israel-lb",
+    "title": "Israeli full withdrawal from south Lebanon",
+    "desc": "Israel withdraws completely from south Lebanon and the SLA is disbanded, ending 22 years of occupation. UNIFIL remains deployed as the Lebanese government has still not restored effective authority over the area.",
+    "source": ""
+  },
+  {
+    "year": 2004,
+    "date": "Sep 2004",
+    "cat": "regional-intl",
+    "title": "UNSC Resolution 1559",
+    "desc": "The Security Council passes Resolution 1559, calling for the withdrawal of all foreign forces from Lebanon and the dismantling of all militias. The resolution is widely understood as targeting both Syrian presence and Hezbollah's armed wing.",
+    "source": ""
+  },
+  {
+    "year": 2005,
+    "date": "2005",
+    "cat": "regional-intl",
+    "title": "Syrian military withdrawal from Lebanon",
+    "desc": "Syria completes its military withdrawal from Lebanon following massive domestic and international pressure in the wake of the Hariri assassination. The withdrawal ends nearly three decades of Syrian military presence.",
+    "source": ""
+  },
+  {
+    "year": 2006,
+    "date": "Jul 2006",
+    "cat": "israel-lb",
+    "title": "July 2006 Israel-Lebanon War",
+    "desc": "Israel launches a major military campaign against Lebanon primarily targeting Hezbollah, following the capture of two Israeli soldiers. The war results in UNSC Resolution 1701 and a significantly expanded UNIFIL mandate.",
+    "source": ""
+  }
+];
+
+
+// Compute decade groups
+function getDecade(year) {
+  if (year < 1980) return '1967–1979';
+  if (year < 1990) return '1980s';
+  if (year < 2000) return '1990s';
+  if (year < 2010) return '2000s';
+  if (year < 2020) return '2010s';
+  return '2020s';
+}
+
+const DECADE_ORDER = ['1967–1979','1980s','1990s','2000s','2010s','2020s'];
+
+// 5-year buckets for density chart
+const BUCKETS = [];
+for (let y = 1965; y < 2030; y += 5) {
+  BUCKETS.push({ start: y, end: y + 4, label: `${y}` });
+}
+
+const MONTH_IDX = { jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12 };
+function parseSortKey(dateStr) {
+  const s = String(dateStr).trim();
+  if (/^\d{4}(-\d{1,2}(-\d{1,2})?)?$/.test(s)) {
+    const parts = s.split('-').map(Number);
+    return [parts[0]||0, parts[1]||0, parts[2]||0];
+  }
+  const yearM = s.match(/\b(1[89]\d\d|20\d\d)\b/);
+  const year = yearM ? parseInt(yearM[1]) : 0;
+  const monM = s.toLowerCase().match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/);
+  const month = monM ? MONTH_IDX[monM[1]] : 0;
+  const dayM = s.match(/\b(\d{1,2})\b/);
+  const day = dayM ? parseInt(dayM[1]) : 0;
+  return [year, month, day];
+}
+
+function App() {
+  const [tweaks] = useState(TWEAK_DEFAULTS);
+  const [tweaksOpen, setTweaksOpen] = useState(false);
+  const [yearMin, setYearMin] = useState(1969);
+  const [yearMax, setYearMax] = useState(2006);
+  const [activeCats, setActiveCats] = useState(new Set(CATEGORIES.map(c => c.id)));
+  const [activeDecade, setActiveDecade] = useState(null);
+  const decadeRefs = useRef({});
+  const minRef = useRef(); const maxRef = useRef();
+
+  // Editing state
+  const [eventsData, setEventsData] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('unifil-events-edits') || '{}');
+      const base = EVENTS.map((ev, i) => saved[i] ? { ...ev, ...saved[i] } : { ...ev });
+      // Append user-created events stored beyond EVENTS.length
+      const extras = Object.keys(saved)
+        .map(Number).filter(k => k >= EVENTS.length)
+        .sort((a, b) => a - b)
+        .map(k => saved[k]);
+      return [...base, ...extras];
+    } catch(e) { return EVENTS.map(ev => ({ ...ev })); }
+  });
+  const [editingIdx, setEditingIdx] = useState(null);
+  const [draft, setDraft] = useState({ title: '', desc: '', source: '', date: '', cat: '' });
+  const [confirmDeleteIdx, setConfirmDeleteIdx] = useState(null);
+  const [addingEvent, setAddingEvent] = useState(false);
+  const [newDraft, setNewDraft] = useState({ title: '', desc: '', source: '', date: '', cat: 'unifil' });
+  const editTextareaRef = useRef();
+  const newTitleRef = useRef();
+
+  const persistEdits = (next) => {
+    const saved = {};
+    next.forEach((ev, i) => {
+      if (ev.edited || ev.deleted || ev.userCreated)
+        saved[i] = { title: ev.title, desc: ev.desc, source: ev.source, date: ev.date, cat: ev.cat, year: ev.year, edited: ev.edited, deleted: ev.deleted, userCreated: ev.userCreated };
+    });
+    localStorage.setItem('unifil-events-edits', JSON.stringify(saved));
+  };
+
+  const parseYear = (dateStr) => {
+    const m = String(dateStr).match(/\b(1[89]\d\d|20\d\d)\b/);
+    return m ? parseInt(m[1]) : 0;
+  };
+
+  const addEvent = useCallback(() => {
+    if (!newDraft.title.trim() && !newDraft.desc.trim()) return;
+    const year = parseYear(newDraft.date);
+    const ev = { ...newDraft, year, userCreated: true };
+    setEventsData(prev => {
+      const next = [...prev, ev];
+      persistEdits(next);
+      return next;
+    });
+    setNewDraft({ title: '', desc: '', source: '', date: '', cat: 'unifil' });
+    setAddingEvent(false);
+  }, [newDraft]);
+
+  const startEdit = useCallback((idx, ev) => {
+    setEditingIdx(idx);
+    setConfirmDeleteIdx(null);
+    setDraft({ title: ev.title, desc: ev.desc, source: ev.source, date: ev.date, cat: ev.cat });
+    setTimeout(() => editTextareaRef.current?.focus(), 50);
+  }, []);
+
+  const saveEdit = useCallback((idx) => {
+    setEventsData(prev => {
+      const next = [...prev];
+      const [year] = parseSortKey(draft.date);
+      next[idx] = { ...next[idx], ...draft, year: year || next[idx].year, edited: true };
+      persistEdits(next);
+      return next;
+    });
+    setEditingIdx(null);
+  }, [draft]);
+
+  const deleteEvent = useCallback((idx) => {
+    setEventsData(prev => {
+      const next = [...prev];
+      next[idx] = { ...next[idx], deleted: true };
+      persistEdits(next);
+      return next;
+    });
+    setEditingIdx(null);
+    setConfirmDeleteIdx(null);
+  }, []);
+
+  const cancelEdit = useCallback(() => { setEditingIdx(null); setConfirmDeleteIdx(null); }, []);
+
+  const MIN_YEAR = 1969; const MAX_YEAR = 2006;
+
+  // Listen for tweaks toggle
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.data?.type === '__activate_edit_mode') setTweaksOpen(true);
+      if (e.data?.type === '__deactivate_edit_mode') setTweaksOpen(false);
+    };
+    window.addEventListener('message', handler);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', handler);
+  }, []);
+
+  // Restore from localStorage
+  useEffect(() => {
+    try {
+      const s = JSON.parse(localStorage.getItem('unifil-timeline') || '{}');
+      if (s.yearMin) setYearMin(s.yearMin);
+      if (s.yearMax) setYearMax(s.yearMax);
+    } catch(e) {}
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('unifil-timeline', JSON.stringify({ yearMin, yearMax }));
+  }, [yearMin, yearMax]);
+
+  const toggleCat = useCallback((id) => {
+    setActiveCats(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) { if (next.size > 1) next.delete(id); }
+      else next.add(id);
+      return next;
+    });
+  }, []);
+
+  const isFiltered = yearMin !== MIN_YEAR || yearMax !== MAX_YEAR || activeCats.size !== CATEGORIES.length;
+
+  const clearFilters = useCallback(() => {
+    setYearMin(MIN_YEAR);
+    setYearMax(MAX_YEAR);
+    setActiveCats(new Set(CATEGORIES.map(c => c.id)));
+  }, []);
+
+  const filtered = useMemo(() =>
+    eventsData
+      .map((e, i) => ({ ...e, _idx: i }))
+      .filter(e => !e.deleted && e.year >= yearMin && e.year <= yearMax && activeCats.has(e.cat))
+      .sort((a, b) => {
+        const ka = parseSortKey(a.date), kb = parseSortKey(b.date);
+        return ka[0] - kb[0] || ka[1] - kb[1] || ka[2] - kb[2];
+      }),
+    [eventsData, yearMin, yearMax, activeCats]);
+
+  // Group by decade
+  const byDecade = useMemo(() => {
+    const map = {};
+    for (const d of DECADE_ORDER) map[d] = [];
+    for (const e of filtered) {
+      const d = getDecade(e.year);
+      if (map[d]) map[d].push(e);
+    }
+    return map;
+  }, [filtered]);
+
+  // Density: count per 5-year bucket (from all events)
+  const bucketCounts = useMemo(() => {
+    return BUCKETS.map(b => ({
+      ...b,
+      count: EVENTS.filter(e => e.year >= b.start && e.year <= b.end).length,
+      filtered: filtered.filter(e => e.year >= b.start && e.year <= b.end).length,
+    }));
+  }, [filtered]);
+  const maxCount = Math.max(...bucketCounts.map(b => b.count));
+
+  // Decade counts
+  const decadeCounts = useMemo(() => {
+    const map = {};
+    for (const d of DECADE_ORDER) {
+      map[d] = EVENTS.filter(e => getDecade(e.year) === d).length;
+    }
+    return map;
+  }, []);
+  const maxDecadeCount = Math.max(...Object.values(decadeCounts));
+
+  const scrollToDecade = (decade) => {
+    const el = decadeRefs.current[decade];
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 185;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+    setActiveDecade(decade);
+  };
+
+  // Dual range handler
+  const handleMinChange = (e) => {
+    const v = Math.min(Number(e.target.value), yearMax - 1);
+    setYearMin(v);
+  };
+  const handleMaxChange = (e) => {
+    const v = Math.max(Number(e.target.value), yearMin + 1);
+    setYearMax(v);
+  };
+
+  const minPct = ((yearMin - MIN_YEAR) / (MAX_YEAR - MIN_YEAR)) * 100;
+  const maxPct = ((yearMax - MIN_YEAR) / (MAX_YEAR - MIN_YEAR)) * 100;
+
+  const catMap = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
+
+  // Scroll spy
+  useEffect(() => {
+    const handler = () => {
+      for (const d of [...DECADE_ORDER].reverse()) {
+        const el = decadeRefs.current[d];
+        if (!el) continue;
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 200) { setActiveDecade(d); break; }
+      }
+    };
+    window.addEventListener('scroll', handler, { passive: true });
+    return () => window.removeEventListener('scroll', handler);
+  }, []);
+
+  return (
+    <div>
+      {/* Header */}
+      <header className="page-header">
+        <div style={{ maxWidth: 1140, margin: '0 auto' }}>
+          <div className="header-eyebrow">UNIFIL Research Library</div>
+          <div className="header-top">
+            <h1 className="header-title">Event Timeline</h1>
+            <div className="header-stats">
+              <div className="stat-item"><div className="stat-num">27</div><div className="stat-label">Events</div></div>
+              <div className="stat-item"><div className="stat-num">37</div><div className="stat-label">Years Covered</div></div>
+              <div className="stat-item"><div className="stat-num">37</div><div className="stat-label">Sources</div></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Controls */}
+      <div className="controls-bar">
+        <div className="controls-section">
+          <span className="controls-label">Years</span>
+          <span className="range-val">{yearMin}</span>
+          <div className="range-wrap">
+            <div className="range-track" />
+            <div className="range-fill" style={{ left: `${minPct}%`, width: `${maxPct - minPct}%` }} />
+            <input ref={minRef} className="range-input" type="range"
+              min={MIN_YEAR} max={MAX_YEAR} value={yearMin} onChange={handleMinChange}
+              style={{ zIndex: yearMin > MAX_YEAR - 10 ? 5 : 3 }} />
+            <input ref={maxRef} className="range-input" type="range"
+              min={MIN_YEAR} max={MAX_YEAR} value={yearMax} onChange={handleMaxChange}
+              style={{ zIndex: 4 }} />
+          </div>
+          <span className="range-val">{yearMax}</span>
+        </div>
+
+        <div className="controls-section">
+          <span className="controls-label">Category</span>
+          <div className="pill-wrap">
+            {CATEGORIES.map(cat => {
+              const on = activeCats.has(cat.id);
+              return (
+                <button key={cat.id} className={`pill${on ? ' active' : ''}`}
+                  style={on ? { backgroundColor: cat.color, borderColor: cat.color } : {}}
+                  onClick={() => toggleCat(cat.id)}>
+                  <span className="pill-dot" style={{ backgroundColor: on ? 'rgba(255,255,255,0.6)' : cat.color }} />
+                  {cat.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {isFiltered && (
+          <button onClick={clearFilters} style={{
+            background: 'none', border: '1.5px solid var(--divider)', borderRadius: 3,
+            padding: '3px 10px', cursor: 'pointer', fontFamily: 'inherit',
+            fontSize: 11, fontWeight: 600, letterSpacing: '0.06em',
+            color: 'var(--muted)', whiteSpace: 'nowrap', transition: 'all 0.15s',
+          }}
+          onMouseEnter={e => { e.target.style.borderColor = 'var(--navy-mid)'; e.target.style.color = 'var(--navy)'; }}
+          onMouseLeave={e => { e.target.style.borderColor = 'var(--divider)'; e.target.style.color = 'var(--muted)'; }}>
+            Clear filters
+          </button>
+        )}
+        <div className="result-count">{filtered.length} events</div>
+        <button onClick={() => { setAddingEvent(v => !v); setTimeout(() => newTitleRef.current?.focus(), 50); }} style={{
+          padding: '4px 12px', borderRadius: 3, cursor: 'pointer', fontFamily: 'inherit',
+          fontSize: 11, fontWeight: 600, letterSpacing: '0.06em', whiteSpace: 'nowrap',
+          background: addingEvent ? 'var(--navy-mid)' : 'none',
+          color: addingEvent ? 'white' : 'var(--navy-mid)',
+          border: '1.5px solid var(--navy-mid)', transition: 'all 0.15s',
+        }}>+ Add event</button>
+      </div>
+
+      {/* Main */}
+      <div className="main-wrap">
+        {/* Left nav */}
+        <aside className="decade-nav">
+          <div className="decade-nav-label">Jump to era</div>
+          {DECADE_ORDER.map(d => {
+            const cnt = byDecade[d]?.length || 0;
+            const total = decadeCounts[d] || 0;
+            return (
+              <button key={d} className={`decade-nav-item${activeDecade === d ? ' active' : ''}`}
+                onClick={() => scrollToDecade(d)}>
+                <span className="decade-nav-year">{d}</span>
+                <span className="decade-nav-bar">
+                  <span className="decade-nav-fill" style={{ width: `${(total / maxDecadeCount) * 100}%` }} />
+                </span>
+                <span className="decade-nav-count">{cnt}</span>
+              </button>
+            );
+          })}
+        </aside>
+
+        {/* Timeline */}
+        <div>
+          {/* Add event form */}
+          {addingEvent && (
+            <div style={{
+              background: 'var(--bg-card)', border: '1px solid var(--navy-mid)',
+              borderRadius: 4, padding: '16px 20px', marginBottom: 20,
+              display: 'flex', flexDirection: 'column', gap: 10,
+            }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--navy-mid)', marginBottom: 2 }}>New Event</div>
+              <div style={{ display: 'flex', gap: 10 }}>
+                <input ref={newTitleRef}
+                  className="edit-source-input"
+                  style={{ fontStyle: 'normal', fontWeight: 600, fontSize: 13, flex: 2 }}
+                  value={newDraft.title}
+                  onChange={e => setNewDraft(d => ({ ...d, title: e.target.value }))}
+                  placeholder="Title…"
+                  onKeyDown={e => { if (e.key === 'Escape') setAddingEvent(false); }}
+                />
+                <input
+                  className="edit-source-input"
+                  style={{ fontStyle: 'normal', flex: 1 }}
+                  value={newDraft.date}
+                  onChange={e => setNewDraft(d => ({ ...d, date: e.target.value }))}
+                  placeholder="Date (e.g. Mar 1978 or 1978-03-15)…"
+                  onKeyDown={e => { if (e.key === 'Escape') setAddingEvent(false); }}
+                />
+              </div>
+              <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
+                {CATEGORIES.map(c => {
+                  const on = newDraft.cat === c.id;
+                  return (
+                    <button key={c.id}
+                      style={{
+                        padding: '2px 8px', borderRadius: 3, cursor: 'pointer',
+                        border: `1.5px solid ${on ? c.color : 'var(--divider)'}`,
+                        background: on ? c.bg : 'none',
+                        color: on ? c.color : 'var(--muted)',
+                        fontFamily: 'inherit', fontSize: 10, fontWeight: 600,
+                        letterSpacing: '0.06em', textTransform: 'uppercase',
+                      }}
+                      onClick={() => setNewDraft(d => ({ ...d, cat: c.id }))}>
+                      {c.label}
+                    </button>
+                  );
+                })}
+              </div>
+              <textarea
+                className="edit-textarea"
+                value={newDraft.desc}
+                onChange={e => setNewDraft(d => ({ ...d, desc: e.target.value }))}
+                onKeyDown={e => { if (e.key === 'Escape') setAddingEvent(false); if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) addEvent(); }}
+                placeholder="Description…"
+                rows={3}
+              />
+              <input
+                className="edit-source-input"
+                value={newDraft.source}
+                onChange={e => setNewDraft(d => ({ ...d, source: e.target.value }))}
+                placeholder="Source attribution…"
+                onKeyDown={e => { if (e.key === 'Escape') setAddingEvent(false); if (e.key === 'Enter') addEvent(); }}
+              />
+              <div className="edit-actions">
+                <button className="edit-cancel-btn" onClick={() => setAddingEvent(false)}>Cancel</button>
+                <button className="edit-save-btn" onClick={addEvent}>Add event</button>
+              </div>
+            </div>
+          )}
+
+          {/* Density chart */}
+          <div className="density-wrap">
+            <div className="density-label">Event density by 5-year period</div>
+            <div className="density-chart">
+              {bucketCounts.filter(b => b.start >= 1965 && b.end <= 2029).map(b => {
+                const h = maxCount > 0 ? (b.count / maxCount) * 100 : 0;
+                const inRange = b.start <= yearMax && b.end >= yearMin;
+                return (
+                  <div key={b.start} className={`density-bar-wrap${inRange ? ' active' : ''}`}
+                    onClick={() => { setYearMin(b.start); setYearMax(b.end); }}>
+                    <div className="density-bar" style={{
+                      height: `${Math.max(h, 4)}%`,
+                      opacity: inRange ? 1 : 0.35,
+                    }} />
+                    {b.start % 10 === 0 || b.start === 1967 ?
+                      <span className="density-bar-year">{b.start}</span> :
+                      <span className="density-bar-year" style={{ opacity: 0 }}>{b.start}</span>}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Decade sections */}
+          {filtered.length === 0 && (
+            <div className="no-results">No events match current filters.</div>
+          )}
+
+          {DECADE_ORDER.map(decade => {
+            const events = byDecade[decade];
+            if (!events || events.length === 0) return null;
+            return (
+              <div key={decade} className="decade-section"
+                ref={el => decadeRefs.current[decade] = el}
+                data-screen-label={decade}>
+                <div className="decade-heading">
+                  <span className="decade-year-label">{decade}</span>
+                  <span className="decade-pill">{events.length} event{events.length !== 1 ? 's' : ''}</span>
+                </div>
+                <div className="events-column">
+                  <div className="spine-line" />
+                  {events.map((ev, i) => {
+                    const cat = catMap[ev.cat];
+                    const isEditing = editingIdx === ev._idx;
+                    return (
+                      <div key={ev._idx} className="event-row">
+                        <div className="event-date-col">
+                          <div className="event-date">{ev.date}</div>
+                          <div className="spine-dot" style={{ backgroundColor: cat.color }} />
+                        </div>
+                        <div className="event-card" style={{ borderLeftColor: cat.color, position: 'relative' }}>
+                          <div className="event-card-top">
+                            <span className="event-category-badge" style={{
+                              backgroundColor: cat.bg,
+                              color: cat.color,
+                            }}>{cat.label}</span>
+                            {ev.edited && !isEditing && (
+                              <span className="edited-marker">edited</span>
+                            )}
+                            {!isEditing && (
+                              <button className="edit-btn" title="Edit event"
+                                onClick={() => startEdit(ev._idx, ev)}>
+                                <PencilIcon />
+                              </button>
+                            )}
+                          </div>
+                          {isEditing ? (
+                            <div className="edit-form">
+                              <div style={{ display: 'flex', gap: 8 }}>
+                                <input
+                                  className="edit-source-input"
+                                  style={{ fontStyle: 'normal', fontWeight: 600, fontSize: 13, flex: 2 }}
+                                  value={draft.title || ''}
+                                  onChange={e => setDraft(d => ({ ...d, title: e.target.value }))}
+                                  placeholder="Event title…"
+                                  onKeyDown={e => { if (e.key === 'Escape') cancelEdit(); }}
+                                />
+                                <input
+                                  className="edit-source-input"
+                                  style={{ fontStyle: 'normal', flex: 1 }}
+                                  value={draft.date || ''}
+                                  onChange={e => setDraft(d => ({ ...d, date: e.target.value }))}
+                                  placeholder="Date (e.g. Mar 1978)…"
+                                  onKeyDown={e => { if (e.key === 'Escape') cancelEdit(); }}
+                                />
+                              </div>
+                              <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
+                                {CATEGORIES.map(c => {
+                                  const on = draft.cat === c.id;
+                                  return (
+                                    <button key={c.id}
+                                      style={{
+                                        padding: '2px 8px', borderRadius: 3, cursor: 'pointer',
+                                        border: `1.5px solid ${on ? c.color : 'var(--divider)'}`,
+                                        background: on ? c.bg : 'none',
+                                        color: on ? c.color : 'var(--muted)',
+                                        fontFamily: 'inherit', fontSize: 10, fontWeight: 600,
+                                        letterSpacing: '0.06em', textTransform: 'uppercase',
+                                      }}
+                                      onClick={() => setDraft(d => ({ ...d, cat: c.id }))}>
+                                      {c.label}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                              <textarea
+                                ref={editTextareaRef}
+                                className="edit-textarea"
+                                value={draft.desc}
+                                onChange={e => setDraft(d => ({ ...d, desc: e.target.value }))}
+                                onKeyDown={e => { if (e.key === 'Escape') cancelEdit(); if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) saveEdit(ev._idx); }}
+                                rows={3}
+                              />
+                              <input
+                                className="edit-source-input"
+                                value={draft.source || ''}
+                                onChange={e => setDraft(d => ({ ...d, source: e.target.value }))}
+                                placeholder="Source attribution…"
+                                onKeyDown={e => { if (e.key === 'Escape') cancelEdit(); if (e.key === 'Enter') saveEdit(ev._idx); }}
+                              />
+                              <div className="edit-actions">
+                                {confirmDeleteIdx === ev._idx ? (
+                                  <>
+                                    <span style={{ fontSize: 11, color: '#c0392b', marginRight: 'auto', alignSelf: 'center' }}>Delete this event?</span>
+                                    <button className="edit-cancel-btn" onClick={() => setConfirmDeleteIdx(null)}>No</button>
+                                    <button style={{
+                                      padding: '4px 14px', background: '#c0392b', color: 'white',
+                                      border: 'none', borderRadius: 3, fontFamily: 'inherit',
+                                      fontSize: 11, fontWeight: 600, cursor: 'pointer',
+                                    }} onClick={() => deleteEvent(ev._idx)}>Confirm delete</button>
+                                  </>
+                                ) : (
+                                  <>
+                                    <button style={{
+                                      padding: '4px 10px', background: 'none', color: '#c0392b',
+                                      border: '1px solid #e8c4c0', borderRadius: 3, fontFamily: 'inherit',
+                                      fontSize: 11, cursor: 'pointer', marginRight: 'auto',
+                                    }} onClick={() => setConfirmDeleteIdx(ev._idx)}>Delete</button>
+                                    <button className="edit-cancel-btn" onClick={cancelEdit}>Cancel</button>
+                                    <button className="edit-save-btn" onClick={() => saveEdit(ev._idx)}>Save</button>
+                                  </>
+                                )}
+                              </div>
+                            </div>
+                          ) : (
+                            <>
+                              {ev.title && <div className="event-title">{ev.title}</div>}
+                              <div className="event-desc">{ev.desc}</div>
+                              {ev.source && <div className="event-source">{ev.source}</div>}
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Tweaks panel */}
+      <div className={`tweaks-panel${tweaksOpen ? ' open' : ''}`}>
+        <div className="tweaks-title">Tweaks</div>
+        <div className="tweak-row">
+          <span className="tweak-label">Card style</span>
+          <div className="tweak-options">
+            {['bordered','minimal','filled'].map(v => (
+              <button key={v} className={`tweak-btn${tweaks.cardStyle === v ? ' active' : ''}`}
+                onClick={() => {
+                  window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { cardStyle: v } }, '*');
+                }}>{v}</button>
+            ))}
+          </div>
+        </div>
+        <div className="tweak-row">
+          <span className="tweak-label">Density</span>
+          <div className="tweak-options">
+            {['compact','comfortable','spacious'].map(v => (
+              <button key={v} className={`tweak-btn${tweaks.density === v ? ' active' : ''}`}
+                onClick={() => {
+                  window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { density: v } }, '*');
+                }}>{v}</button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

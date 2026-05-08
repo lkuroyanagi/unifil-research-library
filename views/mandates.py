@@ -1,17 +1,16 @@
 import streamlit as st
-import base64
 from pathlib import Path
 
 _BASE = Path(__file__).parent.parent
 
-def show_pdf(file_path):
+def show_pdf(file_path, filename):
     with open(file_path, "rb") as f:
-        b64 = base64.b64encode(f.read()).decode("utf-8")
-    st.markdown(
-        f'<iframe src="data:application/pdf;base64,{b64}" '
-        f'width="100%" height="600px" '
-        f'style="border:1px solid #E8E5DE; border-radius:3px;"></iframe>',
-        unsafe_allow_html=True,
+        pdf_bytes = f.read()
+    st.download_button(
+        label="⬇ Download PDF",
+        data=pdf_bytes,
+        file_name=filename,
+        mime="application/pdf",
     )
 
 def show():
@@ -66,8 +65,12 @@ def show():
 
     with st.expander("Read the original resolutions →"):
         pdf_path = _BASE / "data" / "pdfs" / "scr_425_426.pdf"
+        st.markdown(
+            "Original UN document: "
+            "[SCR 425/426](https://undocs.org/S/RES/425(1978))"
+        )
         if pdf_path.exists():
-            show_pdf(str(pdf_path))
+            show_pdf(str(pdf_path), "scr_425_426.pdf")
         else:
             st.warning("PDF file not found. Please ensure scr_425_426.pdf is in data/pdfs/")
 
@@ -123,7 +126,11 @@ def show():
 
     with st.expander("Read the original resolution →"):
         pdf_path = _BASE / "data" / "pdfs" / "scr_1701.pdf"
+        st.markdown(
+            "Original UN document: "
+            "[SCR 1701](https://undocs.org/S/RES/1701(2006))"
+        )
         if pdf_path.exists():
-            show_pdf(str(pdf_path))
+            show_pdf(str(pdf_path), "scr_1701.pdf")
         else:
             st.warning("PDF file not found. Please ensure scr_1701.pdf is in data/pdfs/")

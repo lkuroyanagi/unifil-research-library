@@ -37,7 +37,7 @@
   },
   {
     "date": "1978-03-19",
-    "event": "UNSCR 425/426 – UNIFIL established",
+    "event": "UNSCR 425/426",
     "category": "UNIFIL",
     "description": "UNSCR 425/426: UNIFIL established with initial six-month mandate. The mission is mandated to confirm withdrawal, restore peace, and assist Lebanon in reasserting authority in the south."
   },
@@ -49,13 +49,13 @@
   },
   {
     "date": "1978-06-13",
-    "event": "Israel completes formal withdrawal – transfers to SLA, not UNIFIL",
+    "event": "Israel completes formal withdrawal",
     "category": "Israel-Lebanon",
     "description": "Israel completes formal withdrawal but transfers positions to SLA (Haddad forces), not UNIFIL — first major mandate failure."
   },
   {
     "date": "1978-10",
-    "event": "Israeli withdrawal – SLA handover",
+    "event": "Israeli withdrawal",
     "category": "Israel-Lebanon",
     "description": "Israel withdraws its forces under US pressure but transfers the border zone to the right-wing South Lebanon Army (SLA) auxiliary. Israel is widely regarded as retaining effective control, leading to repeated renewal of UNIFIL's mandate."
   },
@@ -114,14 +114,14 @@
     "description": "Hezbollah publishes its founding ideological manifesto, the 'Open Letter,' formally articulating its goals, identity, and resistance posture. The document establishes the organisation's ideological framework for decades to come."
   },
   {
-    "date": "1985",
+    "date": "1985-05",
     "event": "War of the Camps begins",
     "category": "Lebanese Politics",
-    "description": "Amal launches a siege of Palestinian refugee camps in Beirut and the south, initiating the so-called 'War of the Camps.' The conflict lasts approximately two years and deepens sectarian and factional divisions."
+    "description": "1985 to 1988. Amal launches a siege of Palestinian refugee camps in Beirut and the south, initiating the so-called 'War of the Camps.' The conflict lasts approximately two years and deepens sectarian and factional divisions."
   },
   {
     "date": "1985-06",
-    "event": "IDF completes third-stage withdrawal – security zone consolidated",
+    "event": "IDF completes third-stage withdrawal",
     "category": "Israel-Lebanon",
     "description": "IDF completes third-stage withdrawal; post-1985 security zone consolidated and expanded under SLA/Lahad. Israel retains a 10–20 km 'security belt' along the border, including a salient around Jizzin — roughly 10% of Lebanese territory. The SLA continues to administer the zone under Israeli direction."
   },
@@ -211,7 +211,7 @@
   },
   {
     "date": "2001",
-    "event": "UN scales down UNIFIL; Finland and Ireland withdraw",
+    "event": "UN scales down UNIFIL",
     "category": "UNIFIL",
     "description": "UN scales down UNIFIL; Finland and Ireland withdraw."
   },
@@ -247,7 +247,7 @@
   },
   {
     "date": "2006",
-    "event": "Finland and Ireland return to UNIFIL",
+    "event": "Finland, Ireland return to UNIFIL",
     "category": "UNIFIL",
     "description": "Finland and Ireland return to UNIFIL at UN request as joint Finnish/Irish Battalion."
   },
@@ -283,7 +283,7 @@
   },
   {
     "date": "2007-02",
-    "event": "Italian General Graziano assumes UNIFIL Force Command",
+    "event": "New Force Command",
     "category": "UNIFIL",
     "description": "Italian General Graziano assumes UNIFIL Force Command (until Jan 2010)."
   },
@@ -325,13 +325,13 @@
   },
   {
     "date": "2015-01-28",
-    "event": "Spanish UNIFIL soldier killed – Hezbollah ATGM attack",
+    "event": "Spanish UNIFIL soldier killed",
     "category": "UNIFIL",
     "description": "Hezbollah ATGM attack kills two IDF soldiers near Shebaa Farms; Israeli return fire kills one Spanish UNIFIL member."
   },
   {
     "date": "2015-05",
-    "event": "Estonia joins Finnish contingent in UNIFIL Western Sector",
+    "event": "Estonia joins Finnish contingent in UNIFIL",
     "category": "UNIFIL",
     "description": "Estonia joins Finnish contingent as platoon-sized unit in UNIFIL Western Sector."
   },
@@ -361,7 +361,7 @@
   },
   {
     "date": "2017-11",
-    "event": "First UNIFIL periodic report since SCR 2373 – no verified findings",
+    "event": "First UNIFIL periodic report since SCR 2373",
     "category": "UNIFIL",
     "description": "First UNIFIL periodic report following SCR 2373 confirms no 'verified findings' at any suspected Hezbollah sites despite enhanced monitoring requirements."
   },
@@ -373,13 +373,13 @@
   },
   {
     "date": "2018-12-04",
-    "event": "Operation Northern Shield – Hezbollah tunnels exposed",
+    "event": "Operation Northern Shield",
     "category": "Israel-Lebanon",
     "description": "IDF Operation Northern Shield begins; exposes six Hezbollah cross-border attack tunnels crossing the Blue Line into Israel; concludes 13 Jan 2019."
   },
   {
     "date": "2018-12-26",
-    "event": "Chicken coop incident – tunnel infrastructure confirmed",
+    "event": "Chicken coop incident",
     "category": "UNIFIL",
     "description": "UN observers witness concrete flowing from a Lebanese chicken coop into a tunnel crossing the Blue Line — first irrefutable physical proof of tunnel infrastructure."
   },
@@ -397,31 +397,31 @@
   },
   {
     "date": "2020-08-28",
-    "event": "SCR 2539 adopted – UNIFIL force ceiling reduced",
+    "event": "SCR 2539 adopted",
     "category": "UNIFIL",
     "description": "SCR 2539 adopted; UNIFIL force ceiling reduced from 15,000 to 13,000; mandate renewed for one year without substantive change."
   },
   {
     "date": "2020-10",
-    "event": "Lebanon-Israel maritime border negotiations launched",
+    "event": "Lebanon-Israel maritime border negotiations",
     "category": "Israel-Lebanon",
     "description": "Launch of formal Lebanon-Israel maritime border negotiations under US mediation."
   },
   {
     "date": "2022",
-    "event": "Spanish General Lázaro assumes UNIFIL Force Command",
+    "event": "New Force Commander",
     "category": "UNIFIL",
     "description": "Spanish General Major General Aroldo Lázaro Sáenz assumes command of UNIFIL mission."
   },
   {
     "date": "2023-10-08",
-    "event": "Hezbollah attacks Israel – south Lebanon war resumes",
+    "event": "Hezbollah attacks Israel",
     "category": "Hezbollah",
     "description": "Hezbollah opens fire across Blue Line in solidarity with Gaza; south Lebanon war resumes."
   },
   {
-    "date": "2024-09",
-    "event": "Israeli escalation – assassination of Nasrallah; ground invasion",
+    "date": "2024-09-27",
+    "event": "Assassination of Nasrallah",
     "category": "Israel-Lebanon",
     "description": "Israeli escalation; assassination of Nasrallah and Hezbollah leadership; ground invasion of south Lebanon."
   },
@@ -445,13 +445,13 @@
   },
   {
     "date": "2025-06-24",
-    "event": "Italian General Abagnara assumes UNIFIL Force Command",
+    "event": "New Force Commander",
     "category": "UNIFIL",
     "description": "Italian Major General Diodato Abagnara assumes Force Commander role."
   },
   {
     "date": "2025-08-28",
-    "event": "SCR 2790 adopted – final UNIFIL mandate renewal",
+    "event": "SCR 2790 adopted",
     "category": "UNIFIL",
     "description": "SCR 2790 adopted; final UNIFIL mandate renewal to 31 December 2026, driven primarily by US pressure."
   },
@@ -463,8 +463,8 @@
   },
   {
     "date": "2026-02-28",
-    "event": "Hezbollah rocket fire – Israeli 'Gaza model' response",
+    "event": "US-Israel-Iran War",
     "category": "Regional / International",
-    "description": "Hezbollah fires rockets at Israel following US assassination of Iranian Supreme Leader Ali Khamenei; Israel applies 'Gaza model': mass displacement, razing of border villages, deep buffer zone to Litani. Lebanese government issues unprecedented formal ban on Hezbollah military activity."
+    "description": "Hezbollah fires rockets in Israel following US assassination of Iranian Supreme Leader Ali Khamenei; Israel applies 'Gaza model': mass displacement, razing of border villages, deep buffer zone to Litani. Lebanese government issues unprecedented formal ban on Hezbollah military activity."
   }
 ]

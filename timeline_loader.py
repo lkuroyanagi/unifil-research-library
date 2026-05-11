@@ -347,8 +347,8 @@ CAT_MAP = {
     "UNIFIL":                 "unifil",
     "Israel-Lebanon":         "israel-lb",
     "Hezbollah":              "hezbollah",
-    "Lebanese politics":      "lb-politics",
-    "Regional-International": "regional-intl",
+    "Lebanese Politics":      "lb-politics",
+    "Regional / International": "regional-intl",
 }
 
 MONTHS = ["Jan","Feb","Mar","Apr","May","Jun",

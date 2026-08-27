@@ -142,11 +142,37 @@ _client_cache = {"key": None, "client": None}
 
 
 def _current_api_key():
-    """Re-read .env on every call. override=True is essential: without it,
-    load_dotenv never replaces a variable already in the process environment,
-    so a key loaded at server start (even a placeholder) would stick forever."""
-    load_dotenv(ENV_PATH, override=True)
-    return os.environ.get("ANTHROPIC_API_KEY", "")
+    """
+    Resolve the Anthropic API key, checked in this order:
+
+    1. .env in the project root, for local development — re-read on every
+       call with override=True so editing the file takes effect on the next
+       question with no server restart needed. This step is skipped if no
+       .env file exists (e.g. on Streamlit Cloud), so it can never clobber
+       a real deployment secret with an empty read.
+    2. The process environment — covers Streamlit Cloud, which injects every
+       top-level key from secrets.toml directly as an env var, as well as
+       any real shell/deployment-set ANTHROPIC_API_KEY.
+    3. st.secrets directly — a fallback for a Streamlit Cloud setup where
+       the secret isn't mirrored into the environment (e.g. nested under a
+       [section] in secrets.toml rather than defined at the top level).
+    """
+    if ENV_PATH.exists():
+        load_dotenv(ENV_PATH, override=True)
+
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if key:
+        return key
+
+    try:
+        import streamlit as st
+        secret = st.secrets.get("ANTHROPIC_API_KEY", "")
+        if secret:
+            return secret
+    except Exception:
+        pass  # not running inside Streamlit, or no secrets.toml configured
+
+    return ""
 
 
 def _client():

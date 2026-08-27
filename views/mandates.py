@@ -16,7 +16,7 @@ def show_pdf(file_path, filename):
 def show():
     st.markdown("""
     <div class="library-header">
-        <h1 class="library-title">UNIFIL Mandates</h1>
+        <h1 class="library-title">Resolutions</h1>
     </div>
     <div style="font-size:0.9rem; color:#5a6a7a;
          margin-bottom:1.5rem; max-width:680px;">

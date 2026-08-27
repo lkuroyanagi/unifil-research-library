@@ -13,7 +13,7 @@ def show():
     <div class="library-header">
         <div>
             <p class="library-subtitle">Navigation by Theme</p>
-            <h1 class="library-title">Thematic Navigator</h1>
+            <h1 class="library-title">Themes</h1>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -31,6 +31,25 @@ def show():
 
     # Summary grid
     if st.session_state.selected_cluster is None:
+        # Invisible button overlaid on each card makes the whole card clickable
+        st.markdown("""
+        <style>
+        div[class*="st-key-clcard_"] { position: relative; }
+        div[class*="st-key-clcard_"] div[data-testid="stElementContainer"]:has(div[data-testid="stButton"]) {
+            position: absolute; inset: 0; z-index: 1; margin: 0;
+            width: auto !important; height: auto !important;
+        }
+        div[class*="st-key-clcard_"] div[data-testid="stButton"],
+        div[class*="st-key-clcard_"] div[data-testid="stButton"] button {
+            width: 100%; height: 100%; min-height: 0; margin: 0; padding: 0;
+        }
+        div[class*="st-key-clcard_"] div[data-testid="stButton"] button {
+            opacity: 0; cursor: pointer;
+        }
+        div[class*="st-key-clcard_"]:hover .cluster-card { background: #f6f8fb !important; }
+        div[class*="st-key-clcard_"]:hover .cluster-card-arrow { color: #1a3a5c !important; }
+        </style>
+        """, unsafe_allow_html=True)
         cols = st.columns(3)
         for i, cluster in enumerate(THEMATIC_CLUSTERS):
             srcs = coverage.get(cluster, [])
@@ -40,20 +59,22 @@ def show():
             bar_width = max(int(strength * 100), 4)
 
             with cols[i % 3]:
-                st.markdown(f"""
-                <div style="background:white; border:1px solid #ddd8cc; border-top:3px solid {'#1a3a5c' if n >= 2 else '#c8952a'};
-                     border-radius:4px; padding:1rem; margin-bottom:0.8rem; min-height:110px;">
-                    <div style="font-family:'Playfair Display',serif; font-size:1rem; font-weight:600; color:#1a3a5c;
-                         line-height:1.3; margin-bottom:0.5rem;">{cluster}{gap_badge}</div>
-                    <div style="font-size:0.78rem; color:#8a9ab0; margin-bottom:0.5rem;">{n} source{"s" if n!=1 else ""}</div>
-                    <div style="background:#eef2f7; border-radius:2px; height:4px; width:100%;">
-                        <div style="background:#1a3a5c; height:4px; border-radius:2px; width:{bar_width}%;"></div>
+                with st.container(key=f"clcard_{i}"):
+                    st.markdown(f"""
+                    <div class="cluster-card" style="position:relative; background:white; border:1px solid #ddd8cc; border-top:3px solid {'#1a3a5c' if n >= 2 else '#c8952a'};
+                         border-radius:4px; padding:1rem; margin-bottom:0.8rem; min-height:110px;">
+                        <div style="font-family:'Playfair Display',serif; font-size:1rem; font-weight:600; color:#1a3a5c;
+                             line-height:1.3; margin-bottom:0.5rem;">{cluster}{gap_badge}</div>
+                        <div style="font-size:0.78rem; color:#8a9ab0; margin-bottom:0.5rem;">{n} source{"s" if n!=1 else ""}</div>
+                        <div style="background:#eef2f7; border-radius:2px; height:4px; width:100%;">
+                            <div style="background:#1a3a5c; height:4px; border-radius:2px; width:{bar_width}%;"></div>
+                        </div>
+                        <div class="cluster-card-arrow" style="position:absolute; bottom:0.65rem; right:0.8rem; color:#b0bcc9; font-size:0.85rem;">→</div>
                     </div>
-                </div>
-                """, unsafe_allow_html=True)
-                if st.button(f"Explore →", key=f"cluster_{i}"):
-                    st.session_state.selected_cluster = cluster
-                    st.rerun()
+                    """, unsafe_allow_html=True)
+                    if st.button(f"Explore →", key=f"cluster_{i}"):
+                        st.session_state.selected_cluster = cluster
+                        st.rerun()
     else:
         # ── Individual cluster view ───────────────────────────────────────────
         cluster = st.session_state.selected_cluster

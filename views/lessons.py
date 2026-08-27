@@ -45,7 +45,7 @@ def show():
     <div class="library-header">
         <div>
             <p class="library-subtitle">Extracted from the Corpus</p>
-            <h1 class="library-title">Lessons Log</h1>
+            <h1 class="library-title">Lessons Learned</h1>
         </div>
     </div>
     """, unsafe_allow_html=True)

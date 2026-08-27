@@ -13,8 +13,8 @@
       "displacement"
     ],
     "thematic_clusters": [
-      "De-mining",
-      "Protection of Civilians"
+      "De-mining & post-conflict stabilisation",
+      "Civilian protection"
     ],
     "timeline_coverage": [
       2000,
@@ -36,7 +36,7 @@
     ],
     "bias_flag": "The Hariri Foundation is a Lebanese civil society organization with an advocacy mandate; its written statement reflects a victim-centred framing oriented toward maximizing international pressure on Israel and the UN. Factually grounded on humanitarian dimensions but does not engage with political and logistical constraints that limited mine clearance operations. Use as a primary source on civilian impact and humanitarian consequences, cross-referenced with UN operational documents on the actual scope and constraints of UNIFIL's de-mining activities.",
     "analytical_notes": [
-      "Most useful for the De-mining cluster — specifically for documenting the gap between UNIFIL's operational de-mining (corridor clearance) and the broader civilian need (agricultural land and return routes).",
+      "Most useful for the De-mining & post-conflict stabilization cluster — specifically for documenting the gap between UNIFIL's operational de-mining (corridor clearance) and the broader civilian need (agricultural land and return routes).",
       "Cross-reference with North-South XXI (2001a and 2001b) which cover the same thematic ground from a slightly earlier vantage point and with similar advocacy framing.",
       "The $50M UAE grant figure illustrates that the international community's response to mine contamination was largely channelled through bilateral/donor mechanisms rather than UNIFIL's mandate — relevant to lessons on mandate scope design.",
       "Interview question: Why was UNIFIL's de-mining mandate limited to operational corridors? Was there any internal DPO discussion of expanding it, and what were the constraints?"
@@ -69,8 +69,8 @@
       "mandate"
     ],
     "thematic_clusters": [
-      "De-mining",
-      "Protection of Civilians"
+      "De-mining & post-conflict stabilisation",
+      "Civilian protection"
     ],
     "timeline_coverage": [
       2000,
@@ -119,13 +119,13 @@
     "publisher": "UN Commission on Human Rights",
     "country_of_origin": "Switzerland",
     "tags": [
-      "qana-massacre",
+      "Qana Massacre",
       "civilian-protection",
       "displacement",
       "force-protection"
     ],
     "thematic_clusters": [
-      "Protection of Civilians",
+      "Civilian protection",
       "Accountability"
     ],
     "timeline_coverage": [
@@ -184,18 +184,20 @@
     "publisher": "United Nations",
     "country_of_origin": "International",
     "tags": [
-      "force-mobile-reserve",
-      "isr",
+      "Force Mobile Reserve",
+      "ISR",
+      "PoC",
+      "SLA",
+      "TCC",
       "civilian-protection",
-      "tcc",
       "force-protection",
       "mandate"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "TCC/Command",
-      "Relations with Host State",
-      "Protection of Civilians",
+      "TCC dynamics & command",
+      "Host-state relations & LAF",
+      "Civilian protection",
       "Force protection & safety",
       "Operational adaptation & innovation"
     ],
@@ -276,14 +278,17 @@
     "publisher": "Institute for National Security Studies, INSS Insight No. 1154",
     "country_of_origin": "Israel",
     "tags": [
+      "LAF",
       "accountability",
       "blue-line",
+      "blue-line violation",
+      "hezbollah",
       "monitoring",
       "tunnels"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Monitoring, reporting & technology",
       "Accountability"
     ],
@@ -348,15 +353,15 @@
     "year": 2009,
     "publisher": "International Peacekeeping, 16(2)",
     "tags": [
-      "dpko-dppa",
-      "p5",
+      "DPKO-DPPA",
+      "P5",
       "mandate",
       "peacekeeping-doctrine",
       "political-dynamics"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
+      "Political dynamics & P5",
       "DPKO-DPPA integration"
     ],
     "timeline_coverage": {
@@ -406,14 +411,14 @@
     "year": 2015,
     "publisher": "International Peace Institute (IPI)",
     "tags": [
-      "roe",
-      "tcc",
+      "ROE",
+      "TCC",
       "command-control",
       "partnerships",
       "peacekeeping-doctrine"
     ],
     "thematic_clusters": [
-      "TCC/Command",
+      "TCC dynamics & command",
       "Operational adaptation & innovation"
     ],
     "timeline_coverage": {
@@ -455,19 +460,19 @@
     "year": 2007,
     "publisher": "NATO Defense College",
     "tags": [
-      "scr-1701",
-      "maritime-task-force",
-      "tcc",
+      "1701",
+      "MTF",
+      "TCC",
       "command-control",
       "deterrence",
+      "maritime",
       "tripartite-mechanism"
     ],
     "thematic_clusters": [
-      "TCC/Command",
-      "Tripartite Liaison Mechanism & Liaison",
+      "TCC dynamics & command",
+      "Liaison & tripartite mechanism",
       "Operational adaptation & innovation",
-      "Force protection & safety",
-      "Maritime Task Force"
+      "Force protection & safety"
     ],
     "timeline_coverage": {
       "start": 2006,
@@ -531,16 +536,16 @@
     "tags": [
       "mandate",
       "political-dynamics",
-      "p5",
+      "P5",
       "civilian-protection",
-      "non-state-armed-actors",
+      "non-state-actors",
       "host-state"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
-      "Relations with Host State",
-      "Protection of Civilians",
+      "Political dynamics & P5",
+      "Host-state relations & LAF",
+      "Civilian protection",
       "Relations with non-state armed actors"
     ],
     "timeline_coverage": {
@@ -592,16 +597,16 @@
     "year": 2009,
     "publisher": "Egmont Institute",
     "tags": [
-      "cimic",
+      "CIMIC",
       "blue-line",
       "deterrence",
       "force-protection",
       "peacekeeping-doctrine",
       "tripartite-mechanism",
-      "chapter-vii"
+      "use of force"
     ],
     "thematic_clusters": [
-      "Tripartite Liaison Mechanism & Liaison",
+      "Liaison & tripartite mechanism",
       "Operational adaptation & innovation",
       "CIMIC & community relations",
       "Force protection & safety",
@@ -658,15 +663,17 @@
     "year": 2025,
     "publisher": "Institute for National Security Studies, INSS Insight No. 1986",
     "tags": [
-      "scr-1701",
+      "1701",
+      "LAF",
       "ceasefire",
+      "hezbollah",
       "mandate",
       "monitoring"
     ],
     "thematic_clusters": [
       "Mandate evolution",
       "Monitoring, reporting & technology",
-      "Relations with Host State"
+      "Host-state relations & LAF"
     ],
     "timeline_coverage": {
       "start": 2024,
@@ -728,13 +735,15 @@
     "tags": [
       "mandate",
       "monitoring",
-      "scr-1701",
-      "political-dynamics"
+      "hezbollah",
+      "1701",
+      "political-dynamics",
+      "LAF"
     ],
     "thematic_clusters": [
       "Mandate evolution",
       "Monitoring, reporting & technology",
-      "Member State, P5, UNSC Dynamics",
+      "Political dynamics & P5",
       "Relations with non-state armed actors"
     ],
     "timeline_coverage": {
@@ -790,17 +799,18 @@
     "year": 2020,
     "publisher": "Institute for National Security Studies, INSS Insight No. 1380",
     "tags": [
-      "mandate",
-      "p5",
+      "Mandate Renewal",
+      "P5",
       "ceasefire",
       "escalation",
+      "mandate",
       "monitoring",
       "political-dynamics"
     ],
     "thematic_clusters": [
       "Mandate evolution",
       "Monitoring, reporting & technology",
-      "Member State, P5, UNSC Dynamics"
+      "Political dynamics & P5"
     ],
     "timeline_coverage": {
       "start": 2020,
@@ -858,13 +868,15 @@
     "year": 2017,
     "publisher": "Institute for National Security Studies, INSS Insight No. 902",
     "tags": [
+      "hezbollah",
       "host-state",
       "mandate",
-      "scr-1701",
-      "political-dynamics"
+      "1701",
+      "political-dynamics",
+      "LAF"
     ],
     "thematic_clusters": [
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Mandate evolution",
       "Relations with non-state armed actors"
     ],
@@ -919,17 +931,19 @@
     "year": 2016,
     "publisher": "Institute for National Security Studies, INSS Insight No. 844",
     "tags": [
-      "scr-1701",
+      "1701",
+      "LAF",
+      "hezbollah",
       "mandate",
       "monitoring",
       "tripartite-mechanism",
-      "chapter-vii"
+      "use of force"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Tripartite Liaison Mechanism & Liaison",
+      "Liaison & tripartite mechanism",
       "Monitoring, reporting & technology",
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Force protection & safety",
       "Use of force"
     ],
@@ -989,16 +1003,17 @@
     "year": 2018,
     "publisher": "Institute for National Security Studies, INSS Insight No.1015",
     "tags": [
-      "scr-1701",
+      "1701",
+      "hezbollah",
       "mandate",
       "monitoring",
-      "non-state-armed-actors",
+      "non-state-actors",
       "political-dynamics"
     ],
     "thematic_clusters": [
       "Monitoring, reporting & technology",
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics"
+      "Political dynamics & P5"
     ],
     "timeline_coverage": {
       "start": 2017,
@@ -1058,16 +1073,16 @@
     "year": 2026,
     "publisher": "Al Jazeera, 11 March2026",
     "tags": [
-      "quintet-monitoring-mechanism",
-      "trilateral-military-committee",
+      "Quintet monitoring mechanism",
+      "Trilateral Military Committee",
       "ceasefire",
       "monitoring"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
+      "Political dynamics & P5",
       "Monitoring, reporting & technology",
-      "Protection of Civilians",
+      "Civilian protection",
       "Force protection & safety"
     ],
     "timeline_coverage": {
@@ -1132,15 +1147,18 @@
     "year": 2026,
     "publisher": "International Crisis Group, March2026",
     "tags": [
+      "hezbollah",
+      "LAF",
       "displacement",
       "escalation",
+      "Iran",
       "host-state"
     ],
     "thematic_clusters": [
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Relations with non-state armed actors",
-      "Protection of Civilians",
-      "Member State, P5, UNSC Dynamics"
+      "Civilian protection",
+      "Political dynamics & P5"
     ],
     "timeline_coverage": {
       "start": 2024,
@@ -1222,13 +1240,15 @@
     "year": 1980,
     "publisher": "Jerusalem Post (repr.Journal of Palestine Studies, Vol. 9, No. 4, pp.156–158)",
     "tags": [
-      "proxy",
+      "Haddad",
+      "Proxy",
+      "SLA",
       "mandate"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
       "Force protection & safety",
-      "TCC/Command"
+      "TCC dynamics & command"
     ],
     "timeline_coverage": {
       "start": 1978,
@@ -1281,12 +1301,13 @@
     "year": 2020,
     "publisher": "Institute for National Security Studies, INSS Insight No.1390",
     "tags": [
-      "coordination",
+      "Coordination",
+      "hezbollah",
       "tripartite-mechanism"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
-      "Tripartite Liaison Mechanism & Liaison",
+      "Liaison & tripartite mechanism",
       "Coordination"
     ],
     "timeline_coverage": {
@@ -1347,18 +1368,20 @@
     "year": 2014,
     "publisher": "Center for Strategic and International Studies(CSIS)",
     "tags": [
-      "cimic",
-      "coordination",
+      "CIMIC",
+      "Coordination",
+      "LAF",
+      "US",
       "civilian-protection",
       "host-state",
-      "non-state-armed-actors",
+      "non-state-actors",
       "political-dynamics"
     ],
     "thematic_clusters": [
-      "Relations with Host State",
-      "Member State, P5, UNSC Dynamics",
+      "Host-state relations & LAF",
+      "Political dynamics & P5",
       "Relations with non-state armed actors",
-      "TCC/Command",
+      "TCC dynamics & command",
       "CIMIC & community relations"
     ],
     "timeline_coverage": {
@@ -1416,18 +1439,20 @@
     "year": 1993,
     "publisher": "Journal of Palestine Studies, Vol. 23,No. 1, pp.61–79",
     "tags": [
-      "israeli-withdrawal",
+      "IDF",
+      "Israeli-withdrawal",
+      "SLA",
       "civilian-protection",
       "force-protection",
       "mandate"
     ],
     "thematic_clusters": [
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Relations with non-state armed actors",
       "Force protection & safety",
-      "Protection of Civilians",
+      "Civilian protection",
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
+      "Political dynamics & P5",
       "Use of force"
     ],
     "timeline_coverage": {
@@ -1510,19 +1535,19 @@
     "year": 2009,
     "publisher": "Carnegie Endowment for International Peace (Carnegie Middle East Center)",
     "tags": [
-      "maritime-task-force",
+      "EU",
+      "MTF",
       "ceasefire",
       "host-state",
       "mandate",
       "political-dynamics"
     ],
     "thematic_clusters": [
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Monitoring, reporting & technology",
       "Mandate evolution",
       "Disarmament",
-      "TCC/Command",
-      "Maritime Task Force"
+      "TCC dynamics & command"
     ],
     "timeline_coverage": {
       "start": 2006,
@@ -1587,20 +1612,20 @@
     "year": 2007,
     "publisher": "Journalof Palestine Studies, Vol. 36, No.3",
     "tags": [
-      "cimic",
-      "tcc",
+      "CIMIC",
+      "TCC",
       "civilian-protection",
       "force-protection",
       "mandate",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Relations with non-state armed actors",
-      "Tripartite Liaison Mechanism & Liaison",
+      "Liaison & tripartite mechanism",
       "CIMIC & community relations",
-      "TCC/Command"
+      "TCC dynamics & command"
     ],
     "timeline_coverage": {
       "start": 1978,
@@ -1680,16 +1705,18 @@
     "year": 1999,
     "publisher": "Council on Foreign Relations (Muslim Politics Project)",
     "tags": [
+      "Iran",
       "civilian-protection",
+      "hezbollah",
       "host-state",
-      "non-state-armed-actors",
+      "non-state-actors",
       "political-dynamics"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
-      "Member State, P5, UNSC Dynamics",
-      "Relations with Host State",
-      "Protection of Civilians"
+      "Political dynamics & P5",
+      "Host-state relations & LAF",
+      "Civilian protection"
     ],
     "timeline_coverage": {
       "start": 1982,
@@ -1754,14 +1781,15 @@
     "year": 2017,
     "publisher": "Arab Studies Quarterly, Vol. 39, No.3, Pluto Journals",
     "tags": [
+      "Palestine",
       "civilian-protection",
       "displacement",
       "host-state",
       "mandate",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
-      "Protection of Civilians"
+      "Civilian protection"
     ],
     "timeline_coverage": {
       "start": 1967,
@@ -1835,20 +1863,22 @@
   {
     "id": "sobelman_2004",
     "author": "Daniel Sobelman",
-    "title": "New Rules of the Game: Israel and Hizbollah after the Withdrawal from Lebanon (Chapters 1, 7 & Conclusion)",
+    "title": "New Rulesof the Game: Israel and Hizbollah after the Withdrawal from Lebanon (Chapters 1, 7 & Conclusion)",
     "year": 2004,
     "publisher": "Institute for National Security Studies(INSS), Tel Aviv",
     "tags": [
+      "Iran",
       "deterrence",
       "escalation",
+      "hezbollah",
       "host-state",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
-      "Relations with Host State",
+      "Political dynamics & P5",
+      "Host-state relations & LAF",
       "Force protection & safety",
       "CIMIC & community relations"
     ],
@@ -1933,16 +1963,18 @@
     "year": 2017,
     "publisher": "Center for Strategic and International Studies(CSIS)",
     "tags": [
+      "LAF",
       "blue-line",
-      "communication-strategy",
+      "communication strategy",
+      "hezbollah",
       "host-state",
       "monitoring",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
       "Monitoring, reporting & technology",
       "Relations with non-state armed actors",
-      "Relations with Host State"
+      "Host-state relations & LAF"
     ],
     "timeline_coverage": {
       "start": 2017,
@@ -1998,15 +2030,15 @@
     "year": 2007,
     "publisher": "NATO Defense College",
     "tags": [
-      "cimic",
-      "tcc",
-      "cultural-differences",
+      "CIMIC",
+      "TCC",
+      "cultural differences",
       "deterrence",
       "mandate"
     ],
     "thematic_clusters": [
       "CIMIC & community relations",
-      "TCC/Command",
+      "TCC dynamics & command",
       "Training"
     ],
     "timeline_coverage": {
@@ -2053,17 +2085,18 @@
     "year": 2024,
     "publisher": "Journal of International Peacekeeping (pre-print)",
     "tags": [
-      "cimic",
-      "tcc",
+      "CIMIC",
+      "LAF",
+      "TCC",
       "civilian-protection",
       "host-state",
       "peacekeeping-doctrine"
     ],
     "thematic_clusters": [
       "CIMIC & community relations",
-      "TCC/Command",
-      "Relations with Host State",
-      "Protection of Civilians",
+      "TCC dynamics & command",
+      "Host-state relations & LAF",
+      "Civilian protection",
       "Operational adaptation & innovation"
     ],
     "timeline_coverage": [
@@ -2127,19 +2160,19 @@
     "year": 2021,
     "publisher": "Lebanese American University (LAU), Dept. of Political Science and International Affairs",
     "tags": [
-      "scr-1701",
-      "cimic",
+      "1701",
+      "CIMIC",
+      "LAF",
       "host-state",
       "monitoring",
       "tripartite-mechanism"
     ],
     "thematic_clusters": [
       "CIMIC & community relations",
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Mandate evolution",
-      "Tripartite Liaison Mechanism & Liaison",
-      "Relations with non-state armed actors",
-      "Maritime Task Force"
+      "Liaison & tripartite mechanism",
+      "Relations with non-state armed actors"
     ],
     "timeline_coverage": [
       1978,
@@ -2199,18 +2232,18 @@
     "year": 2014,
     "publisher": "Cahiers de la Mediterranee, no. 88",
     "tags": [
-      "tcc",
+      "TCC",
       "host-state",
       "mandate",
-      "non-state-armed-actors",
+      "non-state-actors",
       "peacekeeping-doctrine",
       "political-dynamics"
     ],
     "thematic_clusters": [
-      "TCC/Command",
+      "TCC dynamics & command",
       "Relations with non-state armed actors",
-      "Member State, P5, UNSC Dynamics",
-      "Relations with Host State",
+      "Political dynamics & P5",
+      "Host-state relations & LAF",
       "Mandate evolution"
     ],
     "timeline_coverage": [
@@ -2278,14 +2311,14 @@
     "year": 2016,
     "publisher": "International Centre for Defence and Security (ICDS), Tallinn",
     "tags": [
-      "cimic",
-      "tcc",
+      "CIMIC",
+      "TCC",
       "command-control",
       "force-protection",
       "peacekeeping-doctrine"
     ],
     "thematic_clusters": [
-      "TCC/Command",
+      "TCC dynamics & command",
       "CIMIC & community relations",
       "Force protection & safety",
       "Operational adaptation & innovation"
@@ -2352,22 +2385,21 @@
     "year": 2009,
     "publisher": "DGAP / LCPS / CITpax / AUB",
     "tags": [
-      "scr-1701",
-      "cimic",
-      "maritime-task-force",
-      "tcc",
+      "1701",
+      "CIMIC",
+      "MTF",
+      "TCC",
       "host-state",
       "mandate"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "TCC/Command",
-      "Relations with Host State",
+      "TCC dynamics & command",
+      "Host-state relations & LAF",
       "CIMIC & community relations",
-      "Tripartite Liaison Mechanism & Liaison",
+      "Liaison & tripartite mechanism",
       "Operational adaptation & innovation",
-      "Monitoring, reporting & technology",
-      "Maritime Task Force"
+      "Monitoring, reporting & technology"
     ],
     "timeline_coverage": [
       1978,
@@ -2429,16 +2461,17 @@
     "year": 1992,
     "publisher": "Journal of Palestine Studies, Vol. 21, No. 3, pp. 35-53",
     "tags": [
-      "cimic",
-      "israel-policy",
-      "sectarian-divisions",
+      "CIMIC",
+      "Israel policy",
+      "SLA",
+      "Sectarian divisions",
       "displacement",
       "host-state",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
-      "Member State, P5, UNSC Dynamics",
+      "Political dynamics & P5",
       "CIMIC & community relations"
     ],
     "timeline_coverage": [
@@ -2489,16 +2522,18 @@
     "year": 2024,
     "publisher": "Middle East Report, No. 313, MERIP (Winter 2024)",
     "tags": [
-      "scr-1701",
-      "dahiya-doctrine",
-      "sectarian-divisions",
-      "civilian-protection"
+      "1701",
+      "Dahiya Doctrine",
+      "LAF",
+      "Sectarian divisions",
+      "civilian-protection",
+      "hezbollah"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Relations with non-state armed actors",
-      "Protection of Civilians",
+      "Civilian protection",
       "Sectarian divisions"
     ],
     "timeline_coverage": [
@@ -2555,7 +2590,7 @@
     "year": 2024,
     "publisher": "Middle East Report, No. 313, MERIP (Winter 2024)",
     "tags": [
-      "cimic",
+      "CIMIC",
       "civilian-protection",
       "de-mining",
       "displacement",
@@ -2563,10 +2598,10 @@
       "post-conflict"
     ],
     "thematic_clusters": [
-      "Protection of Civilians",
+      "Civilian protection",
       "CIMIC & community relations",
-      "Relations with Host State",
-      "De-mining"
+      "Host-state relations & LAF",
+      "De-mining & post-conflict stabilisation"
     ],
     "timeline_coverage": [
       2023,
@@ -2609,17 +2644,17 @@
     "year": 2020,
     "publisher": "Centre of Excellence for Stability Police Units (CoESPU)",
     "tags": [
-      "scr-1701",
-      "cimic",
+      "1701",
+      "CIMIC",
+      "LAF",
       "mandate",
-      "maritime-task-force",
+      "maritime",
       "tripartite-mechanism"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Relations with Host State",
-      "Tripartite Liaison Mechanism & Liaison",
-      "Maritime Task Force"
+      "Host-state relations & LAF",
+      "Liaison & tripartite mechanism"
     ],
     "abstract": "A structured overview of UNIFIL's mandate evolution from 1978 to 2020, published by CoESPU. The article traces the three major mandate adjustments driven by the 1978 establishment, the 1982–2000 period of humanitarian presence behind Israeli lines, and the post-2006 enhanced force under SCR 1701. It describes current operational architecture including the MTF, tripartite mechanism, CIMIC, and LAF strategic dialogue, and closes with a forward-looking argument for transitioning UNIFIL toward a peace stability operation model incorporating gendarmerie-type peacekeepers.",
     "key_arguments": [
@@ -2683,10 +2718,10 @@
     "year": 2014,
     "publisher": "The Oxford Handbook of United Nations Peacekeeping Operations, ed. Joachim A. Koops et al., Oxford University Press, Ch. 65, pp. 767–778",
     "tags": [
-      "scr-1701",
-      "dpko-dppa",
-      "smc",
-      "tcc",
+      "1701",
+      "DPKO",
+      "SMC",
+      "TCC",
       "command-control",
       "force-protection",
       "mandate",
@@ -2694,9 +2729,9 @@
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
-      "TCC/Command",
-      "Tripartite Liaison Mechanism & Liaison",
+      "Political dynamics & P5",
+      "TCC dynamics & command",
+      "Liaison & tripartite mechanism",
       "Operational adaptation & innovation",
       "Relations with non-state armed actors",
       "Force protection & safety"
@@ -2789,19 +2824,20 @@
     "year": 2012,
     "publisher": "Journal of Conflict & Security Law, Vol. 17, No. 3, pp. 373–402, Oxford University Press",
     "tags": [
-      "scr-1701",
+      "1701",
+      "IDF",
       "civilian-protection",
       "force-protection",
       "mandate",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
-      "Protection of Civilians",
+      "Civilian protection",
       "Mandate evolution",
       "Force protection & safety",
       "Relations with non-state armed actors",
-      "TCC/Command",
-      "Relations with Host State",
+      "TCC dynamics & command",
+      "Host-state relations & LAF",
       "CIMIC & community relations"
     ],
     "abstract": "Murphy traces UNIFIL's evolving — and largely frustrated — engagement with civilian protection across three crisis periods: the 1978 deployment, the 1982 Israeli invasion and 'iron fist' occupation, and the post-2006 reconfiguration under SCR 1701. He argues that despite the explicit protection-of-civilians authorisation in paragraph 12, UNIFIL II remains conceptually a Chapter VI policing mission whose role is circumscribed by an ambiguous mandate, dependence on the LAF and tacit accommodation with Hezbollah for its own security. He concludes that effective civilian protection is structurally impossible in the context of Israel–Hezbollah hostilities, and that the Strategic Military Cell, while enabling European engagement, was a flawed and ultimately discarded innovation.",
@@ -2873,14 +2909,16 @@
     "publisher": "The Washington Institute for Near East Policy",
     "tags": [
       "mandate",
+      "hezbollah",
+      "LAF",
       "monitoring",
-      "scr-1701",
+      "1701",
       "force-protection"
     ],
     "thematic_clusters": [
       "Mandate evolution",
       "Monitoring, reporting & technology",
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "Relations with non-state armed actors"
     ],
     "abstract": "Written ahead of UNIFIL's August 2024 mandate renewal, this brief argues that UNIFIL has systematically failed its SCR 1701 mandate due to Hezbollah obstruction, LAF complicity, and the force's own institutional risk-aversion. The authors — a former U.S. Assistant Secretary of State and a former IDF strategic planning chief — present a conditional case for salvaging rather than scrapping UNIFIL, contingent on a package of reforms, while leaving open the option of a U.S. veto should the force continue to underperform.",
@@ -2938,14 +2976,15 @@
     "publisher": "SSRN (preprint)",
     "tags": [
       "freedom-of-movement",
-      "sofa",
+      "SOFA",
       "mandate-legal",
-      "scr-1701",
+      "1701",
+      "LAF",
       "legal-analysis"
     ],
     "thematic_clusters": [
       "Mandate evolution",
-      "Relations with Host State"
+      "Host-state relations & LAF"
     ],
     "abstract": "A Lebanese investigative judge and international law fellow provides a detailed legal analysis of UNIFIL's freedom of movement, examining the binding obligations arising from SOFA (1995) and all relevant UNSCRs from 425 (1978) to 2790 (2025). The article addresses whether UNIFIL requires prior LAF authorization for patrols, the distinction between large and small movements, and the significance of 'coordinated and adjacent' patrols. It concludes that UNIFIL needs no prior authorization for either announced or unannounced patrols, with coordination required only for large-scale logistical movements.",
     "key_arguments": [
@@ -3002,14 +3041,15 @@
     "publisher": "Israel National News (Arutz Sheva)",
     "tags": [
       "mandate-failure",
-      "israeli-security",
-      "southern-lebanon",
+      "hezbollah",
+      "Israeli-security",
+      "southern-Lebanon",
       "post-2024",
-      "non-state-armed-actors"
+      "non-state-actors"
     ],
     "thematic_clusters": [
       "Relations with non-state armed actors",
-      "Relations with Host State"
+      "Host-state relations & LAF"
     ],
     "abstract": "A Middle East Forum fellow argues that UNIFIL's 46-year presence in southern Lebanon represents structural failure by design rather than execution — a diplomatic alibi for Western inaction rather than a genuine security instrument. In the aftermath of Hezbollah's military degradation in 2024, the author contends that localized security arrangements between specific Lebanese confessional communities and Israel offer a more durable alternative than renewed multilateral frameworks or UNSCR 1701 implementation.",
     "key_arguments": [
@@ -3036,12 +3076,15 @@
     "year": 2026,
     "publisher": "Global Studies Quarterly (OUP/ISA)",
     "tags": [
-      "tripartite-mechanism",
+      "tripartite",
+      "liaison",
+      "LAF",
+      "IDF",
       "deconfliction",
       "conflict-management"
     ],
     "thematic_clusters": [
-      "Tripartite Liaison Mechanism & Liaison"
+      "Liaison & tripartite mechanism"
     ],
     "abstract": "Drawing on eleven interviews (seven UNIFIL, two IDF, two LAF), the authors examine UNIFIL's Tripartite Meetings (Aug 2006–Oct 2023) as a ritual: routinized, symbolically vital, and choreographed. They argue the meetings contained and reproduced antagonistic emotions (blame, injustice, victimhood) rather than fostering rapprochement. While reducing information asymmetries and preventing tactical escalation for 18 years, the Tripartites sustained a 'false equilibrium' that deferred political resolution and gave both the IDF and Hezbollah space to rearm.",
     "key_arguments": [
@@ -3104,14 +3147,14 @@
     "publisher": "International Studies Quarterly (OUP/ISA)",
     "tags": [
       "blue-line",
-      "cimic",
+      "CIMIC",
       "host-state",
       "civilian-protection",
-      "non-state-armed-actors",
+      "non-state-actors",
       "settler-colonialism"
     ],
     "thematic_clusters": [
-      "Relations with Host State",
+      "Host-state relations & LAF",
       "CIMIC & community relations"
     ],
     "abstract": "Based on a decade of ethnographic fieldwork and 80 interviews (2009–2019), Kassem examines UNIFIL's Blue Line demarcation through the case of Blida, a southern border village. She argues UNIFIL's technical, liberal-peace approach to bordering is locally rejected because residents read it within a long history of Western imperial land appropriation and Israeli settler colonialism. The article contends UNIFIL weakens rather than strengthens the Lebanese state by usurping sovereign functions, and that its conflict-resolution tools (development projects, awareness campaigns) fail to secure local consent.",
@@ -3144,201 +3187,5 @@
       "Hezbollah",
       "IDF"
     ]
-  },
-  {
-    "id": "unknown_year",
-    "author": "UNIFIL",
-    "title": "Q&A on UNIFIL",
-    "source_type": "UN Official Publication",
-    "year": 2024,
-    "publisher": "UNIFIL",
-    "tags": [
-      "UNIFIL",
-      "RES1701",
-      "mandate",
-      "impartiality",
-      "LAF",
-      "disinformation"
-    ],
-    "abstract": "This internal UNIFIL Q&A document (December 2024) addresses false narratives circulating in media about UNIFIL's mandate, impartiality, and operations. It clarifies that resolution 1701 remains valid after the 27 November 2024 cessation of hostilities, that UNIFIL lacks a mandate to disarm Hezbollah by force, that peacekeepers maintained forward positions despite IDF targeting, and that the mission operates impartially. The document also describes UNIFIL's 18-year record of liaison, monitoring, Blue Line marking, and LAF capacity-building.",
-    "key_arguments": [
-      "Security Council resolution 1701 remains the agreed framework for peace and stability and is not rendered obsolete by the November 2024 cessation of hostilities; the enhanced tripartite mechanism chaired by the US reinforces rather than replaces it.",
-      "UNIFIL does not have the mandate or authority to disarm Hezbollah or any non-state armed group by force; implementation of resolution 1701 is primarily the responsibility of the parties—Israel and Lebanon - not UNIFIL.",
-      "UNIFIL maintained its 29 forward positions along the Blue Line despite repeated targeting, including deliberate IDF strikes, upholding Security Council mandates and continuing humanitarian support and monitoring functions.",
-      "UNIFIL operates strictly impartially, recording and reporting violations by all parties, and serves as the sole communication channel between the Lebanese Armed Forces and the Israel Defense Forces through its liaison and tripartite mechanisms."
-    ],
-    "bias_flag": "The Q&A format is explicitly designed to rebut criticism, and the document is drafted in a self-exculpatory register. The document does not represent an independent assessment and should be read as an institutional advocacy document, albeit one grounded in UN official positions.",
-    "thematic_clusters": [
-      "Mandate evolution",
-      "Monitoring, reporting & technology",
-      "Relations with Host State"
-    ],
-    "timeline_events": [],
-    "lessons_learned": [],
-    "actors": [
-      "UNIFIL"
-    ],
-    "pdf_file": "data/pdfs/unknown_year.pdf"
-  },
-  {
-    "id": "costy_2026",
-    "author": "Alexander Costy",
-    "title": "What Happens after UNIFIL?",
-    "source_type": "Think tank",
-    "year": 2026,
-    "publisher": "IPI Global Observatory (International Peace Institute)",
-    "tags": [
-      "UNIFIL",
-      "post-mandate",
-      "southern Lebanon",
-      "Hezbollah",
-      "Israel",
-      "LAF",
-      "peacekeeping withdrawal",
-      "Security Council",
-      "stabilization"
-    ],
-    "abstract": "This article assesses the mission's three stabilizing functions (ceasefire management, internal Lebanese political buffering, and socioeconomic support) and examines four possible post-UNIFIL scenarios: a national Hezbollah disarmament agreement, a modified international force, a US–Israel–Lebanon trilateral arrangement, and a long-term Israeli security cordon. The author argues no agreed plan exists and advocates for a reduced UN presence to bridge the gap.",
-    "key_arguments": [
-      "UNIFIL stabilized southern Lebanon through three functions: ceasefire monitoring and liaison, political buffering that deferred the Hezbollah disarmament question, and socioeconomic support as the region's largest employer.",
-      "The Security Council's August 2025 decision to close UNIFIL leaves a political, security, and economic vacuum with no agreed successor arrangement, risking renewed regional instability.",
-      "A modified or reduced UN presence—potentially a smaller observer mission—represents the most prudent bridge option, even over Israeli objections, to support ongoing US–Israel–Lebanon ceasefire efforts and maintain independent monitoring."
-    ],
-    "bias_flag": "Alexander Costy served as Principal Political Advisor and Chief of Staff for the Office of the UN Special Coordinator for Lebanon (2014–2021), giving him substantial insider expertise but also a likely institutional disposition toward viewing UN engagement positively. Published by the IPI Global Observatory, which is closely affiliated with the UN system and generally supportive of multilateral peacekeeping. Analysis may underweight Israeli security concerns and overstate the viability of a continued UN presence.",
-    "thematic_clusters": [
-      "Mandate evolution",
-      "Member State, P5, UNSC Dynamics",
-      "Tripartite Liaison Mechanism & Liaison",
-      "Monitoring, reporting & technology",
-      "Relations with Host State",
-      "CIMIC & community relations",
-      "Relations with non-state armed actors"
-    ],
-    "timeline_events": [
-      {
-        "date": "1978",
-        "event": "UNIFIL initial deployment",
-        "category": "UNIFIL",
-        "description": "UNIFIL was first deployed to southern Lebanon to restore peace and security and confirm Israel's withdrawal following actions against the PLO."
-      },
-      {
-        "date": "1982",
-        "event": "IDF return to Lebanon",
-        "category": "Israel-Lebanon",
-        "description": "The Israel Defense Forces returned to Lebanon and established a long-term presence in the south, lasting until 2000, during which UN peacekeepers frequently came under IDF fire."
-      },
-      {
-        "date": "1989",
-        "event": "Taif Agreement",
-        "category": "Lebanese Politics",
-        "description": "The Taif Agreement, which formally ended Lebanon's civil war in 1990, provided for the dissolution of all domestic and foreign-backed armed militias."
-      },
-      {
-        "date": "2006",
-        "event": "Israel-Hezbollah War and UN Security Council Resolution 1701",
-        "category": "Israel-Lebanon",
-        "description": "Following the 2006 war, the Security Council passed Resolution 1701 calling for a cessation of hostilities and UNIFIL's strength was boosted with additional troops and a maritime interdiction force."
-      },
-      {
-        "date": "2023-10-08",
-        "event": "Hezbollah sustained offensive against Israel begins",
-        "category": "Hezbollah",
-        "description": "Hezbollah launched a sustained offensive against Israel, breaking the 17-year ceasefire that had held since 2006 under Resolution 1701."
-      },
-      {
-        "date": "2025-08-28",
-        "event": "UN Security Council decides to close UNIFIL",
-        "category": "UNIFIL",
-        "description": "The Security Council voted to close UNIFIL, with the mission's mandate set to expire on December 31, 2026, leaving no agreed successor arrangement."
-      }
-    ],
-    "lessons_learned": [],
-    "actors": [
-      "UNIFIL",
-      "France",
-      "Italy",
-      "Türkiye",
-      "Israel",
-      "USA",
-      "UNSC"
-    ],
-    "pdf_file": "data/pdfs/costy_2026.pdf"
-  },
-  {
-    "id": "orion_2026",
-    "author": "Assaf Orion",
-    "title": "Lebanon After UNIFIL: Good Riddance, Not a \"Vacuum\"",
-    "source_type": "Think tank",
-    "year": 2026,
-    "publisher": "The Washington Institute for Near East Policy",
-    "tags": [
-      "UNIFIL withdrawal",
-      "post-UNIFIL architecture",
-      "Hezbollah disarmament",
-      "LAF",
-      "U.S.-led mechanism",
-      "Resolution 1701",
-      "Resolution 2790",
-      "Israel-Lebanon",
-      "minilateral mechanism",
-      "MFO model"
-    ],
-    "abstract": "Orion argues that UNIFIL's expiring mandate (UNSCR 2790, December 2026) will not create a security vacuum because the force has been largely ineffective for decades. The U.S.-led ceasefire implementation mechanism established in 2024 has already superseded UNIFIL's liaison role. Post-UNIFIL arrangements should be judged by their contribution to Lebanese sovereignty and Hezbollah disarmament. The author recommends a U.S.-led, LAF-centered architecture modelled on the Sinai MFO, with European and UN roles subordinated to Washington-Jerusalem coordination.",
-    "key_arguments": [
-      "UNIFIL's decades-long presence never translated into effective implementation of its core mandate (establishing a weapons-free zone south of the Litani) so its withdrawal creates no meaningful security vacuum.",
-      "The U.S.-led ceasefire implementation mechanism established in November 2024 has already marginalized UNIFIL by providing a more effective platform for IDF-LAF liaison, coordination, and demilitarization monitoring.",
-      "Post-UNIFIL international arrangements must be U.S.-led, subordinate European/UN roles to Washington-Jerusalem coordination, minimize foreign footprint to deny Hezbollah cover, and focus on training the LAF for disarmament-related missions.",
-      "The Sinai Multinational Force and Observers (MFO) offers a viable template: American leadership, commitment to core stakeholders only, effective liaison, multinational participation in agreed missions, and absence of UN politicization."
-    ],
-    "bias_flag": "Assaf Orion is a former IDF Brigadier General and head of the IDF Strategic Planning Division, currently a fellow at The Washington Institute for Near East Policy (WINEP) and the Institute for National Security Studies (INSS), both institutions with documented pro-Israel policy orientations. His analysis consistently privileges Israeli and U.S. strategic preferences—minimizing UN and European roles, framing UNIFIL as wholly ineffective, and advocating Hezbollah disarmament as the paramount benchmark—while downplaying structural constraints on LAF sovereignty or the legitimate peacekeeping contributions of UNIFIL contingents. Readers should weight recommendations accordingly.",
-    "thematic_clusters": [
-      "Mandate evolution",
-      "Tripartite Liaison Mechanism & Liaison"
-    ],
-    "timeline_events": [
-      {
-        "date": "2006",
-        "event": "UN Security Council adopts Resolution 1701",
-        "category": "UNIFIL",
-        "description": "Resolution 1701 ended the 2006 Israel-Hezbollah war and tasked UNIFIL with monitoring the ceasefire, supporting LAF deployment south of the Litani River, and establishing a zone free of militia weapons."
-      },
-      {
-        "date": "2024-11",
-        "event": "November 2024 ceasefire and U.S.-led implementation mechanism established",
-        "category": "Israel-Lebanon",
-        "description": "A ceasefire brokered with U.S. involvement created a new implementation mechanism led by the United States and supported by France, including Lebanon, Israel, and UNIFIL, effectively marginalising UNIFIL's liaison role."
-      },
-      {
-        "date": "2025-08",
-        "event": "UN Security Council adopts Resolution 2790",
-        "category": "UNIFIL",
-        "description": "Resolution 2790 extended UNIFIL's mandate for the last time, setting a December 31, 2026, expiration date after which the force is required to draw down and depart within one year."
-      },
-      {
-        "date": "2026-03",
-        "event": "Hezbollah resumes large-scale attacks against Israel",
-        "category": "Hezbollah",
-        "description": "Hezbollah launched large-scale attacks against Israel following the start of the Iran war, prompting the IDF to declare security control up to the Litani River and establish a 10 km security zone beyond the Blue Line."
-      },
-      {
-        "date": "2026-04-14",
-        "event": "U.S.-brokered Israel-Lebanon ceasefire talks",
-        "category": "Israel-Lebanon",
-        "description": "Secretary of State Marco Rubio opened direct talks between Lebanese and Israeli ambassadors in Washington, leading to a ten-day cessation of hostilities subsequently extended, alongside joint efforts toward a peace framework."
-      },
-      {
-        "date": "2026-04-24",
-        "event": "Hezbollah ambush kills two French UNIFIL peacekeepers",
-        "category": "UNIFIL",
-        "description": "An alleged Hezbollah attack on a UNIFIL patrol killed two French peacekeepers, illustrating how Hezbollah has exploited peacekeeping deployments as leverage over contributing countries and the UN."
-      }
-    ],
-    "lessons_learned": [],
-    "actors": [
-      "UNIFIL",
-      "Israel",
-      "Lebanon"
-    ],
-    "pdf_file": "data/pdfs/orion_2026.pdf"
   }
 ]

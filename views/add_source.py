@@ -73,18 +73,19 @@ Return ONLY valid JSON with exactly these keys:
 
 Thematic clusters to map to (use exact names):
 - Mandate evolution
-- Political dynamics & P5
-- Liaison & tripartite mechanism
+- Member State, P5, UNSC Dynamics
+- Tripartite Liaison Mechanism & Liaison
 - Monitoring, reporting & technology
-- TCC dynamics & command
-- Host-state relations & LAF
-- Civilian protection
+- TCC/Command
+- Relations with Host State
+- Protection of Civilians
 - Force protection & safety
 - Operational adaptation & innovation
 - Relations with non-state armed actors
-- De-mining & post-conflict stabilization
+- De-mining
 - CIMIC & community relations
 - DPKO-DPPA integration
+- Maritime Task Force
 
 Rules:
 - Never invent content not present in the source
@@ -103,33 +104,47 @@ def _init_state():
         st.session_state.add_src_saved_id = None
     if "add_src_saved_title" not in st.session_state:
         st.session_state.add_src_saved_title = None
+    if "add_src_api_key" not in st.session_state:
+        # Pre-fill from the project .env (same resolution logic as the chat widget)
+        try:
+            from utils.chat_utils import _current_api_key
+            st.session_state.add_src_api_key = _current_api_key()
+        except Exception:
+            st.session_state.add_src_api_key = ""
 
 
-def _scan_pdf(uploaded_file, api_key: str) -> dict:
-    from pypdf import PdfReader
+def _scan_pdf(pdf_bytes: bytes, api_key: str) -> dict:
+    """Send the PDF itself to Claude (native PDF understanding) and parse the
+    structured JSON source record it returns. Works on scanned/image-only PDFs
+    too, and reads the whole document rather than a truncated text extract."""
+    import base64
     import anthropic
 
-    try:
-        reader = PdfReader(io.BytesIO(uploaded_file.read()))
-        text = "\n".join(page.extract_text() or "" for page in reader.pages)
-    except Exception as e:
-        raise RuntimeError(f"PDF extraction failed: {e}")
-
-    if not text.strip():
-        raise RuntimeError("Could not extract any text from the PDF. The file may be scanned/image-only.")
+    if len(pdf_bytes) > 30_000_000:
+        raise RuntimeError("PDF is larger than 30 MB — too big to scan in one request.")
 
     try:
         client = anthropic.Anthropic(api_key=api_key)
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             max_tokens=4000,
             system=SCANNER_SYSTEM,
             messages=[{
                 "role": "user",
-                "content": f"Process this document:\n\n{text[:15000]}"
-            }]
+                "content": [
+                    {
+                        "type": "document",
+                        "source": {
+                            "type": "base64",
+                            "media_type": "application/pdf",
+                            "data": base64.standard_b64encode(pdf_bytes).decode(),
+                        },
+                    },
+                    {"type": "text", "text": "Process this document."},
+                ],
+            }],
         )
-        raw = response.content[0].text.strip()
+        raw = "".join(b.text for b in response.content if b.type == "text").strip()
         # Strip markdown fences if the model adds them despite instructions
         if raw.startswith("```"):
             raw = raw.split("```")[1]
@@ -231,6 +246,8 @@ def _stage_upload():
         help="Your key is only held in memory for this session and never saved to disk.",
     )
     st.session_state.add_src_api_key = api_key
+    if api_key.startswith("sk-ant-"):
+        st.caption("✓ API key loaded from the project .env — no need to change it.")
 
     uploaded = st.file_uploader(
         "Upload PDF",
@@ -245,10 +262,14 @@ def _stage_upload():
         scan_clicked = st.button("Scan document", key="add_src_scan_btn", disabled=not scan_ready)
 
     if scan_clicked and scan_ready:
-        with st.spinner("Scanning document…"):
+        with st.spinner("Scanning document with Claude — this can take a minute…"):
             try:
-                result = _scan_pdf(uploaded, api_key.strip())
+                pdf_bytes = uploaded.read()
+                result = _scan_pdf(pdf_bytes, api_key.strip())
                 st.session_state.add_src_result = result
+                # Keep the PDF so it can be archived locally on save
+                st.session_state.add_src_pdf_bytes = pdf_bytes
+                st.session_state.add_src_pdf_name = uploaded.name
                 st.session_state.add_src_stage = "review"
                 st.rerun()
             except RuntimeError as e:
@@ -430,9 +451,11 @@ def _stage_review():
         tags_list = [t.strip() for t in new_tags_str.split(",") if t.strip()]
         actors_list = [a.strip() for a in new_actors_str.split(",") if a.strip()]
 
+        import re
         source_id = new_id.strip() or "unknown_year"
+        source_id = re.sub(r"[^A-Za-z0-9_-]", "_", source_id)
         sources = load_sources()
-        existing_ids = {s.get("id") for s in sources}
+        existing_ids = {str(s.get("id")) for s in sources}
         if source_id in existing_ids:
             source_id = source_id + "_v2"
 
@@ -452,6 +475,14 @@ def _stage_review():
             "lessons_learned": final_lessons,
             "actors": actors_list,
         }
+
+        # Archive the uploaded PDF locally alongside the record
+        pdf_bytes = st.session_state.get("add_src_pdf_bytes")
+        if pdf_bytes:
+            pdf_dir = Path(__file__).parent.parent / "data" / "pdfs"
+            pdf_dir.mkdir(parents=True, exist_ok=True)
+            (pdf_dir / f"{source_id}.pdf").write_bytes(pdf_bytes)
+            new_source["pdf_file"] = f"data/pdfs/{source_id}.pdf"
 
         sources.append(new_source)
         save_sources(sources)
@@ -477,7 +508,7 @@ def _stage_saved():
     </div>
     """, unsafe_allow_html=True)
 
-    _export_button()
+    _export_button(key="add_src_export_btn_saved")
 
     st.markdown('<div style="height:0.5rem;"></div>', unsafe_allow_html=True)
 
@@ -493,7 +524,7 @@ def _stage_saved():
             st.rerun()
 
 
-def _export_button():
+def _export_button(key: str = "add_src_export_btn"):
     sources = load_sources()
     if not sources:
         return
@@ -505,14 +536,15 @@ def _export_button():
             data=docx_bytes,
             file_name=filename,
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-            key="add_src_export_btn",
+            key=key,
         )
     except Exception as e:
         st.error(f"Export failed: {e}")
 
 
 def _clear_review_state():
-    for k in ("add_src_args", "add_src_events", "add_src_lessons"):
+    for k in ("add_src_args", "add_src_events", "add_src_lessons",
+              "add_src_pdf_bytes", "add_src_pdf_name"):
         st.session_state.pop(k, None)
 
 

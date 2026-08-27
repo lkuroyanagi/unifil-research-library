@@ -182,7 +182,7 @@ def show():
     <div class="library-header">
         <div>
             <p class="library-subtitle">UN DPO · Policy & Best Practices Service</p>
-            <h1 class="library-title">Actor Profiles</h1>
+            <h1 class="library-title">Actors</h1>
         </div>
     </div>
     """, unsafe_allow_html=True)

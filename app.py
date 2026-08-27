@@ -297,11 +297,11 @@ with st.sidebar:
         [
             "Sources",
             "➕ Add Source",
-            "UNIFIL Mandates",
-            "Thematic Navigator",
-            "Historical Timeline",
-            "Actor Profiles",
-            "Lessons Learned Candidates",
+            "Resolutions",
+            "Themes",
+            "Timeline",
+            "Actors",
+            "Lessons Learned",
             "Research Gaps",
             "Mind Map",
         ],
@@ -338,19 +338,19 @@ if page == "Sources":
 elif page == "➕ Add Source":
     from views.add_source import show
     show()
-elif page == "UNIFIL Mandates":
+elif page == "Resolutions":
     from views.mandates import show
     show()
-elif page == "Thematic Navigator":
+elif page == "Themes":
     from views.thematic import show
     show()
-elif page == "Historical Timeline":
+elif page == "Timeline":
     from views.timeline import show
     show()
-elif page == "Actor Profiles":
+elif page == "Actors":
     from views.actors_profiles import show
     show()
-elif page == "Lessons Learned Candidates":
+elif page == "Lessons Learned":
     from views.lessons import show
     show()
 elif page == "Research Gaps":
@@ -359,3 +359,7 @@ elif page == "Research Gaps":
 elif page == "Mind Map":
     from views.mindmap import show
     show()
+
+# ── Floating chat widget (all pages) ──────────────────────────────────────────
+from views.chat_widget import render_chat_widget
+render_chat_widget()

@@ -187,27 +187,27 @@ svg:active{cursor:grabbing}
     <div class="ss"><div class="sl">Search</div><input class="si" id="iSearch" type="text" placeholder="Search tags &amp; sources…"></div>
     <div class="ss">
       <div class="sl">Node size</div>
-      <div class="row"><label>Scale</label><span class="val" id="vSz">0.35×</span></div>
-      <input type="range" id="rSz" min="0.2" max="2.5" step="0.05" value="0.35">
+      <div class="row"><label>Scale</label><span class="val" id="vSz">0.65×</span></div>
+      <input type="range" id="rSz" min="0.2" max="2.5" step="0.05" value="0.65">
     </div>
     <div class="ss">
       <div class="sl">Links</div>
-      <div class="row"><label>Opacity</label><span class="val" id="vLO">100%</span></div>
-      <input type="range" id="rLO" min="5" max="100" step="5" value="100">
+      <div class="row"><label>Opacity</label><span class="val" id="vLO">65%</span></div>
+      <input type="range" id="rLO" min="5" max="100" step="5" value="65">
       <div class="gap"></div>
-      <div class="row"><label>Width</label><span class="val" id="vLW">0.3</span></div>
-      <input type="range" id="rLW" min="0.3" max="6" step="0.1" value="0.3">
+      <div class="row"><label>Width</label><span class="val" id="vLW">1.5</span></div>
+      <input type="range" id="rLW" min="0.3" max="6" step="0.1" value="1.5">
     </div>
     <div class="ss">
       <div class="sl">Physics</div>
-      <div class="row"><label>Repulsion</label><span class="val" id="vCh">−510</span></div>
-      <input type="range" id="rCh" min="-1000" max="-30" step="10" value="-510">
+      <div class="row"><label>Repulsion</label><span class="val" id="vCh">−300</span></div>
+      <input type="range" id="rCh" min="-1000" max="-30" step="10" value="-300">
       <div class="gap"></div>
-      <div class="row"><label>Link distance</label><span class="val" id="vLD">110</span></div>
-      <input type="range" id="rLD" min="30" max="350" step="10" value="110">
+      <div class="row"><label>Link distance</label><span class="val" id="vLD">140</span></div>
+      <input type="range" id="rLD" min="30" max="350" step="10" value="140">
       <div class="gap"></div>
-      <div class="row"><label>Gravity</label><span class="val" id="vGr">0.31</span></div>
-      <input type="range" id="rGr" min="0" max="0.5" step="0.01" value="0.31">
+      <div class="row"><label>Gravity</label><span class="val" id="vGr">0.04</span></div>
+      <input type="range" id="rGr" min="0" max="0.5" step="0.01" value="0.04">
     </div>
     <div class="ss">
       <div class="sl">Show types</div>
@@ -237,6 +237,24 @@ svg:active{cursor:grabbing}
 
   <div class="cv" id="cvWrap">
     <svg id="graph">
+      <defs>
+        <filter id="glow-link" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="glow-tag" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+          <feFlood flood-color="#a8b4cc" flood-opacity="0.55" result="c"/>
+          <feComposite in="c" in2="b" operator="in" result="g"/>
+          <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="glow-source" x="-70%" y="-70%" width="240%" height="240%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+          <feFlood flood-color="#d45050" flood-opacity="0.75" result="c"/>
+          <feComposite in="c" in2="b" operator="in" result="g"/>
+          <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
       <g id="mainG"></g>
     </svg>
     <div class="hint">Scroll to zoom · Drag canvas to pan · Click node for details</div>
@@ -270,8 +288,8 @@ const PALETTES = {
 const TYPE_LBL={tag:"Tag",source:"Source"};
 
 const CFG={
-  scale:0.35, lo:1.0, lw:0.3,
-  charge:-510, dist:110, grav:0.31,
+  scale:0.65, lo:0.65, lw:1.5,
+  charge:-300, dist:140, grav:0.04,
   types:new Set(["tag","source"]),
   tag:"", search:"", pal:"def"
 };
@@ -321,7 +339,7 @@ function build(){
   });
 
   const sim=d3.forceSimulation(vNodes)
-    .alphaDecay(0.05).velocityDecay(0.55).alphaMin(0.005)
+    .alphaDecay(0.028).velocityDecay(0.4)
     .force("link",    d3.forceLink(vLinks).id(d=>d.id).distance(CFG.dist).strength(0.7))
     .force("charge",  d3.forceManyBody().strength(CFG.charge))
     .force("center",  d3.forceCenter(W/2,H/2))
@@ -329,7 +347,7 @@ function build(){
     .force("x",       d3.forceX(W/2).strength(CFG.grav))
     .force("y",       d3.forceY(H/2).strength(CFG.grav))
     .stop();
-  for(let i=0;i<150;i++) sim.tick();
+  for(let i=0;i<300;i++) sim.tick();
 
   mainG.selectAll("*").remove();
 
@@ -338,6 +356,7 @@ function build(){
     .attr("stroke",tc("link"))
     .attr("stroke-width",d=>CFG.lw*(d.weight||1)*1.3)
     .attr("stroke-opacity",CFG.lo)
+    .style("filter","url(#glow-link)")
     .attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
     .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
 
@@ -364,7 +383,13 @@ function build(){
     .attr("r",d=>nodeR(d))
     .attr("fill",d=>tc(d.type))
     .attr("stroke",d=>{const c=d3.color(tc(d.type));return c?c.brighter(.6)+"":"#fff";})
-    .attr("stroke-width",1);
+    .attr("stroke-width",1)
+    .style("filter",d=>`url(#glow-${d.type})`);
+
+  nSel.append("circle").attr("class","ring")
+    .attr("r",d=>nodeR(d)+5).attr("fill","none")
+    .attr("stroke","#fff").attr("stroke-width",2).attr("opacity",0)
+    .attr("pointer-events","none");
 
   nSel.append("text")
     .attr("text-anchor","middle")
@@ -403,12 +428,7 @@ function selectNode(d){
       const s=l.source.id||l.source,t=l.target.id||l.target;
       return s===d.id||t===d.id?1:CFG.lo*0.1;
     });
-    // Selection ring exists only on the selected node (cheaper than one per node)
-    mainG.selectAll(".ring").remove();
-    curNSel.filter(n=>n.id===d.id).append("circle").attr("class","ring")
-      .attr("r",nodeR(d)+5).attr("fill","none")
-      .attr("stroke","#fff").attr("stroke-width",2)
-      .attr("pointer-events","none");
+    curNSel.select(".ring").attr("opacity",n=>n.id===d.id?1:0);
   }
 
   document.getElementById("dDot").style.background=tc(d.type);
@@ -450,24 +470,22 @@ document.getElementById("dBody").addEventListener("click",e=>{
 function deselect(){
   mainG.selectAll("circle:not(.ring)").attr("opacity",1);
   mainG.selectAll("line").attr("stroke-opacity",CFG.lo);
-  mainG.selectAll(".ring").remove();
+  mainG.selectAll(".ring").attr("opacity",0);
   document.getElementById("dPanel").classList.remove("open");
 }
 
 function $id(id){return document.getElementById(id);}
-function debounce(fn,ms){let t;return function(...a){clearTimeout(t);t=setTimeout(()=>fn.apply(this,a),ms);};}
-const buildDebounced=debounce(build,150);
 
-$id("rSz").addEventListener("input",function(){CFG.scale=+this.value;$id("vSz").textContent=(+this.value).toFixed(2)+"×";buildDebounced();});
+$id("rSz").addEventListener("input",function(){CFG.scale=+this.value;$id("vSz").textContent=(+this.value).toFixed(2)+"×";build();});
 $id("rLO").addEventListener("input",function(){CFG.lo=this.value/100;$id("vLO").textContent=this.value+"%";mainG.selectAll(".lG line").attr("stroke-opacity",CFG.lo);});
 $id("rLW").addEventListener("input",function(){CFG.lw=+this.value;$id("vLW").textContent=(+this.value).toFixed(1);mainG.selectAll(".lG line").attr("stroke-width",d=>CFG.lw*(d.weight||1)*1.3);});
 $id("rCh").addEventListener("input",function(){CFG.charge=+this.value;$id("vCh").textContent=CFG.charge;if(simInst){simInst.force("charge").strength(CFG.charge);simInst.alpha(.6).restart();}});
 $id("rLD").addEventListener("input",function(){CFG.dist=+this.value;$id("vLD").textContent=CFG.dist;if(simInst){simInst.force("link").distance(CFG.dist);simInst.alpha(.6).restart();}});
 $id("rGr").addEventListener("input",function(){CFG.grav=+this.value;$id("vGr").textContent=CFG.grav.toFixed(2);if(simInst){simInst.force("x").strength(CFG.grav);simInst.force("y").strength(CFG.grav);simInst.alpha(.3).restart();}});
 document.querySelectorAll("[data-t]").forEach(cb=>{cb.addEventListener("change",function(){this.checked?CFG.types.add(this.dataset.t):CFG.types.delete(this.dataset.t);build();});});
-$id("sTag").addEventListener("change",function(){CFG.tag=this.value;buildDebounced();});
-$id("sTh").addEventListener("change",function(){CFG.pal=this.value;buildDebounced();});
-$id("iSearch").addEventListener("input",function(){CFG.search=this.value.trim();buildDebounced();});
+$id("sTag").addEventListener("change",function(){CFG.tag=this.value;build();});
+$id("sTh").addEventListener("change",function(){CFG.pal=this.value;build();});
+$id("iSearch").addEventListener("input",function(){CFG.search=this.value.trim();build();});
 $id("btnRe").addEventListener("click",()=>{NODES.forEach(n=>{delete n.x;delete n.y;delete n.vx;delete n.vy;delete n.fx;delete n.fy;});build();});
 $id("btnFit").addEventListener("click",()=>{svgSel.transition().duration(500).call(zoomBeh.transform,d3.zoomIdentity);deselect();});
 $id("dClose").addEventListener("click",deselect);

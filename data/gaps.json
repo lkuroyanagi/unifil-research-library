@@ -4,7 +4,7 @@
     "title": "Non-Western TCC Perspectives",
     "description": "No sources from Non-Western TCC national perspectives (France, Italy, Spain). Their motivations, constraints, and national caveats are undocumented in the current corpus.",
     "thematic_clusters": [
-      "TCC dynamics & command"
+      "TCC/Command"
     ],
     "status": "Being addressed",
     "source": "Manual",
@@ -28,8 +28,8 @@
     "title": "Lebanese and Arab Perspectives",
     "description": "The corpus is heavily weighted toward Israeli institutional sources and Western academic analysis. Lebanese, Arab, and Shia community perspectives on UNIFIL are significantly underrepresented.",
     "thematic_clusters": [
-      "Host-state relations & LAF",
-      "Civilian protection",
+      "Relations with Host State",
+      "Protection of Civilians",
       "CIMIC & community relations"
     ],
     "status": "Open",
@@ -42,7 +42,7 @@
     "title": "Freedom of Movement of UNIFIL ",
     "description": "Many sources mention lack of freedom of movement of the mission. Would be interesting to hear UN perspective on how this was handled and how much it affected mandate implementaiton ",
     "thematic_clusters": [
-      "Host-state relations & LAF",
+      "Relations with Host State",
       "Relations with non-state armed actors"
     ],
     "status": "Open",
@@ -55,7 +55,7 @@
     "title": "Quality of Peacekeepers",
     "description": "Assaf Orion (2016) points to diffence in quality of troops of UNIFIL I and UNIFIL II. ",
     "thematic_clusters": [
-      "TCC dynamics & command"
+      "TCC/Command"
     ],
     "status": "Open",
     "source": "Manual",
@@ -85,5 +85,17 @@
     "source": "Manual",
     "added_by": "Leo",
     "date_added": "2026-04-28"
+  },
+  {
+    "id": "gap_fa62e5b1",
+    "title": "De-mining",
+    "description": "Sources seem to indicate incredible work done by UNIFIL to de-mine Lebanese territory. Need to find more information / statistics. ",
+    "thematic_clusters": [
+      "De-mining"
+    ],
+    "status": "Open",
+    "source": "Manual",
+    "added_by": "Leo ",
+    "date_added": "2026-05-19"
   }
 ]

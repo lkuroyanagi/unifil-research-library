@@ -34,8 +34,8 @@ def _build_density_chart(sources):
     fig = go.Figure(go.Bar(
         x=years, y=counts, marker_color=colors,
         width=bucket * 0.85,
-        hovertemplate="%{x}: %{customdata} source(s)<extra></extra>",
         customdata=[max(0, int(c)) for c in counts],
+        hovertemplate="%{x}: %{customdata} source(s)<extra></extra>",
     ))
     fig.update_layout(
         height=90,
@@ -95,10 +95,12 @@ def _card_html(s):
       <div style="font-size:12.5px;color:#6B7280;line-height:1.55;margin-bottom:8px;">
         {abstract}</div>
       {f'<div style="margin-bottom:8px;">{tags_html}</div>' if tags_html else ''}
-      <div style="display:flex;gap:16px;padding-top:8px;border-top:1px solid #F0EDE6;
+      <div style="display:flex;gap:16px;align-items:center;padding-top:8px;border-top:1px solid #F0EDE6;
                   font-size:11px;color:#5A6475;">
         <span><strong style="color:#1a1a2e;">{ll}</strong> LL Candidates</span>
         <span><strong style="color:#1a1a2e;">{actors}</strong> Actors</span>
+        <span class="source-card-arrow" style="margin-left:auto;color:#9A968E;opacity:0.75;
+              font-size:15px;line-height:1;">→</span>
       </div>
     </div>
     """
@@ -1034,12 +1036,33 @@ def show():
 
     st.markdown(f"**{len(filtered)}** source{'s' if len(filtered) != 1 else ''} found")
 
-    # Card grid — 2 columns
+    # Card grid — 2 columns. The open button is overlaid invisibly on the
+    # arrow in each card's bottom-right corner (see CSS below).
+    st.markdown("""
+    <style>
+    div[class*="st-key-srccard_"] { position: relative; }
+    div[class*="st-key-srccard_"] div[data-testid="stElementContainer"]:has(div[data-testid="stButton"]) {
+        position: absolute; right: 0; bottom: 4px; z-index: 1; margin: 0;
+        width: 52px !important; height: 46px !important;
+    }
+    div[class*="st-key-srccard_"] div[data-testid="stButton"],
+    div[class*="st-key-srccard_"] div[data-testid="stButton"] button {
+        width: 100%; height: 100%; min-height: 0; margin: 0; padding: 0;
+    }
+    div[class*="st-key-srccard_"] div[data-testid="stButton"] button {
+        opacity: 0; cursor: pointer;
+    }
+    div[class*="st-key-srccard_"]:has(button:hover) .source-card-arrow {
+        color: #1a1a2e !important; opacity: 1 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
     col_a, col_b = st.columns(2)
     for i, s in enumerate(filtered):
         col = col_a if i % 2 == 0 else col_b
         with col:
-            st.markdown(_card_html(s), unsafe_allow_html=True)
-            if st.button("Open →", key=f"open_{s['id']}"):
-                st.session_state.selected_source_id = s["id"]
-                st.rerun()
+            with st.container(key=f"srccard_{s['id']}"):
+                st.markdown(_card_html(s), unsafe_allow_html=True)
+                if st.button("Open →", key=f"open_{s['id']}"):
+                    st.session_state.selected_source_id = s["id"]
+                    st.rerun()

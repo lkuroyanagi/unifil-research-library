@@ -6,18 +6,19 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 
 THEMATIC_CLUSTERS = [
     "Mandate evolution",
-    "Political dynamics & P5",
-    "Liaison & tripartite mechanism",
+    "Member State, P5, UNSC Dynamics",
+    "Tripartite Liaison Mechanism & Liaison",
     "Monitoring, reporting & technology",
-    "TCC dynamics & command",
-    "Host-state relations & LAF",
-    "Civilian protection",
+    "TCC/Command",
+    "Relations with Host State",
+    "Protection of Civilians",
     "Force protection & safety",
     "Operational adaptation & innovation",
     "Relations with non-state armed actors",
-    "De-mining & post-conflict stabilization",
+    "De-mining",
     "CIMIC & community relations",
     "DPKO-DPPA integration",
+    "Maritime Task Force",
 ]
 
 SOURCE_TYPES = ["Academic", "Policy", "Think Tank", "UN Document", "Opinion / Primary", "Media", "NGO", "Other"]

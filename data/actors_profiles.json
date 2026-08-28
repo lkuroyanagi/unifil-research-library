@@ -201,7 +201,7 @@
   },
   {
     "name": "ITALCON",
-    "category": "Non-State Armed Groups",
+    "category": "International Actors",
     "description": "Italian military contingent deployed as part of the Multinational Force (MNF) in Lebanon, 1982–1984, comprising approximately 500 soldiers. Tasked with the evacuation of 12,000 Palestinian fighters and 3,000 Syrian soldiers from besieged Beirut; later reconstituted as part of MNF II following the Sabra and Shatila massacres."
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "name": "Mustafa Dirani",
-    "category": "International Actors",
+    "category": "Non-State Armed Groups",
     "description": "Former Lebanese army intelligence sergeant who led the Believer's Resistance, an Amal splinter group sympathetic to Hezbollah. Responsible for the 1988 kidnapping of UN Observer Group Lebanon head Col. William Higgins."
   },
   {
@@ -326,12 +326,12 @@
   },
   {
     "name": "PLO (Palestine Liberation Organization)",
-    "category": "Non-State Armed Groups",
+    "category": "Palestinian Actors",
     "description": "Palestinian armed organization that made southern Lebanon its main theater of operations against Israel, drawing Lebanon into the Arab-Israeli conflict. Party to both the Cairo Agreement (1969) and the Chtaura Agreement (1977); Arafat served as overall interlocutor for Palestinian factions and their Lebanese allies."
   },
   {
     "name": "Popular Front for the Liberation of Palestine (PFLP)",
-    "category": "Non-State Armed Groups",
+    "category": "Palestinian Actors",
     "description": "Palestinian armed faction led by George Habash with a significant armed presence in southern Lebanon. Had a tough local commander, Major Nur, described as a legendary fighter."
   },
   {

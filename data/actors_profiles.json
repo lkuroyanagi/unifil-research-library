@@ -1,82 +1,82 @@
 [
   {
     "name": "Abbas Musawi",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Shaykh and Secretary-General of Hezbollah, predecessor to Hassan Nasrallah. Killed by Israel in 1992."
   },
   {
     "name": "Abu Nidal",
-    "category": "Palestine",
+    "category": "Palestinian Actors",
     "description": "Palestinian dissident and enemy of Arafat and the mainstream PLO. His followers shot Israeli Ambassador Argov in 1982, apparently under Iraqi orders, providing Israel's stated pretext for the invasion."
   },
   {
     "name": "Al-Qwat al-Mushtaraka",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Joint forces of the PLO and the Lebanese National Movement, led by Druze leader Kamal Junblat. Held key positions in the south, particularly in Tyre and the Rashidiyya camp."
   },
   {
     "name": "Alain Pellegrini",
-    "category": "UN",
+    "category": "UN & International",
     "description": "French General; UNIFIL Head of Mission and Force Commander from 26 January 2004 to 2 February 2007. Oversaw the mission in the period immediately preceding the 2006 war and mandate expansion."
   },
   {
     "name": "Alberto Asarta Cuevas",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Spanish General; UNIFIL Head of Mission and Force Commander from 28 January 2010 to 28 January 2012."
   },
   {
     "name": "Amal",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Lebanese Shia grassroots movement established in the early 1970s as the militia adjunct to Musa al-Sadr's Harakat al-Mahrumin; resurgent after 1978 and led by Nabih Berri. Clashed seriously with Palestinians from 1980–81 and served as the political origin of Hassan Nasrallah before he moved to Hezbollah."
   },
   {
     "name": "Amin Gemayel",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Brother of Bashir Gemayel who succeeded him as Lebanese president following Bashir's assassination in September 1982. Presided over Lebanon during the period of the May 17 Agreement."
   },
   {
     "name": "Antoine Lahad",
-    "category": "Israeli actors",
+    "category": "Israeli Actors",
     "description": "Major General who replaced Sa'ad Haddad as SLA commander after Haddad's death in 1984. Tasked by Israel with maintaining security in the southern Lebanese buffer zone."
   },
   {
     "name": "Anwar Sadat",
-    "category": "Other",
+    "category": "International Actors",
     "description": "Egyptian president whose November 1977 announcement of intent to visit Israel shattered Arab unity and collapsed broader Middle East peace negotiations, triggering bilateral Egyptian-Israeli talks."
   },
   {
     "name": "Arab Deterrent Force (ADF)",
-    "category": "Member states",
+    "category": "International Actors",
     "description": "Force established by the Arab League in November 1978 to help the Lebanese government reassert authority over its territory. Dominated in practice by Syrian troops already present in Lebanon; Israel vetoed its deployment south of the Litani River."
   },
   {
     "name": "Arab League",
-    "category": "Other",
+    "category": "International Actors",
     "description": "Pan-Arab intergovernmental body that established the Arab Deterrent Force in November 1978. Sought to help Lebanon restore authority over its territory."
   },
   {
     "name": "Arab Socialist Unions",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "At least three Lebanese gangs operating under this name, hiring out their services to any paying group, primarily Palestinians during the relevant period. Described as essentially mercenary in nature."
   },
   {
     "name": "Ariel Sharon",
-    "category": "Israeli actors",
+    "category": "Israeli Actors",
     "description": "Israeli Defense Minister at the time of the 1982 invasion of Lebanon. Key architect of the military operation alongside Prime Minister Begin."
   },
   {
     "name": "Aroldo Lázaro Sáenz",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Spanish Lieutenant General; UNIFIL Head of Mission and Force Commander from 28 February 2022 to 24 June 2025, overseeing the mission during the post-October 2023 escalation and into the ceasefire period."
   },
   {
     "name": "Bashir Gemayel",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Powerful Maronite commander of the Lebanese Forces militia, openly allied with Israel, who was elected Lebanese president. Assassinated in September 1982 before taking office."
   },
   {
     "name": "Believer's Resistance",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Splinter group of Amal led by former Lebanese army intelligence sergeant Mustafa Dirani, sympathetic to Hezbollah. Responsible for the 1988 kidnapping of UN Observer Group Lebanon head Col. William Higgins."
   },
   {
@@ -86,22 +86,22 @@
   },
   {
     "name": "Brian Urquhart",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Head of UN peacekeeping operations during the early UNIFIL period. Key figure in managing UN peacekeeping policy in Lebanon."
   },
   {
     "name": "Caspar Weinberger",
-    "category": "Member states",
+    "category": "International Actors",
     "description": "U.S. Secretary of Defense who publicly criticized the May 17 Agreement, noting its secret side letter effectively gave Syrian President Assad veto power over any Israeli withdrawal from Lebanon."
   },
   {
     "name": "Claudio Graziano",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian General; UNIFIL Force Commander and Head of Mission from 2 February 2007 to 28 January 2010, leading the mission through the critical early phase of the expanded UNIFIL II mandate."
   },
   {
     "name": "Daoud Sulaiman Daoud",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Amal leader mentioned alongside Nabih Berri as a key figure in the movement."
   },
   {
@@ -111,32 +111,32 @@
   },
   {
     "name": "Diodato Abagnara",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian Major General; UNIFIL Head of Mission and Force Commander from 24 June 2025 to present, leading the mission through its final mandate period ahead of the December 2026 closure."
   },
   {
     "name": "DPO/DPPA",
-    "category": "UN / International",
+    "category": "UN & International",
     "description": "The integrated UN Secretariat department responsible for managing and overseeing peace operations, including UNIFIL, combining political and operational peacekeeping functions."
   },
   {
     "name": "Elias Sarkis",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Lebanese president whose swearing-in ostensibly ended the first phase of the civil war. Faced sustained attacks from right-wing Maronite factions, particularly Bashir Gemayel."
   },
   {
     "name": "Emmanuel Erskine",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Ghanaian General; UNIFIL Head of Mission and Force Commander from March 1978 to February 1981, the first Force Commander of the mission."
   },
   {
     "name": "European Union (EU)",
-    "category": "Member states",
+    "category": "International Actors",
     "description": "Backbone of UNIFIL's TCC framework under the 1701 mandate, with two-thirds of international troops in southern Lebanon being European (Italy, France, Spain) as of 2009. Lebanon's main trading partner and largest donor as of 2009."
   },
   {
     "name": "Franco Angioni",
-    "category": "UN",
+    "category": "International Actors",
     "description": "Italian General; Commander of ITALCON, the Italian contingent within the Multinational Force (MNF) in Lebanon, 1982–1984. Oversaw the evacuation of Palestinian fighters and Syrian soldiers from besieged Beirut."
   },
   {
@@ -151,42 +151,42 @@
   },
   {
     "name": "George Habash",
-    "category": "Other",
+    "category": "Palestinian Actors",
     "description": "Leader of the Popular Front for the Liberation of Palestine (PFLP), a Palestinian armed faction active in southern Lebanon."
   },
   {
     "name": "George Shultz",
-    "category": "Other",
+    "category": "International Actors",
     "description": "U.S. Secretary of State who brokered the May 17 Agreement (1983) between Israel and Lebanon, later criticized by Defense Secretary Weinberger for its secret protocol giving Syria veto power over Israeli withdrawal."
   },
   {
     "name": "Gerhard Conrad",
-    "category": "Other",
+    "category": "International Actors",
     "description": "German intelligence official and diplomat who mediated the 2008 Israeli-Hezbollah prisoner exchange, illustrating Germany's quiet but significant bilateral role in Lebanon-related diplomacy."
   },
   {
     "name": "Germany",
-    "category": "Member states",
+    "category": "International Actors",
     "description": "Contributed to UNIFIL's Maritime Task Force and played a key bilateral diplomatic role, notably mediating the 2008 Israeli-Hezbollah prisoner exchange through diplomat Gerhard Conrad."
   },
   {
     "name": "Giandominico Picco",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Representative of UN Secretary-General Pérez de Cuéllar. Negotiated directly with Hezbollah captors for the release of hostages."
   },
   {
     "name": "Giovanni Ridinò",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian General appointed head of the Strategic Military Cell (SMC) within DPKO New York in 2006, supporting the enhanced UNIFIL II mandate."
   },
   {
     "name": "Giuseppe Guglietta",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian Captain appointed Deputy Director of the Strategic Military Cell (SMC) in 2007. Tasked with supporting DPKO with military experts, linking New York to the field, and engaging key TCCs in strategic planning."
   },
   {
     "name": "Guglielmo Luigi Miglietta",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian General; former Commander of the Italian UNIFIL base in Chamaa. Exact dates of service not specified in source."
   },
   {
@@ -196,17 +196,17 @@
   },
   {
     "name": "Hafez al-Assad",
-    "category": "Other",
+    "category": "International Actors",
     "description": "Syrian president who gained effective veto power over Israeli withdrawal from Lebanon via the secret protocol of the May 17 Agreement (1983). Spearheaded the Arab rejection front following Sadat's move toward bilateral peace with Israel."
   },
   {
     "name": "Harakat al-Mahrumin (Movement of the Deprived)",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Populist Shia reform movement founded by Musa al-Sadr in the early 1970s. Parent political movement of Amal."
   },
   {
     "name": "Hassan Nasrallah",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Leader of Hezbollah, succeeding Abbas Musawi after his assassination in 1992. Began his political career within Amal before moving to Hezbollah."
   },
   {
@@ -216,7 +216,7 @@
   },
   {
     "name": "Hezbollah",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Lebanese Shia armed movement and political party with strong Iranian influence, emerging as a major resistance force against Israeli occupation in southern Lebanon. Party to the April Understanding ceasefire; participated in 1992 parliamentary elections; suspected ties to the Revolutionary Justice Organization; conducted periodic reminder operations in the Shebaa Farms."
   },
   {
@@ -226,22 +226,22 @@
   },
   {
     "name": "ISIS",
-    "category": "Non-state armed actors",
+    "category": "Non-State Armed Groups",
     "description": "Sunni jihadist organisation that established a presence in parts of Lebanon's Bekaa Valley and border areas, representing a secondary armed threat distinct from Hezbollah."
   },
   {
     "name": "Islamic Students Union",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Local Shia resistance cells organized by Shaykh Raghib Harb around Nabatiya, structured in five- to six-man village cells. Mounted significant resistance against Israeli forces; Hezbollah attempted but largely failed to absorb the group when moving south."
   },
   {
     "name": "ITALCON",
-    "category": "Armed groups",
+    "category": "International Actors",
     "description": "Italian military contingent deployed as part of the Multinational Force (MNF) in Lebanon, 1982–1984, comprising approximately 500 soldiers. Tasked with the evacuation of 12,000 Palestinian fighters and 3,000 Syrian soldiers from besieged Beirut; later reconstituted as part of MNF II following the Sabra and Shatila massacres."
   },
   {
     "name": "Jabhat al-Nusra",
-    "category": "Non-state armed actors",
+    "category": "Non-State Armed Groups",
     "description": "Syrian jihadist group affiliated with al-Qaeda that operated in the Arsal border area, prompting Hezbollah's unilateral military operation against it in July 2017."
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "name": "Javier Pérez de Cuéllar",
-    "category": "UN",
+    "category": "UN & International",
     "description": "UN Secretary-General whose representative Giandominico Picco conducted negotiations with Hezbollah over hostage kidnappings. Key figure in UN diplomacy regarding Lebanon."
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "name": "Jimmy Carter",
-    "category": "Other",
+    "category": "International Actors",
     "description": "U.S. President whose plans for comprehensive Geneva Middle East peace talks collapsed in late 1977. Redirected efforts toward facilitating bilateral Egyptian-Israeli negotiations."
   },
   {
@@ -296,7 +296,7 @@
   },
   {
     "name": "Kamal Junblat",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Druze leader who led al-Qwat al-Mushtaraka, the joint PLO-Lebanese National Movement forces. Key figure in the Lebanese left-nationalist coalition during the civil war."
   },
   {
@@ -316,47 +316,47 @@
   },
   {
     "name": "Lebanese Armed Forces (LAF)",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "The official military of the Lebanese state, mandated under Resolution 1701 to deploy south of the Litani River alongside UNIFIL; long constrained by political paralysis and limited capacity relative to Hezbollah."
   },
   {
     "name": "Lebanese communities",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "The civilian population of southern Lebanon — predominantly Shia — directly affected by the conflict, Israeli occupation, and UNIFIL's presence."
   },
   {
     "name": "Lebanese Forces (LF)",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Right-wing Maronite militia commanded by Bashir Gemayel, openly allied with Israel. Key player in the Lebanese civil war on the Christian right-wing side."
   },
   {
     "name": "Lebanese Front",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Coalition of right-wing Christian parties and militias that opposed the Lebanese National Movement during the civil war. Allied broadly with Israel and against the Palestinian armed presence."
   },
   {
     "name": "Lebanese government",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "The formal state authority in Beirut, whose sovereignty UNIFIL is mandated to support but which has historically exercised limited control over southern Lebanon."
   },
   {
     "name": "Lebanese National Movement (LNM)",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Coalition of leftist and nationalist Lebanese parties allied with and utilizing Palestinian armed groups during the civil war. Opposed the Lebanese Front."
   },
   {
     "name": "Lebanese Navy",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "The Lebanese naval force that operates in coordination with UNIFIL's Maritime Task Force to monitor and enforce Lebanon's territorial waters under Resolution 1701."
   },
   {
     "name": "Lebanese Shi'a community",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "The dominant demographic group in southern Lebanon, whose political and armed representation shifted from Amal to Hezbollah over the course of the 1980s and 1990s."
   },
   {
     "name": "Lebanon Independent Border Assessment Team (LIBAT)",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Mission dispatched by the UN Secretary-General in June 2007 to assess Lebanon's border security. Found it insufficient to prevent arms smuggling; a 2008 follow-up mission registered no significant progress, confirming the weapons embargo had not been effectively enforced."
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "name": "Maritime Task Force UNIFIL (MTF UNIFIL)",
-    "category": "UN",
+    "category": "UN & International",
     "description": "UNIFIL naval component tasked with monitoring Lebanon's territorial waters, securing the coastline, and preventing arms smuggling. Operates at the request of the Lebanese government; boarding of suspicious vessels, confiscation, and arrests are restricted to the Lebanese navy and customs, significantly limiting its interdiction capacity."
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "name": "Menachem Begin",
-    "category": "Israeli actors",
+    "category": "Israeli Actors",
     "description": "Israeli Prime Minister at the time of the 1982 invasion of Lebanon (Operation Peace for Galilee). Key decision-maker alongside Defense Minister Ariel Sharon."
   },
   {
@@ -391,37 +391,37 @@
   },
   {
     "name": "Mohammed Husain Fadlallah",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Senior Shia shaykh described as the enduring spiritual inspiration behind Hezbollah. His religious authority gave Hezbollah significant ideological grounding."
   },
   {
     "name": "Muhammad Mahdi Shams al-Din",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Prominent Shia thinker and religious scholar who led the Supreme Islamic Shia Council. Known for sponsoring ecumenical Christian-Muslim dialogue; the Council is regarded as an institutional rival to both Amal and Hezbollah."
   },
   {
     "name": "Multinational Force (MNF)",
-    "category": "Member states",
+    "category": "International Actors",
     "description": "U.S.-led force comprising American, French, and Italian troops established in August 1982 at Lebanon's request, without UNSC authorization. Mandated to supervise PLO withdrawal and restore Lebanese sovereignty in Beirut; doubled in size after the Sabra and Shatila massacres to serve as an interposition force (MNF II)."
   },
   {
     "name": "Musa al-Sadr",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Iran-born Shia cleric who founded both the Harakat al-Mahrumin and its militia adjunct Amal in the early 1970s, and established the Supreme Islamic Shia Council in 1969. Disappeared enigmatically during a trip to Libya in 1978."
   },
   {
     "name": "Mustafa Dirani",
-    "category": "Other",
+    "category": "Non-State Armed Groups",
     "description": "Former Lebanese army intelligence sergeant who led the Believer's Resistance, an Amal splinter group sympathetic to Hezbollah. Responsible for the 1988 kidnapping of UN Observer Group Lebanon head Col. William Higgins."
   },
   {
     "name": "Nabih Berri",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Head of the Amal movement and key Shia political figure. Became Speaker of the Lebanese Parliament after the end of the internal war in 1990."
   },
   {
     "name": "Paolo Serra",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian General; UNIFIL Head of Mission and Force Commander from 28 January 2012 to 24 July 2014."
   },
   {
@@ -431,37 +431,37 @@
   },
   {
     "name": "Philip Habib",
-    "category": "Other",
+    "category": "International Actors",
     "description": "U.S. Ambassador who negotiated the PLO-Israel ceasefire following cross-border exchanges in July 1981."
   },
   {
     "name": "Pierre Gemayel",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Father of Bashir and Amin Gemayel; founding figure of the Maronite political establishment. Like his son Bashir, viewed Sa'ad Haddad as a traitor."
   },
   {
     "name": "PLO (Palestine Liberation Organization)",
-    "category": "Armed groups",
+    "category": "Palestinian Actors",
     "description": "Palestinian armed organization that made southern Lebanon its main theater of operations against Israel, drawing Lebanon into the Arab-Israeli conflict. Party to both the Cairo Agreement (1969) and the Chtaura Agreement (1977); Arafat served as overall interlocutor for Palestinian factions and their Lebanese allies."
   },
   {
     "name": "Popular Front for the Liberation of Palestine (PFLP)",
-    "category": "Armed groups",
+    "category": "Palestinian Actors",
     "description": "Palestinian armed faction led by George Habash with a significant armed presence in southern Lebanon. Had a tough local commander, Major Nur, described as a legendary fighter."
   },
   {
     "name": "Quintet Committee",
-    "category": "UN / International",
+    "category": "UN & International",
     "description": "Five-party body established after the November 2024 ceasefire comprising the US, France, Israel, Lebanon, and UNIFIL to monitor and enforce ceasefire implementation, replacing the Trilateral Military Committee."
   },
   {
     "name": "Raghib Harb",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Charismatic Shia shaykh based in Jibshit near Nabatiya who organized the Islamic Students Union resistance cells against Israeli forces. Hezbollah attempted but largely failed to absorb his network when it moved south."
   },
   {
     "name": "Revolutionary Justice Organization",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Group that claimed responsibility for the 1988 killing of Col. William Higgins. Widely believed to have ties to Hezbollah."
   },
   {
@@ -471,12 +471,12 @@
   },
   {
     "name": "Sa'ad Haddad",
-    "category": "Israeli actors",
+    "category": "Israeli Actors",
     "description": "Cashiered Lebanese Major recruited by Israel to command the South Lebanon Army proxy militia as a buffer against Palestinian commandos along Israel's northern border. Died of cancer in 1984."
   },
   {
     "name": "Security Council",
-    "category": "UN / International",
+    "category": "UN & International",
     "description": "The principal UN body with primary responsibility for international peace and security, which established UNIFIL through Resolution 425 (1978) and has repeatedly renewed its mandate."
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "name": "Shlomo Argov",
-    "category": "Israeli actors",
+    "category": "Israeli Actors",
     "description": "Israeli Ambassador seriously wounded in an assassination attempt in 1982 by followers of Abu Nidal. Israel used the attack as the stated pretext for launching Operation Peace for Galilee."
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "South Lebanon Army (SLA)",
-    "category": "Armed groups",
+    "category": "Non-State Armed Groups",
     "description": "Israeli-organized proxy militia originally under cashiered Lebanese Major Sa'ad Haddad, later commanded by Major General Antoine Lahad after Haddad's death in 1984. Served as a buffer along Israel's northern border and was to be integrated into the security zone envisaged by the May 17 Agreement."
   },
   {
@@ -516,22 +516,22 @@
   },
   {
     "name": "Strategic Military Cell (SMC)",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Ad hoc cell established within the UN Department of Peacekeeping Operations in New York in 2006 to support UNIFIL II. Tasked with providing DPKO with a pool of military experts, strengthening links between New York and the field, and engaging key troop-contributing countries in strategic military planning."
   },
   {
     "name": "Supreme Islamic Shia Council",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Representative Shia body established by Musa al-Sadr in 1969 to place Shia on equal political footing with Sunnis. Led by Shams al-Din; active in ecumenical dialogue; regarded as institutional rival to both Amal and Hezbollah."
   },
   {
     "name": "Trilateral Military Committee",
-    "category": "UN / International",
+    "category": "UN & International",
     "description": "Three-way military coordination body linking UNIFIL, the IDF, and the Lebanese Armed Forces to manage incidents along the Blue Line; superseded by the Quintet Committee after 2024."
   },
   {
     "name": "Tripartite Liaison Mechanism",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Three-way military coordination body linking UNIFIL, the IDF, and the Lebanese Armed Forces (LAF), operating through real-time communications and monthly meetings at the UN base in Naqoura. Focused on Blue Line marking, infrastructure problem-solving, and de-escalation; credited as a critical non-kinetic tool for preventing conflict flare-ups, transmitting messages between parties, and maintaining calm on the ground."
   },
   {
@@ -541,47 +541,47 @@
   },
   {
     "name": "Tufayli",
-    "category": "Lebanese political",
+    "category": "Lebanese Political",
     "description": "Former Secretary-General of Hezbollah. Expelled from the organization in January 1998."
   },
   {
     "name": "UN Observer Group Lebanon",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Unit of approximately 50 men drawn from the UN Truce Supervision Organization, set up to monitor armistice lines and assist UNIFIL in southern Lebanon. Staff largely based in Israel; headed by Col. William Higgins until his kidnapping and killing in 1988."
   },
   {
     "name": "UN Secretary-General",
-    "category": "UN / International",
+    "category": "UN & International",
     "description": "The chief administrative officer of the United Nations, responsible for reporting to the Security Council on UNIFIL's implementation of its mandate and proposing adjustments to the mission."
   },
   {
     "name": "UN Truce Supervision Organization (UNTSO)",
-    "category": "UN",
+    "category": "UN & International",
     "description": "UN body established in 1949 to monitor armistice lines in the Middle East. Parent organization of the UN Observer Group Lebanon."
   },
   {
     "name": "UNIFIL",
-    "category": "UN",
+    "category": "UN & International",
     "description": "United Nations Interim Force in Lebanon, deployed in southern Lebanon following Israel's 1978 invasion. Operated under extraordinary circumstances including direct Israeli occupation, focusing on emergency relief, humanitarian intervention, and record keeping when unable to perform peacekeeping work."
   },
   {
     "name": "UNSCOL",
-    "category": "UN",
+    "category": "UN & International",
     "description": "The political office of the UN that organizes the work of the UN in Lebanon. "
   },
   {
     "name": "Uri Lubrani",
-    "category": "Israeli actors",
+    "category": "Israeli Actors",
     "description": "Israeli coordinator of affairs in Lebanon. Served as a key liaison figure for Israeli interests in the Lebanese context."
   },
   {
     "name": "Vasco Angelotti",
-    "category": "UN",
+    "category": "UN & International",
     "description": "Italian General; former Commander of the Italian UNIFIL base in Chamaa. Exact dates of service not specified in source."
   },
   {
     "name": "William Higgins",
-    "category": "UN",
+    "category": "UN & International",
     "description": "U.S. Marine Lieutenant Colonel serving as head of the UN Observer Group Lebanon. Kidnapped in 1988 and killed by the Believer's Resistance, an Amal splinter group with Hezbollah ties."
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "Yasser Arafat",
-    "category": "Palestine",
+    "category": "Palestinian Actors",
     "description": "Chairman of the PLO and overall interlocutor for all Palestinian factions and their Lebanese allies prior to UNIFIL II. Key figure in Palestinian armed operations launched from southern Lebanon."
   }
 ]

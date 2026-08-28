@@ -10,20 +10,24 @@ DATA_PATH = Path(__file__).parent.parent / "data" / "actors_profiles.json"
 
 ALPHABET = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-BASE_CATEGORIES = ["Palestine", "UN", "Israel", "Lebanon", "Non-state armed actors", "Other"]
+# The six canonical actor categories, in the order they should appear
+# throughout the UI (filter dropdown, edit dropdown, etc.).
+CATEGORIES = [
+    "UN & International",
+    "Non-State Armed Groups",
+    "Lebanese Political",
+    "Israeli Actors",
+    "Palestinian Actors",
+    "International Actors",
+]
 
 CATEGORY_COLORS = {
-    "UN":                     "#1a3a5c",
-    "UN / International":     "#1a3a5c",
-    "Israeli actors":         "#64b5f6",
-    "Israel":                 "#64b5f6",
-    "Non-state armed actors": "#dc2626",
-    "Armed groups":           "#dc2626",
-    "Palestine":              "#dc2626",
-    "Lebanese political":     "#d97706",
-    "Lebanon":                "#d97706",
-    "Member states":          "#16a34a",
-    "Other":                  "#78909c",
+    "UN & International":     "#1a3a5c",
+    "Non-State Armed Groups": "#dc2626",
+    "Lebanese Political":     "#d97706",
+    "Israeli Actors":         "#64b5f6",
+    "Palestinian Actors":     "#7b3fa0",
+    "International Actors":   "#16a34a",
 }
 
 
@@ -40,7 +44,7 @@ def first_sentence(text):
 def show():
     actors = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     actors_sorted = sorted(actors, key=lambda x: x["name"].upper())
-    all_categories = sorted(set(BASE_CATEGORIES) | set(a.get("category", "") for a in actors if a.get("category")))
+    all_categories = CATEGORIES
 
     # ── Page-scoped CSS ───────────────────────────────────────────────────────
     st.markdown("""
@@ -311,7 +315,9 @@ def _render_card(actor: dict, all_categories: list):
     if st.session_state.get(edit_key):
         # Edit mode: Streamlit expander + form
         with st.expander(name, expanded=True):
-            cat_options = sorted(set(all_categories + ([cat] if cat and cat not in all_categories else [])))
+            # Preserve the canonical order; only append a stray legacy value
+            # (shouldn't occur post-cleanup, but keeps old data editable).
+            cat_options = all_categories + ([cat] if cat and cat not in all_categories else [])
             with st.form(f"ap_edit_form_{name}"):
                 new_desc = st.text_area("Description", value=full, height=130, key=f"ap_desc_{name}")
                 new_cat = st.selectbox(

@@ -201,6 +201,14 @@ def render_source_edit(s, all_tags):
         type_options = SOURCE_TYPES if current_type in SOURCE_TYPES else [current_type] + SOURCE_TYPES
         source_type = st.selectbox("Source type", type_options, index=type_options.index(current_type), key=f"e_stype_{sid}")
 
+    url = st.text_input(
+        "URL (optional)",
+        value=s.get("url", ""),
+        key=f"e_url_{sid}",
+        placeholder="https://…",
+        help="Link to read this source online. Shown as a 'Read online →' link on the source's detail page.",
+    )
+
     abstract = st.text_area("Abstract", value=s.get("abstract", ""), height=130, key=f"e_abstract_{sid}")
 
     st.markdown('<div style="font-size:0.85rem;font-weight:600;color:#1a1a2e;border-bottom:1px solid #E8E5DE;padding-bottom:0.25rem;margin:1rem 0 0.6rem 0;">Key Arguments</div>', unsafe_allow_html=True)
@@ -354,6 +362,7 @@ def render_source_edit(s, all_tags):
         updated["author"]  = author
         updated["year"]    = int(year)
         updated["source_type"] = source_type
+        updated["url"] = url.strip()
         updated["abstract"] = abstract
         updated["key_arguments"] = [
             st.session_state[f"e_arg_{sid}_{i}"].strip()
@@ -407,6 +416,129 @@ def render_source_edit(s, all_tags):
 
 # ── Detail view (Streamlit full-page) ────────────────────────────────────────
 
+# Project root, resolved to an absolute path. Using .resolve() rather than a
+# bare .parent chain matters on Streamlit Cloud, where the app runs from a
+# mounted path (e.g. /mount/src/<repo>/) that may involve symlinks — resolving
+# once here avoids any ambiguity in every join built from it below.
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+
+def _resolve_pdf_path(pdf_file: str):
+    """
+    Resolve a source's stored pdf_file value to a real file on disk, and
+    report (via print, so it shows up in Streamlit Cloud's app logs) how it
+    was resolved. Handles the two known cross-platform gotchas:
+
+    - Case sensitivity: macOS/Windows filesystems are case-insensitive by
+      default, so a pdf_file value that differs only in case from the real
+      filename works locally but silently fails on Streamlit Cloud's
+      case-sensitive Linux filesystem.
+    - Unicode normalization: a filename with an accented character or a
+      "smart" apostrophe can be stored in a different Unicode normal form
+      (NFC vs NFD) than what's actually on disk, depending on the OS/tool
+      that wrote it — an exact byte-for-byte match then fails everywhere.
+
+    Returns the resolved Path, or None if no match was found by any strategy.
+    """
+    import unicodedata
+
+    if not pdf_file:
+        return None
+
+    exact = _PROJECT_ROOT / pdf_file
+    if exact.exists():
+        print(f"[library] PDF resolved (exact match): {exact}")
+        return exact
+
+    # "Smart"/curly punctuation -> its plain ASCII equivalent. A filename
+    # typed by hand (straight quotes) vs one produced by a PDF/export tool
+    # (curly quotes) is a common source of a byte-for-byte mismatch that no
+    # Unicode normalization form will equate, since they're different
+    # characters, not different encodings of the same one.
+    _PUNCT_FOLD = str.maketrans({
+        "‘": "'", "’": "'",  # ‘ ’ -> '
+        "“": '"', "”": '"',  # “ ” -> "
+        "–": "-", "—": "-",  # – — -> -
+    })
+
+    def _fold(name: str) -> str:
+        return unicodedata.normalize("NFC", name).translate(_PUNCT_FOLD).lower()
+
+    # Fallback: scan the target directory for a match that's case-insensitive
+    # and/or insensitive to Unicode normalization and smart-punctuation
+    # substitution.
+    pdf_dir = exact.parent
+    target_name = _fold(exact.name)
+    if pdf_dir.is_dir():
+        for candidate in pdf_dir.iterdir():
+            if _fold(candidate.name) == target_name:
+                print(f"[library] PDF resolved (case/punctuation-insensitive fallback): "
+                      f"stored='{pdf_file}' -> actual='{candidate}'")
+                return candidate
+
+    print(f"[library] PDF NOT FOUND for pdf_file='{pdf_file}' — "
+          f"looked for exact path '{exact}' under root '{_PROJECT_ROOT}', "
+          f"no case/Unicode-insensitive match in '{pdf_dir}' either.")
+    return None
+
+
+def _render_source_links(s):
+    """PDF download button and/or external 'Read online' link, shown above
+    the abstract. Both are optional — only rendered if the field is present
+    (and, for the PDF, only if the file actually exists on disk)."""
+    pdf_file = s.get("pdf_file")
+    pdf_path = _resolve_pdf_path(pdf_file) if pdf_file else None
+    has_pdf = pdf_path is not None
+    url = (s.get("url") or "").strip()
+
+    if not has_pdf and not url:
+        return
+
+    if url:
+        st.markdown(f"""
+        <a href="{url}" target="_blank" rel="noopener noreferrer" style="
+            display:inline-flex;align-items:center;gap:6px;
+            background:#EAF1F9;color:#1B2A4A;border:1px solid #c8d8ea;
+            border-radius:4px;padding:6px 14px;margin:0 8px 0.8rem 0;
+            font-family:'IBM Plex Sans',sans-serif;font-size:0.82rem;font-weight:600;
+            text-decoration:none;">Read online →</a>
+        """, unsafe_allow_html=True)
+
+    if has_pdf:
+        try:
+            pdf_bytes = pdf_path.read_bytes()
+        except Exception:
+            pdf_bytes = None
+        if pdf_bytes:
+            st.markdown("""
+            <style>
+            div[data-testid="stDownloadButton"] > button {
+                background: transparent !important;
+                border: 1px solid #c8d0d8 !important;
+                color: #4a5a6a !important;
+                font-family: 'IBM Plex Sans', sans-serif !important;
+                font-size: 0.82rem !important;
+                font-weight: 600 !important;
+                padding: 6px 14px !important;
+                border-radius: 4px !important;
+                box-shadow: none !important;
+            }
+            div[data-testid="stDownloadButton"] > button:hover {
+                border-color: #1a3a5c !important;
+                color: #1a3a5c !important;
+                background: transparent !important;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+            st.download_button(
+                "⬇ Download PDF",
+                data=pdf_bytes,
+                file_name=pdf_path.name,
+                mime="application/pdf",
+                key=f"dl_pdf_{s.get('id','')}",
+            )
+
+
 def render_source_detail(s):
     st.markdown(f"""
     <div style="padding:0.5rem 0 1rem 0;">
@@ -415,6 +547,8 @@ def render_source_detail(s):
       <div style="font-size:0.9rem;color:#5A6475;margin-bottom:1rem;">{s['author']} · {s['year']} · {s.get('source_type','')} · {s.get('publisher','')}</div>
     </div>
     """, unsafe_allow_html=True)
+
+    _render_source_links(s)
 
     clusters = s.get('thematic_clusters', [])
     if clusters:

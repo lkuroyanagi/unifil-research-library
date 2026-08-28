@@ -313,6 +313,15 @@ def _stage_review():
     # ── Row 4: publisher ──────────────────────────────────────────────────────
     new_publisher = st.text_input("Publisher / outlet", value=r.get("publisher", ""), key="add_src_publisher")
 
+    # ── Row 4b: url (optional) ─────────────────────────────────────────────────
+    new_url = st.text_input(
+        "URL (optional)",
+        value=r.get("url", ""),
+        key="add_src_url",
+        placeholder="https://…",
+        help="Link to read this source online. Shown as a 'Read online →' link on the source's detail page.",
+    )
+
     # ── Row 5: abstract ───────────────────────────────────────────────────────
     new_abstract = st.text_area("Abstract", value=r.get("abstract", ""), height=120, key="add_src_abstract")
 
@@ -466,6 +475,7 @@ def _stage_review():
             "source_type": new_type,
             "year": int(new_year),
             "publisher": new_publisher.strip(),
+            "url": new_url.strip(),
             "tags": tags_list,
             "abstract": new_abstract.strip(),
             "key_arguments": final_args,

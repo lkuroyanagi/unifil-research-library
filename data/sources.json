@@ -339,7 +339,7 @@
       }
     ],
     "gaps_addressed": [],
-    "pdf_file": "Orion-UNSecretaryGeneralsPeriodic-2019.pdf"
+    "pdf_file": "data/pdfs/Orion-UNSecretaryGeneralsPeriodic-2019.pdf"
   },
   {
     "id": "allee_2009",
@@ -398,7 +398,7 @@
       }
     ],
     "timeline_events": [],
-    "pdf_file": "Allee14n1IJPS.pdf"
+    "pdf_file": "data/pdfs/Allee14n1IJPS.pdf"
   },
   {
     "id": "daniel_2015",
@@ -448,7 +448,7 @@
       }
     ],
     "timeline_events": [],
-    "pdf_file": "DANIEL-CaseStudies-2015.pdf"
+    "pdf_file": "data/pdfs/DANIEL-CaseStudies-2015.pdf"
   },
   {
     "id": "elron_2007",
@@ -523,7 +523,7 @@
         "event": "Hezbollah ATGM attack kills two IDF soldiers near Shebaa Farms; Israeli return fire kills one Spanish UNIFIL member"
       }
     ],
-    "pdf_file": "ELRON-UNIFILIIISRAEL-2007.pdf"
+    "pdf_file": "data/pdfs/ELRON-UNIFILIIISRAEL-2007.pdf"
   },
   {
     "id": "makdisi_2014",
@@ -587,7 +587,7 @@
       }
     ],
     "timeline_events": [],
-    "pdf_file": "Makdisi_JPS_ReconsideringUNIFILinsouthernLebanon2.pdf"
+    "pdf_file": "data/pdfs/Makdisi_JPS_ReconsideringUNIFILinsouthernLebanon2.pdf"
   },
   {
     "id": "mattelaer_2009",
@@ -654,7 +654,7 @@
       }
     ],
     "timeline_events": [],
-    "pdf_file": "Mattelaer-UNIFILOperationalStrategy-2009.pdf"
+    "pdf_file": "data/pdfs/Mattelaer-UNIFILOperationalStrategy-2009.pdf"
   },
   {
     "id": "mizrahi_levanoni_2025",
@@ -723,7 +723,7 @@
         "event": "UNSCR 2790 adopted: final UNIFIL mandate extension to 31 December 2026; closure confirmed"
       }
     ],
-    "pdf_file": "Mizrahi-TimeEndUNIFILs-2025.pdf"
+    "pdf_file": "data/pdfs/Mizrahi-TimeEndUNIFILs-2025.pdf"
   },
   {
     "id": "orion_2017a",
@@ -788,7 +788,7 @@
         "source": "orion_2017a"
       }
     ],
-    "pdf_file": "Orion-Crossroads-2017.pdf"
+    "pdf_file": "data/pdfs/Orion-Crossroads-2017.pdf"
   },
   {
     "id": "orion_2020",
@@ -857,7 +857,7 @@
         "source": "orion_2020"
       }
     ],
-    "pdf_file": "Orion-BrinkEscalation-2020.pdf"
+    "pdf_file": "data/pdfs/Orion-BrinkEscalation-2020.pdf"
   },
   {
     "id": "orion_2017b",
@@ -919,7 +919,7 @@
         "source": "orion_2017b"
       }
     ],
-    "pdf_file": "Orion-HezbollahLebanonAounian-2017.pdf"
+    "pdf_file": "data/pdfs/Orion-HezbollahLebanonAounian-2017.pdf"
   },
   {
     "id": "orion_2016",
@@ -991,7 +991,7 @@
         "source": "orion_2016"
       }
     ],
-    "pdf_file": "Orion-UNIFILIITen-2016.pdf"
+    "pdf_file": "data/pdfs/Orion-UNIFILIITen-2016.pdf"
   },
   {
     "id": "orion_2018",
@@ -1061,7 +1061,7 @@
       }
     ],
     "source_type": "Think Tank",
-    "pdf_file": "Orion-UNIFILSecurityCouncil-2018.pdf"
+    "pdf_file": "data/pdfs/Orion-UNIFILSecurityCouncil-2018.pdf"
   },
   {
     "id": "tenenti_2026",
@@ -1285,7 +1285,7 @@
       }
     ],
     "source_type": "Media",
-    "pdf_file": "IsraelsPolicySouth-1980.pdf"
+    "pdf_file": "data/pdfs/IsraelsPolicySouth-1980.pdf"
   },
   {
     "id": "mizrahi_2020",
@@ -1352,7 +1352,7 @@
       }
     ],
     "source_type": "Think Tank",
-    "pdf_file": "Mizrahi-StrategicChangeLebanonIsrael-2020.pdf"
+    "pdf_file": "data/pdfs/Mizrahi-StrategicChangeLebanonIsrael-2020.pdf"
   },
   {
     "id": "nerguizian_2014",
@@ -1422,7 +1422,7 @@
       }
     ],
     "source_type": "Think Tank",
-    "pdf_file": "Nerguizian-USPolicyTowards-2014.pdf"
+    "pdf_file": "data/pdfs/Nerguizian-USPolicyTowards-2014.pdf"
   },
   {
     "id": "norton_schwedler_1993",
@@ -1517,7 +1517,7 @@
       }
     ],
     "source_type": "Academic / Journal Article",
-    "pdf_file": "Norton-InsecurityZonesSouth-1993.pdf"
+    "pdf_file": "data/pdfs/Norton-InsecurityZonesSouth-1993.pdf"
   },
   {
     "id": "asseburg_2009",
@@ -1595,7 +1595,7 @@
       }
     ],
     "source_type": "Think Tank",
-    "pdf_file": "Asseburg-EuropeanConflictManagement-2009.pdf"
+    "pdf_file": "data/pdfs/Asseburg-EuropeanConflictManagement-2009.pdf"
   },
   {
     "id": "goksel_2007",
@@ -1689,7 +1689,7 @@
       }
     ],
     "source_type": "Academic (Interview)",
-    "pdf_file": "Gksel-MrUNIFILReflects-2007.pdf"
+    "pdf_file": "data/pdfs/Gksel-MrUNIFILReflects-2007.pdf"
   },
   {
     "id": "norton_1999",
@@ -1764,7 +1764,7 @@
       }
     ],
     "source_type": "Think Tank",
-    "pdf_file": "Norton-HizballahLebanon-1999.pdf"
+    "pdf_file": "data/pdfs/Norton-HizballahLebanon-1999.pdf"
   },
   {
     "id": "siklawi_2017",
@@ -1850,7 +1850,7 @@
       }
     ],
     "source_type": "Academic",
-    "pdf_file": "Siklawi-PalestinianResistanceMovement-2017.pdf"
+    "pdf_file": "data/pdfs/Siklawi-PalestinianResistanceMovement-2017.pdf"
   },
   {
     "id": "sobelman_2004",
@@ -1945,7 +1945,7 @@
       }
     ],
     "source_type": "Academic",
-    "pdf_file": "Sobelman-Conclusion-2004.pdf"
+    "pdf_file": "data/pdfs/Sobelman-Conclusion-2004.pdf"
   },
   {
     "id": "nerguizian_2017",
@@ -2011,7 +2011,7 @@
       }
     ],
     "source_type": "Think Tank(CSIS)",
-    "pdf_file": "Nerguizian-HezbollahLAFPower-2017.pdf"
+    "pdf_file": "data/pdfs/Nerguizian-HezbollahLAFPower-2017.pdf"
   },
   {
     "id": "alrfouh_2007",
@@ -2066,7 +2066,7 @@
     ],
     "timeline_events": [],
     "source_type": "Think Tank",
-    "pdf_file": "ALRFOUH-CULTUREPEACEPEACEKEEPING-2007.pdf"
+    "pdf_file": "data/pdfs/ALRFOUH-CULTUREPEACEPEACEKEEPING-2007.pdf"
   },
   {
     "id": "duran_bueno_2024",
@@ -2141,7 +2141,7 @@
       }
     ],
     "source_type": "Academic",
-    "pdf_file": "DURAN- BUENO_Gaining Local_preprint.pdf"
+    "pdf_file": "data/pdfs/DURAN- BUENO_Gaining Local_preprint.pdf"
   },
   {
     "id": "saad_2021",
@@ -2214,7 +2214,7 @@
       }
     ],
     "source_type": "Academic",
-    "pdf_file": "POL 499_HassanSaad.pdf"
+    "pdf_file": "data/pdfs/POL 499_HassanSaad.pdf"
   },
   {
     "id": "calculli_2014",
@@ -2295,7 +2295,7 @@
     ],
     "source_type": "Academic",
     "url": "https://journals.openedition.org/cdlm/7565",
-    "pdf_file": "_Marina Calculli _ National prerogatives in multilateral peacekeeping- Italy in Lebanese perception and Rome's role within UNIFIL II.pdf"
+    "pdf_file": "data/pdfs/_Marina Calculli _ National prerogatives in multilateral peacekeeping- Italy in Lebanese perception and Rome's role within UNIFIL II.pdf"
   },
   {
     "id": "lawrence_2016",
@@ -2371,7 +2371,7 @@
     ],
     "source_type": "Academic",
     "url": "https://www.researchgate.net/publication/335321596_Soldiers_of_Peace_Estonia_Finland_and_Ireland_in_UNIFIL",
-    "pdf_file": "Lawrence-SoldiersPeace-2016.pdf"
+    "pdf_file": "data/pdfs/Lawrence-SoldiersPeace-2016.pdf"
   },
   {
     "id": "makdisi_2009",
@@ -2450,7 +2450,7 @@
     ],
     "source_type": "Academic",
     "url": "https://www.researchgate.net/publication/228377065_UNIFIL_II_Emerging_and_Evolving_European_Engagement_in_Lebanon_and_the_Middle_East",
-    "pdf_file": "UNIFIL II- Emerging and Evolving European Engagement in Lebanon and the Middle East.pdf"
+    "pdf_file": "data/pdfs/UNIFIL II- Emerging and Evolving European Engagement in Lebanon and the Middle East.pdf"
   },
   {
     "id": "beydoun_1992",
@@ -2511,7 +2511,7 @@
       }
     ],
     "source_type": "Academic",
-    "pdf_file": "Beydoun-SouthLebanonBorder-1992.pdf"
+    "pdf_file": "data/pdfs/Beydoun-SouthLebanonBorder-1992.pdf"
   },
   {
     "id": "deeb_2024",
@@ -2579,7 +2579,7 @@
     ],
     "source_type": "Academic",
     "url": "https://www.merip.org/a-primer-on-lebanon-history-palestine-and-resistance-to-israeli-violence-2/",
-    "pdf_file": "Deeb-PrimerLebanonHistoryPalestine-2024.pdf"
+    "pdf_file": "data/pdfs/Deeb-PrimerLebanonHistoryPalestine-2024.pdf"
   },
   {
     "id": "khayyat_2024",
@@ -2635,7 +2635,7 @@
     ],
     "source_type": "Academic",
     "url": "https://www.merip.org/2025/01/dispatch-from-south-lebanon/",
-    "pdf_file": "Khayyat-DispatchSouthLebanonLife-2024.pdf"
+    "pdf_file": "data/pdfs/Khayyat-DispatchSouthLebanonLife-2024.pdf"
   },
   {
     "id": "coespu_2020",
@@ -2816,7 +2816,7 @@
       "Hezbollah"
     ],
     "analytical_notes": [],
-    "pdf_file": "Expanded UNIFIL.pdf"
+    "pdf_file": "data/pdfs/Expanded UNIFIL.pdf"
   },
   {
     "id": "murphy_2012",
@@ -2900,7 +2900,7 @@
       "Hezbollah"
     ],
     "analytical_notes": [],
-    "pdf_file": "Ray Murphy Peacekeeping in Lebanon and Civilian Protection.pdf"
+    "pdf_file": "data/pdfs/Ray Murphy Peacekeeping in Lebanon and Civilian Protection.pdf"
   },
   {
     "id": 41,
@@ -3032,7 +3032,7 @@
       "LAF"
     ],
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6556482",
-    "pdf_file": "UNIFIL Freedom of Movement.pdf"
+    "pdf_file": "data/pdfs/UNIFIL Freedom of Movement.pdf"
   },
   {
     "id": 43,
@@ -3136,7 +3136,7 @@
       "Hezbollah"
     ],
     "url": "https://academic.oup.com/isagsq/article/6/1/ksag019/8526361?login=false",
-    "pdf_file": "Rituals Without Rapproachment.pdf"
+    "pdf_file": "data/pdfs/Rituals Without Rapproachment.pdf"
   },
   {
     "id": 45,
@@ -3189,7 +3189,7 @@
       "IDF"
     ],
     "url": "https://academic.oup.com/isq/article/68/2/sqae051/7651030?login=false",
-    "pdf_file": "UNIFIL's Blue Line Demarcation.pdf"
+    "pdf_file": "data/pdfs/UNIFIL's Blue Line Demarcation.pdf"
   },
   {
     "id": "unknown_year",
@@ -3224,7 +3224,7 @@
     "actors": [
       "UNIFIL"
     ],
-    "pdf_file": "unknown_year.pdf"
+    "pdf_file": "data/pdfs/unknown_year.pdf"
   },
   {
     "id": "costy_2026",
@@ -3308,7 +3308,7 @@
       "USA",
       "UNSC"
     ],
-    "pdf_file": "costy_2026.pdf",
+    "pdf_file": "data/pdfs/costy_2026.pdf",
     "url": "https://theglobalobservatory.org/2026/08/what-happens-after-unifil/"
   },
   {
@@ -3386,7 +3386,7 @@
       "Israel",
       "Lebanon"
     ],
-    "pdf_file": "orion_2026.pdf",
+    "pdf_file": "data/pdfs/orion_2026.pdf",
     "url": "https://www.washingtoninstitute.org/policy-analysis/lebanon-after-unifil-good-riddance-not-vacuum"
   }
 ]

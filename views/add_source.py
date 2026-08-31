@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils.data_utils import load_sources, save_sources, THEMATIC_CLUSTERS
+from utils.data_utils import load_sources, save_sources, THEMATIC_CLUSTERS, GitHubSaveError
 
 
 def is_editor():
@@ -495,7 +495,11 @@ def _stage_review():
             new_source["pdf_file"] = f"data/pdfs/{source_id}.pdf"
 
         sources.append(new_source)
-        save_sources(sources)
+        try:
+            save_sources(sources)
+        except GitHubSaveError as e:
+            st.error(str(e))
+            st.stop()
         st.session_state.add_src_saved_id = source_id
         st.session_state.add_src_saved_title = new_title.strip()
         _clear_review_state()

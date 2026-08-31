@@ -4,7 +4,7 @@ import uuid
 from datetime import date
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils.data_utils import load_sources, load_gaps, save_gaps, get_inferred_gaps, THEMATIC_CLUSTERS
+from utils.data_utils import load_sources, load_gaps, save_gaps, get_inferred_gaps, THEMATIC_CLUSTERS, GitHubSaveError
 
 
 def is_editor():
@@ -104,7 +104,11 @@ def show():
                             gap["thematic_clusters"] = new_clusters
                             gap["status"] = new_status
                             break
-                    save_gaps(manual_gaps)
+                    try:
+                        save_gaps(manual_gaps)
+                    except GitHubSaveError as e:
+                        st.error(str(e))
+                        st.stop()
                     st.session_state[edit_key] = False
                     st.rerun()
                 if cancel_clicked:
@@ -139,7 +143,11 @@ def show():
                         for gap in manual_gaps:
                             if gap["id"] == gap_id:
                                 gap["status"] = new_status
-                        save_gaps(manual_gaps)
+                        try:
+                            save_gaps(manual_gaps)
+                        except GitHubSaveError as e:
+                            st.error(str(e))
+                            st.stop()
                         st.rerun()
                 with col_edit:
                     if is_editor() and st.button("Edit", key=f"gap_edit_btn_{gap_id}"):
@@ -148,7 +156,11 @@ def show():
                 with col_del:
                     if is_editor() and st.button("🗑", key=f"gap_del_btn_{gap_id}"):
                         manual_gaps = [g for g in manual_gaps if g["id"] != gap_id]
-                        save_gaps(manual_gaps)
+                        try:
+                            save_gaps(manual_gaps)
+                        except GitHubSaveError as e:
+                            st.error(str(e))
+                            st.stop()
                         st.rerun()
 
         # Auto-inferred gaps
@@ -196,7 +208,11 @@ def show():
                             "date_added": str(date.today())
                         }
                         manual_gaps.append(new_gap)
-                        save_gaps(manual_gaps)
+                        try:
+                            save_gaps(manual_gaps)
+                        except GitHubSaveError as e:
+                            st.error(str(e))
+                            st.stop()
                         st.success("Gap added to register.")
                         st.rerun()
                     else:

@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.data_utils import (
-    load_sources, get_all_tags, get_all_actors,
-    get_all_countries, THEMATIC_CLUSTERS, SOURCE_TYPES
+    load_sources, save_sources, get_all_tags, get_all_actors,
+    get_all_countries, THEMATIC_CLUSTERS, SOURCE_TYPES, GitHubSaveError
 )
 
 
@@ -128,12 +128,17 @@ def normalize_source_type(raw: str) -> str:
 
 
 def save_source(updated):
+    """Merge one updated record into the full list and persist it via the
+    shared save_sources() — which transparently commits to GitHub instead of
+    the local file when GITHUB_TOKEN is configured (see utils/data_utils.py).
+    Re-reads the file fresh first so a stale in-memory `sources` list from
+    earlier in this render doesn't clobber a concurrent edit."""
     sources = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     for i, s in enumerate(sources):
         if s["id"] == updated["id"]:
             sources[i] = updated
             break
-    DATA_PATH.write_text(json.dumps(sources, indent=2, ensure_ascii=False), encoding="utf-8")
+    save_sources(sources)
 
 
 def _tag_input(label, sid, field_key, initial_items):
@@ -241,7 +246,11 @@ def render_source_edit(s, all_tags):
                     st.session_state[f"e_arg_{sid}_0"] = ""
                 updated = dict(s)
                 updated["key_arguments"] = [v.strip() for v in vals if v.strip()]
-                save_source(updated)
+                try:
+                    save_source(updated)
+                except GitHubSaveError as e:
+                    st.error(str(e))
+                    st.stop()
                 st.rerun()
     mc1, mc2, mc3, mc4 = st.columns([0.35, 2.4, 1.5, 1.5])
     with mc2:
@@ -380,7 +389,11 @@ def render_source_edit(s, all_tags):
             if st.session_state.get(f"e_ll_text_{sid}_{i}", "").strip()
         ]
         updated["timeline_events"] = [e for e in edited_timeline if e["event"].strip()]
-        save_source(updated)
+        try:
+            save_source(updated)
+        except GitHubSaveError as e:
+            st.error(str(e))
+            st.stop()
         # Keep selected_source_id so user returns to detail view, not grid
         st.session_state.editing_source_id = None
         n_a = st.session_state.pop(f"e_args_count_{sid}", 0)

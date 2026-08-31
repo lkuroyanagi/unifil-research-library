@@ -2,7 +2,7 @@ import streamlit as st
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils.data_utils import load_sources, save_sources, THEMATIC_CLUSTERS
+from utils.data_utils import load_sources, save_sources, THEMATIC_CLUSTERS, GitHubSaveError
 
 
 def is_editor():
@@ -118,7 +118,11 @@ def show():
                             s["lessons_learned"] = []
                         s["lessons_learned"].append({"text": add_text.strip(), "tag": add_tag})
                         break
-                save_sources(sources)
+                try:
+                    save_sources(sources)
+                except GitHubSaveError as e:
+                    st.error(str(e))
+                    st.stop()
                 for k in ("ll_add_source", "ll_add_text", "ll_add_tag"):
                     st.session_state.pop(k, None)
                 st.rerun()
@@ -258,7 +262,11 @@ def render_lesson_card(l, sources, render_idx: int = 0):
                     s["lessons_learned"][lesson_idx]["text"] = new_text
                     s["lessons_learned"][lesson_idx]["tag"] = new_tag
                     break
-            save_sources(sources)
+            try:
+                save_sources(sources)
+            except GitHubSaveError as e:
+                st.error(str(e))
+                st.stop()
             st.session_state[edit_key] = False
             st.rerun()
         if cancel_clicked:
@@ -276,7 +284,11 @@ def render_lesson_card(l, sources, render_idx: int = 0):
                     if s.get("id") == source_id:
                         del s["lessons_learned"][lesson_idx]
                         break
-                save_sources(sources)
+                try:
+                    save_sources(sources)
+                except GitHubSaveError as e:
+                    st.error(str(e))
+                    st.stop()
                 st.rerun()
 
     st.markdown('<div style="height:4px;"></div>', unsafe_allow_html=True)

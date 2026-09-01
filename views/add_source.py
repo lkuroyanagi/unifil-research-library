@@ -423,6 +423,14 @@ def _stage_review():
     # ── Row 12: actors ────────────────────────────────────────────────────────
     new_actors_str = st.text_input("Actors (comma-separated)", value=", ".join(r.get("actors", [])), key="add_src_actors")
 
+    # ── Row 13: staff attribution (required) ─────────────────────────────────
+    st.markdown('<div style="font-size:0.82rem;font-weight:600;color:#374151;margin:1.2rem 0 0.3rem 0;text-transform:uppercase;letter-spacing:0.05em;">Added By</div>', unsafe_allow_html=True)
+    col_fname, col_lname = st.columns(2)
+    with col_fname:
+        staff_first_name = st.text_input("First name *", value=r.get("added_by_first_name", ""), key="add_src_staff_first")
+    with col_lname:
+        staff_last_name = st.text_input("Family name *", value=r.get("added_by_last_name", ""), key="add_src_staff_last")
+
     st.markdown('<div style="height:1rem;"></div>', unsafe_allow_html=True)
 
     # ── Action buttons ────────────────────────────────────────────────────────
@@ -435,6 +443,10 @@ def _stage_review():
             st.session_state.add_src_stage = "upload"
             st.session_state.add_src_result = None
             st.rerun()
+
+    if save_clicked and (not staff_first_name.strip() or not staff_last_name.strip()):
+        st.error("Please enter the staff member's first and family name before saving.")
+        save_clicked = False
 
     if save_clicked:
         # Read current widget values for lists that mutate in session_state
@@ -484,6 +496,9 @@ def _stage_review():
             "timeline_events": final_events,
             "lessons_learned": final_lessons,
             "actors": actors_list,
+            "added_by_first_name": staff_first_name.strip(),
+            "added_by_last_name": staff_last_name.strip(),
+            "added_by": f"{staff_first_name.strip()} {staff_last_name.strip()}",
         }
 
         # Archive the uploaded PDF locally alongside the record

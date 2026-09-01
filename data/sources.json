@@ -3388,5 +3388,101 @@
     ],
     "pdf_file": "data/pdfs/orion_2026.pdf",
     "url": "https://www.washingtoninstitute.org/policy-analysis/lebanon-after-unifil-good-riddance-not-vacuum"
+  },
+  {
+    "id": "stracquadanio_2026",
+    "author": "Agnese Stracquadanio",
+    "title": "UNIFIL's final months: Uncertainty persists in Lebanon over what comes next",
+    "source_type": "Media",
+    "year": 2026,
+    "publisher": "Defense News",
+    "url": "",
+    "tags": [
+      "Mission closure",
+      "mandate"
+    ],
+    "abstract": "This article examines the deeply uncertain future of security arrangements in southern Lebanon as UNIFIL approaches its December 31, 2026 mandate expiry. It covers the UN Secretary-General's three troop-reduction options submitted to the Security Council, competing proposals for an EU multinational force or EEAS civilian-military mission, Israel's continued occupation of Lebanese territory, the exclusion of UNIFIL from Lebanon-Israel framework negotiations, and expert opinion arguing the Lebanese Armed Forces should ultimately assume full sovereign responsibility.",
+    "key_arguments": [
+      "UNIFIL's mandate expires on December 31, 2026, and no agreed successor arrangement has been determined, raising the risk of a security vacuum in southern Lebanon.",
+      "UNIFIL has been largely excluded from the Lebanon-Israel framework agreement negotiations and the pilot zone verification process, undermining its relevance in the transition.",
+      "Expert opinion holds that UNIFIL has not been particularly effective, particularly given that at least half its positions are in Israeli-occupied areas, and that the LAF should be built up to assume full sovereign responsibility rather than replaced by another international force."
+    ],
+    "bias_flag": "The article is by a Defense News Middle East correspondent with a Reuters background and a master's in international relations, suggesting professional journalism standards. Defense News serves a defense-industry and military-policy readership, which may incline coverage toward operational and strategic framing over humanitarian or political dimensions. The sole named expert, Paul Salem (CSIS/Middle East Institute), represents a U.S.-affiliated think tank perspective broadly sympathetic to state-building and LAF empowerment; his skepticism of continued international peacekeeping should be read in that context. No pro-UNIFIL academic or troop-contributing country voices are quoted to balance his assessment.",
+    "thematic_clusters": [
+      "Mandate evolution"
+    ],
+    "timeline_events": [
+      {
+        "date": "2006",
+        "event": "UN Security Council Resolution 1701 adopted",
+        "category": "Israel-Lebanon",
+        "description": "Resolution 1701 ended the 2006 Israel-Hezbollah war and provided the legal framework for UNIFIL's enhanced mandate in southern Lebanon."
+      },
+      {
+        "date": "2026-03-02",
+        "event": "Conflict re-escalation and partial UNIFIL civilian evacuation",
+        "category": "UNIFIL",
+        "description": "Fighting reignited on March 2, 2026, prompting evacuation of part of UNIFIL's international civilian staff while military personnel continued operations."
+      },
+      {
+        "date": "2026-06-02",
+        "event": "Post-UNIFIL options to UNSC released",
+        "category": "UNIFIL",
+        "description": "António Guterres presented three reduced-presence scenarios to the UNSC, with troop numbers ranging from 900 to 3,000, alongside military observers and reserve forces."
+      },
+      {
+        "date": "2026-06",
+        "event": "Italy-France Antibes summit proposes post-UNIFIL EU multinational coalition",
+        "category": "International",
+        "description": "Italy and France proposed a multinational coalition to replace UNIFIL at their bilateral summit in Antibes; Germany subsequently joined the call for an EU force."
+      },
+      {
+        "date": "2026-08-04",
+        "event": "Israeli-Lebanese representatives meet in Rome on pilot zones",
+        "category": "Israel-Lebanon",
+        "description": "Israeli and Lebanese delegations were scheduled to meet in Rome to discuss implementation of 'pilot zones' under LAF control as part of the Lebanon-Israel framework agreement."
+      },
+      {
+        "date": "2026-12-31",
+        "event": "UNIFIL mandate expiry and end of operations",
+        "category": "UNIFIL",
+        "description": "UNIFIL's mandate is set to expire on December 31, 2026, after which the mission will dismantle its bases and withdraw following nearly five decades of operations."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "Excluding UNIFIL from key bilateral negotiations (the Lebanon-Israel framework agreement and pilot zone verification process) severely undermines the mission's transitional utility and creates ambiguity about post-mandate security responsibilities.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "The absence of a clear successor arrangement well before mandate expiry risks leaving a security vacuum; transition planning must begin early and with all relevant actors at the table, including the peacekeeping mission itself.",
+        "tag": "ANALYTICAL INFERENCE"
+      },
+      {
+        "text": "Israeli occupation of areas containing at least half of UNIFIL's positions critically constrained freedom of movement and operational effectiveness, demonstrating that host-state and third-party compliance with peacekeeping spatial arrangements is a prerequisite for mission viability.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Long-term stability in southern Lebanon requires capacity-building of the Lebanese Armed Forces rather than perpetual reliance on international forces; peacekeeping mission design should incorporate explicit exit strategies tied to host-state security institution development.",
+        "tag": "SOURCE-DERIVED"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "Kandice Ardiel",
+      "António Guterres",
+      "UN Security Council",
+      "Lebanon",
+      "Israel",
+      "Lebanese Armed Forces (LAF)",
+      "Italy",
+      "France",
+      "Germany",
+      "European External Action Service (EEAS)"
+    ],
+    "added_by_first_name": "Leo",
+    "added_by_last_name": "Kuroyanagi",
+    "added_by": "Leo Kuroyanagi",
+    "pdf_file": "data/pdfs/stracquadanio_2026.pdf"
   }
 ]

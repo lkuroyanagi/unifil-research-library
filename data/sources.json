@@ -3484,5 +3484,127 @@
     "added_by_last_name": "Kuroyanagi",
     "added_by": "Leo Kuroyanagi",
     "pdf_file": "data/pdfs/stracquadanio_2026.pdf"
+  },
+  {
+    "id": "lauriol_2024",
+    "author": "Camille Lauriol",
+    "title": "Analyse de l'efficacité des Missions de Maintien de la Paix de l'ONU : Le cas de la FINUL",
+    "source_type": "Academic",
+    "year": 2024,
+    "publisher": "Université de Montréal",
+    "url": "",
+    "tags": [
+      "UNIFIL",
+      "peacekeeping effectiveness",
+      "deterrence",
+      "mandate evolution",
+      "Lebanon",
+      "Israel-Lebanon conflict",
+      "Hezbollah",
+      "tripartite liaison",
+      "troop levels",
+      "mandate robustness"
+    ],
+    "abstract": "This master's thesis examines UNIFIL's effectiveness from 1978 to 2022 through the lens of deterrence theory. It argues that UNIFIL's ability to fulfil its mandate is directly linked to its deterrent capacity, measured by troop numbers, mandate robustness, and communication channels. The study finds that UNIFIL's greatest effectiveness followed the 2006 mandate reinforcement (Resolution 1701), which tripled troop ceilings and expanded operational authority, correlating with the longest conflict-free period in the mission's history.",
+    "key_arguments": [
+      "UNIFIL's effectiveness, measured by mandate accomplishment, correlates positively with its deterrent capacity: periods of weak deterrence (insufficient troops, non-robust mandate) coincide with repeated mandate failures, while post-2006 reinforcement produced the mission's longest period of relative stability.",
+      "A robust mandate and sufficient troop numbers are necessary but not sufficient conditions for effectiveness; communication channels between parties (operationalized through tripartite meetings after 2006) are equally essential and took decades to develop effectively.",
+      "External political factors—including Israeli domestic politics, Syrian influence, and the Lebanese civil war—repeatedly undermined UNIFIL's deterrent capacity regardless of internal mission variables, demonstrating that peacekeeping effectiveness cannot be reduced to deterrence alone."
+    ],
+    "bias_flag": "This is an academic master's thesis supervised at the Université de Montréal (supervisor: Mme Zahar), relying primarily on UN Secretary-General reports on UNIFIL as its main data source. The author acknowledges these reports may be biased as they are produced by an entity seeking to justify its own mission. The thesis is primarily analytical and adopts a broadly pro-UN peacekeeping normative stance, which may lead to underweighting critiques of UNIFIL's structural limitations. No direct institutional affiliation with UNIFIL, troop-contributing countries, or parties to the conflict is declared.",
+    "thematic_clusters": [
+      "Mandate evolution",
+      "Tripartite Liaison Mechanism & Liaison",
+      "TCC/Command",
+      "Force protection & safety",
+      "Relations with Host State",
+      "Relations with non-state armed actors",
+      "Protection of Civilians",
+      "CIMIC & community relations",
+      "Monitoring, reporting & technology",
+      "Member State, P5, UNSC Dynamics"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978-03-19",
+        "event": "Adoption of UN Security Council Resolutions 425 and 426 – UNIFIL established",
+        "category": "UNIFIL",
+        "description": "Following Israel's Operation Litani, the UNSC adopted Resolutions 425 and 426, establishing UNIFIL to confirm Israeli withdrawal, restore international peace and security, and help Lebanon reassert authority in the south."
+      },
+      {
+        "date": "1982-06-06",
+        "event": "Israeli Operation Peace in Galilee – Second invasion of Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israeli forces invaded Lebanon reaching Beirut by mid-June, bypassing UNIFIL which was unable to halt the advance. The UNSC adopted Resolution 511 adding humanitarian protection to UNIFIL's provisional mandate."
+      },
+      {
+        "date": "1989-10-22",
+        "event": "Taif Agreement – End of Lebanese Civil War",
+        "category": "Lebanese Politics",
+        "description": "Lebanese deputies signed the Taif Accord in Saudi Arabia, revising the confessional power-sharing system and mandating disarmament of militias; Hezbollah was exempted as a 'resistance force,' with Syrian troops remaining in Lebanon."
+      },
+      {
+        "date": "1996-04-18",
+        "event": "Qana Massacre during Operation Grapes of Wrath",
+        "category": "Israel-Lebanon",
+        "description": "Israeli artillery struck a UNIFIL compound in Qana sheltering over 800 civilians, killing approximately 106 people, shocking the international community and accelerating ceasefire negotiations."
+      },
+      {
+        "date": "2000-07",
+        "event": "Complete Israeli withdrawal from southern Lebanon – Blue Line established",
+        "category": "Israel-Lebanon",
+        "description": "Israeli forces completed their withdrawal from Lebanese territory, the South Lebanon Army collapsed, and the UN traced the Blue Line as a reference marker; UNIFIL troop numbers fell to their lowest level at under 2,000."
+      },
+      {
+        "date": "2006-07-12",
+        "event": "Hezbollah cross-border attack triggers 2006 Lebanon War",
+        "category": "Hezbollah",
+        "description": "Hezbollah's raid killing and capturing Israeli soldiers triggered a 33-day war, with Israeli forces advancing to Beirut; UNIFIL with fewer than 2,000 troops was powerless to intervene."
+      },
+      {
+        "date": "2006-08-11",
+        "event": "UN Security Council Resolution 1701 – UNIFIL mandate reinforced",
+        "category": "UNIFIL",
+        "description": "Resolution 1701 called for an immediate ceasefire, raised UNIFIL's troop ceiling to 15,000, expanded its mandate to monitor hostilities cessation, support LAF deployment, and assist in establishing a weapons-exclusion zone south of the Litani."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "Troop numbers and mandate robustness are interdependent deterrence variables: UNIFIL's repeated inability to prevent Israeli military operations or Hezbollah attacks throughout 1978–2005 is directly attributable to an insufficient troop ceiling (never exceeding 6,945) and a Chapter VI mandate limiting action to self-defence. The post-2006 expansion to ~13,000 troops with expanded authority produced the mission's longest conflict-free period, supporting the literature's contention that credible military capacity is necessary for effective deterrence.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Establishing effective communication channels between belligerent parties is a cumulative, long-term process that cannot be accelerated purely by mandate changes. UNIFIL required nearly three decades of continuous presence before it could operationalize tripartite meetings (post-2006) that meaningfully de-escalated incidents along the Blue Line. Institutional memory and local legitimacy accumulated over time are therefore strategic assets that must be preserved across troop rotations.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Communication capacity without commensurate action capacity has limited deterrent value. Prior to 2006, UNIFIL developed communication links with the Lebanese Armed Forces and Israeli military, yet incidents continued unabated because parties knew UNIFIL could not act beyond self-defence. Deterrence requires that both the willingness and the capacity to intervene are credibly communicated.",
+        "tag": "ANALYTICAL INFERENCE"
+      },
+      {
+        "text": "Peacekeeping effectiveness is bounded by the political will of host-state and regional actors: the 2000–2005 period of relative calm was primarily attributable to Israeli domestic political dynamics and the IDF withdrawal rather than to any change in UNIFIL's deterrent capacity, which was at its weakest. Conversely, the 2006 conflict erupted despite functioning communication channels. Mandate and troop reinforcements must therefore be accompanied by sustained diplomatic engagement to address underlying political disputes (e.g., Shebaa Farms, Ghajar).",
+        "tag": "ANALYTICAL INFERENCE"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "UNSC",
+      "UNSG",
+      "Lebanon",
+      "Lebanese Armed Forces",
+      "Israel (Government / IDF)",
+      "Hezbollah",
+      "Palestine Liberation Organization (PLO)",
+      "South Lebanon Army (SLA / ALS)",
+      "Syria",
+      "Iran",
+      "United States",
+      "France",
+      "UNTSO"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/lauriol_2024.pdf"
   }
 ]

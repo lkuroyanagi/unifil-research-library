@@ -3606,5 +3606,126 @@
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/lauriol_2024.pdf"
+  },
+  {
+    "id": "michel_2011",
+    "author": "Benoît Michel",
+    "title": "Maintien de la paix robuste : le cas de la FINUL renforcée",
+    "source_type": "Academic",
+    "year": 2011,
+    "publisher": "Politique étrangère, Institut français des relations internationales (Ifri)",
+    "url": "https://shs.cairn.info/revue-politique-etrangere-2011-2-page-403?lang=fr",
+    "tags": [
+      "UNIFIL",
+      "robust peacekeeping",
+      "Resolution 1701",
+      "Hezbollah",
+      "Lebanon",
+      "mandate",
+      "force protection",
+      "Maritime Task Force",
+      "Quick Reaction Force"
+    ],
+    "abstract": "This article assesses the 'enhanced UNIFIL' deployed after the 2006 war under UNSC Resolution 1701. It traces the failure of the pre-2006 UNIFIL, analyses the political and military reinforcement introduced by Resolution 1701, and argues that despite genuine improvements, UNIFIL operates within a fragile ceasefire rather than a peace agreement. The article concludes that military means alone cannot resolve political problems, and that mandate adaptation must accompany continuous diplomatic effort.",
+    "key_arguments": [
+      "The pre-2006 UNIFIL failed due to chronic understaffing (only ~1,990 troops for 750 km²), inadequate equipment, and political inaction by TCCs and the UN despite a deteriorating security environment between 2000 and 2006.",
+      "Resolution 1701 introduced substantive improvements: troop numbers rising toward 15,000, a Quick Reaction Force with heavy equipment, a Maritime Task Force, reinforced command structures, and tripartite liaison mechanisms — collectively shifting UNIFIL toward 'robust peacekeeping'.",
+      "The post-2006 statu quo is inherently fragile: it reflects a ceasefire between parties that each interpret Resolution 1701 selectively; Hezbollah tolerates UNIFIL only insofar as it deters Israeli intervention, while continuing to rearm south of the Litani; Lebanese political dysfunction prevents full LAF deployment; and Israeli airspace violations undermine UNIFIL credibility.",
+      "Military reinforcement has reached its practical ceiling; future effectiveness requires continuous diplomatic effort and adaptive mandate evolution, as military action supports but cannot replace political solutions."
+    ],
+    "bias_flag": "The author is a French military officer (chef d'escadrons) and researcher at Ifri's Centre des études de sécurité, who served on the UNIFIL staff in 2009. France is UNIFIL's second-largest TCC and commands the Quick Reaction Force. This dual insider/institutional affiliation may produce a bias favouring the robustness of the enhanced UNIFIL and the role of European TCCs (France, Italy, Spain), while potentially understating operational failures attributable to TCC national caveats or Western diplomatic interests. The article is broadly analytical but carries an implicit endorsement of the French-British push for more pragmatic peacekeeping doctrine.",
+    "thematic_clusters": [
+      "Mandate evolution",
+      "Tripartite Liaison Mechanism & Liaison",
+      "TCC/Command",
+      "Relations with Host State",
+      "Operational adaptation & innovation",
+      "Relations with non-state armed actors",
+      "Maritime Task Force",
+      "Monitoring, reporting & technology"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978-03-19",
+        "event": "UNIFIL Created — Resolutions 425 & 426",
+        "category": "UNIFIL",
+        "description": "Following Israel's Operation Litani into southern Lebanon, the UN Security Council adopted Resolutions 425 and 426, establishing UNIFIL with a mandate to confirm Israeli withdrawal and restore peace and Lebanese sovereignty."
+      },
+      {
+        "date": "2000-05",
+        "event": "Israeli Withdrawal from South Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israel announced the definitive withdrawal of its forces from southern Lebanon. UNIFIL was tasked with demarcating the Blue Line in the absence of a formal peace treaty, while Hezbollah consolidated control over the south."
+      },
+      {
+        "date": "2005-02-14",
+        "event": "Assassination of Rafic Hariri",
+        "category": "Lebanese Politics",
+        "description": "Former Lebanese Prime Minister Rafic Hariri was assassinated, triggering the Cedar Revolution and the withdrawal of Syrian forces from Lebanon under US and French pressure, deepening domestic political polarisation."
+      },
+      {
+        "date": "2006-07-12",
+        "event": "Start of the Second Lebanon War",
+        "category": "Israel-Lebanon",
+        "description": "Hezbollah launched rockets into northern Israel and captured two IDF soldiers in a cross-border raid. The ensuing 33-day war exposed UNIFIL's inability to prevent or contain the conflict, underlining critical gaps in mandate, troops, and equipment."
+      },
+      {
+        "date": "2006-08-14",
+        "event": "Adoption of UNSC Resolution 1701 and Ceasefire",
+        "category": "UNIFIL",
+        "description": "Resolution 1701 ended the Second Lebanon War and established the framework for 'enhanced UNIFIL', authorising up to 15,000 troops, more robust rules of engagement, a Maritime Task Force, and a zone between the Blue Line and the Litani River free of non-governmental armed personnel."
+      },
+      {
+        "date": "2007",
+        "event": "Attack on Spanish UNIFIL Peacekeepers",
+        "category": "UNIFIL",
+        "description": "Several Spanish peacekeepers were killed in an attack attributed to their alleged over-zealous search for Hezbollah weapons caches hidden in civilian structures, illustrating the operational limits and force protection risks of mandate implementation."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "A peacekeeping force that is chronically understaffed, poorly equipped, and deployed in a deteriorating security environment without mandate adaptation will fail to fulfil its interposition mission, regardless of political will at lower levels. The pre-2006 UNIFIL's ratio of approximately two troops per km² was wholly inadequate given terrain complexity and the nature of the Hezbollah threat.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Robust peacekeeping enhances operational effectiveness but does not substitute for political resolution. UNIFIL's post-2006 military reinforcement reached its practical ceiling by 2011; sustained diplomatic engagement by TCCs and the UN is indispensable to maintain the conditions under which military instruments can function.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Tripartite liaison mechanisms — including permanent liaison officers exchanged between UNIFIL, the Lebanese Armed Forces, and the IDF, alongside periodic tripartite meetings — significantly improved communication and incident management across the Blue Line, and should be institutionalised as a core component of interposition operations.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "When a non-state armed actor such as Hezbollah retains political leverage within the host-state government and popular legitimacy in the area of operations, peacekeepers face a structural constraint: any activity perceived as targeting that actor risks triggering hostility from the local population and from host-state institutions, progressively eroding the force's freedom of action and credibility.",
+        "tag": "ANALYTICAL INFERENCE"
+      }
+    ],
+    "actors": [
+      "Benoît Michel",
+      "UNIFIL",
+      "United Nations Security Council",
+      "Hezbollah",
+      "Israel Defense Forces (IDF/Tsahal)",
+      "Lebanese Armed Forces (LAF)",
+      "Lebanese Government",
+      "France",
+      "Italy",
+      "Spain",
+      "Germany",
+      "United States",
+      "Syria",
+      "Special Tribunal for Lebanon (STL)",
+      "Rafic Hariri",
+      "Hassan Nasrallah",
+      "Michel Sleiman",
+      "Michel Aoun",
+      "Alain Le Roy",
+      "UNTSO",
+      "Maritime Task Force"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/michel_2011.pdf"
   }
 ]

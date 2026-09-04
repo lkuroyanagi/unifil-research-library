@@ -3616,15 +3616,15 @@
     "publisher": "Politique étrangère, Institut français des relations internationales (Ifri)",
     "url": "https://shs.cairn.info/revue-politique-etrangere-2011-2-page-403?lang=fr",
     "tags": [
-      "UNIFIL",
-      "robust peacekeeping",
-      "Resolution 1701",
       "Hezbollah",
       "Lebanon",
-      "mandate",
-      "force protection",
       "Maritime Task Force",
-      "Quick Reaction Force"
+      "Quick Reaction Force",
+      "Resolution 1701",
+      "UNIFIL",
+      "force protection",
+      "mandate",
+      "robust peacekeeping"
     ],
     "abstract": "This article assesses the 'enhanced UNIFIL' deployed after the 2006 war under UNSC Resolution 1701. It traces the failure of the pre-2006 UNIFIL, analyses the political and military reinforcement introduced by Resolution 1701, and argues that despite genuine improvements, UNIFIL operates within a fragile ceasefire rather than a peace agreement. The article concludes that military means alone cannot resolve political problems, and that mandate adaptation must accompany continuous diplomatic effort.",
     "key_arguments": [
@@ -3647,39 +3647,27 @@
     "timeline_events": [
       {
         "date": "1978-03-19",
-        "event": "UNIFIL Created — Resolutions 425 & 426",
-        "category": "UNIFIL",
-        "description": "Following Israel's Operation Litani into southern Lebanon, the UN Security Council adopted Resolutions 425 and 426, establishing UNIFIL with a mandate to confirm Israeli withdrawal and restore peace and Lebanese sovereignty."
+        "event": "UNIFIL Created — Resolutions 425 & 426"
       },
       {
         "date": "2000-05",
-        "event": "Israeli Withdrawal from South Lebanon",
-        "category": "Israel-Lebanon",
-        "description": "Israel announced the definitive withdrawal of its forces from southern Lebanon. UNIFIL was tasked with demarcating the Blue Line in the absence of a formal peace treaty, while Hezbollah consolidated control over the south."
+        "event": "Israeli Withdrawal from South Lebanon"
       },
       {
         "date": "2005-02-14",
-        "event": "Assassination of Rafic Hariri",
-        "category": "Lebanese Politics",
-        "description": "Former Lebanese Prime Minister Rafic Hariri was assassinated, triggering the Cedar Revolution and the withdrawal of Syrian forces from Lebanon under US and French pressure, deepening domestic political polarisation."
+        "event": "Assassination of Rafic Hariri"
       },
       {
         "date": "2006-07-12",
-        "event": "Start of the Second Lebanon War",
-        "category": "Israel-Lebanon",
-        "description": "Hezbollah launched rockets into northern Israel and captured two IDF soldiers in a cross-border raid. The ensuing 33-day war exposed UNIFIL's inability to prevent or contain the conflict, underlining critical gaps in mandate, troops, and equipment."
+        "event": "Start of the Second Lebanon War"
       },
       {
         "date": "2006-08-14",
-        "event": "Adoption of UNSC Resolution 1701 and Ceasefire",
-        "category": "UNIFIL",
-        "description": "Resolution 1701 ended the Second Lebanon War and established the framework for 'enhanced UNIFIL', authorising up to 15,000 troops, more robust rules of engagement, a Maritime Task Force, and a zone between the Blue Line and the Litani River free of non-governmental armed personnel."
+        "event": "Adoption of UNSC Resolution 1701 and Ceasefire"
       },
       {
         "date": "2007",
-        "event": "Attack on Spanish UNIFIL Peacekeepers",
-        "category": "UNIFIL",
-        "description": "Several Spanish peacekeepers were killed in an attack attributed to their alleged over-zealous search for Hezbollah weapons caches hidden in civilian structures, illustrating the operational limits and force protection risks of mandate implementation."
+        "event": "Attack on Spanish UNIFIL Peacekeepers"
       }
     ],
     "lessons_learned": [
@@ -3701,12 +3689,11 @@
       }
     ],
     "actors": [
-      "Benoît Michel",
       "UNIFIL",
       "United Nations Security Council",
       "Hezbollah",
-      "Israel Defense Forces (IDF/Tsahal)",
-      "Lebanese Armed Forces (LAF)",
+      "Israel Defense Forces",
+      "Lebanese Armed Forces",
       "Lebanese Government",
       "France",
       "Italy",
@@ -3714,7 +3701,7 @@
       "Germany",
       "United States",
       "Syria",
-      "Special Tribunal for Lebanon (STL)",
+      "Special Tribunal for Lebanon",
       "Rafic Hariri",
       "Hassan Nasrallah",
       "Michel Sleiman",
@@ -3726,6 +3713,7 @@
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
-    "pdf_file": "data/pdfs/michel_2011.pdf"
+    "pdf_file": "data/pdfs/michel_2011.pdf",
+    "analytical_notes": []
   }
 ]

@@ -3715,5 +3715,126 @@
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/michel_2011.pdf",
     "analytical_notes": []
+  },
+  {
+    "id": "chapuis_2012",
+    "author": "Julie Chapuis",
+    "title": "La FINUL dans la reconstruction post-2006 du Sud-Liban. La coopération civilo-militaire en question",
+    "source_type": "Academic",
+    "year": 2012,
+    "publisher": "Maghreb-Machrek, Éditions ESKA, N° 214",
+    "url": "https://shs.cairn.info/revue-maghreb-machrek-2012-4-page-85?lang=fr",
+    "tags": [
+      "CIMIC",
+      "civil-military cooperation",
+      "post-2006 reconstruction",
+      "South Lebanon",
+      "UNIFIL II",
+      "humanitarian action",
+      "DPKO",
+      "TCC"
+    ],
+    "abstract": "This article examines UNIFIL's role in post-2006 reconstruction of South Lebanon, focusing on civil-military cooperation (CIMIC). It analyses the institutionalisation of CIMIC within UNIFIL II, the diversity of national approaches among 36 TCCs, and tensions between military and humanitarian logics. The author argues CIMIC primarily serves force integration rather than civilian needs, constitutes a militarisation of humanitarian action, and that UNIFIL's contribution to reconstruction remains marginal relative to Gulf state donors. The article also traces how UNIFIL's strategic military cell influenced the re-militarisation of DPKO.",
+    "key_arguments": [
+      "CIMIC activities within UNIFIL II primarily serve force integration and military objectives rather than civilian populations, fundamentally distinguishing them from genuine humanitarian action.",
+      "The multinational composition of UNIFIL II (36 TCCs) creates incoherence in civil-military cooperation, as each contingent applies divergent national CIMIC doctrines and priorities, often advancing bilateral national interests rather than a unified UN approach.",
+      "UNIFIL's contribution to post-2006 reconstruction is residual compared to Gulf state donors (Iran, Qatar, Kuwait, UAE), whose direct funding bypasses Lebanese state institutions and limits UNIFIL's influence.",
+      "UNIFIL's 2006 Strategic Military Cell served as a model for the re-militarisation of DPKO, inspiring the creation of the Bureau of Military Affairs (BAM) and increasing military weight within UN peacekeeping structures."
+    ],
+    "bias_flag": "Julie Chapuis is a PhD researcher at EHESS (Paris) affiliated with the Institut de Recherche Stratégique de l'École Militaire (IRSEM) and funded by the DGA (French Defence procurement agency). Her institutional ties to French defence structures may incline the analysis toward a favourable view of French contingent activities and French institutional contributions to UNIFIL. The article draws heavily on interviews with French military officers and officials, which may skew the qualitative evidence.",
+    "thematic_clusters": [
+      "CIMIC & community relations",
+      "TCC/Command",
+      "Mandate evolution",
+      "Relations with Host State",
+      "DPKO-DPPA integration"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978-03-19",
+        "event": "UNIFIL established by UNSC Resolutions 425 and 426",
+        "category": "UNIFIL",
+        "description": "The Security Council deployed UNIFIL to South Lebanon to confirm Israeli troop withdrawal, restore peace and security, and help the Lebanese government reassert authority in the region."
+      },
+      {
+        "date": "1992",
+        "event": "Creation of DPKO and publication of Agenda for Peace",
+        "category": "International",
+        "description": "The UN Department of Peacekeeping Operations was established in 1992 to manage increasingly complex operations; Boutros-Ghali's Agenda for Peace articulated integration of humanitarian action into peace consolidation."
+      },
+      {
+        "date": "2000",
+        "event": "Brahimi Report proposes restructuring of DPKO Military Adviser's Office",
+        "category": "International",
+        "description": "The Brahimi Report recommended structural reforms to DPKO's Military Adviser Bureau, leading to recruitment of additional military personnel into a new Military Division."
+      },
+      {
+        "date": "2006",
+        "event": "2006 Lebanon War and expansion of UNIFIL mandate",
+        "category": "Israel-Lebanon",
+        "description": "Following the summer 2006 war between Israel and Hezbollah, UNIFIL's mandate was significantly expanded under UNSC Resolution 1701, enlarging its troop strength and adding monitoring, LAF support, and humanitarian access tasks."
+      },
+      {
+        "date": "2006",
+        "event": "Creation of UNIFIL Strategic Military Cell at DPKO",
+        "category": "UNIFIL",
+        "description": "At France's request, a dedicated Strategic Military Cell was established within DPKO to support UNIFIL II, later cited as the model for the broader re-militarisation of DPKO's Bureau of Military Affairs."
+      },
+      {
+        "date": "2007",
+        "event": "Ban Ki-moon restructures DPKO; Military Division becomes Bureau of Military Affairs",
+        "category": "International",
+        "description": "Secretary-General Ban Ki-moon restructured DPKO, elevating the Military Adviser to Under-Secretary-General level and transforming the Military Division into the Bureau of Military Affairs, which doubled its staff by 2010."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "CIMIC activities in UNIFIL II primarily serve force protection and integration objectives rather than civilian needs; their impact on civilian populations is largely symbolic and is not systematically evaluated, undermining the credibility of UNIFIL's humanitarian posture.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "The absence of a unified CIMIC doctrine across UNIFIL II's 36 TCCs, each applying distinct national approaches and bilateral priorities, results in incoherent civil-military action and risks diluting the mission's overall effectiveness and impartiality.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "UNIFIL's low civilian-to-military ratio (8% vs. 17% UN-wide average as of 2012) and the embryonic state of its civilian component constrain the mission's capacity for genuine integrated peacebuilding and humanitarian coordination with local actors.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "CIMIC teams should avoid substituting for Lebanese state public policies; their projects must be calibrated not to undermine state authority and ownership, which remains central to sustainable post-conflict reconstruction.",
+        "tag": "ANALYTICAL INFERENCE"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "Lebanese Armed Forces",
+      "France",
+      "Italy",
+      "Spain",
+      "BELUFIL",
+      "Turkey",
+      "South Korea",
+      "ICRC",
+      "UNDP",
+      "OCHA",
+      "UNHCR",
+      "Caritas International",
+      "DPKO / Bureau of Military Affairs",
+      "Hezbollah",
+      "Israel",
+      "Lebanon",
+      "Iran",
+      "Qatar",
+      "Kuwait",
+      "United Arab Emirates",
+      "Fouad Siniora",
+      "Ban Ki-moon",
+      "Boutros Boutros-Ghali",
+      "Fondation Sadr"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/chapuis_2012.pdf"
   }
 ]

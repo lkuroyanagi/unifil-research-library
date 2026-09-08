@@ -3825,5 +3825,129 @@
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/chapuis_2012.pdf",
     "analytical_notes": []
+  },
+  {
+    "id": "jocsan_2024",
+    "author": "Samuel Jocsan",
+    "title": "La FINUL – Le sursaut nécessaire",
+    "source_type": "Academic",
+    "year": 2024,
+    "publisher": "Areion Group / DSI (Défense et Sécurité Internationale)",
+    "url": "https://www.jstor.org/stable/48793931",
+    "tags": [
+      "UNIFIL",
+      "South Lebanon",
+      "Hezbollah",
+      "Resolution 1701",
+      "LAF",
+      "force protection",
+      "mandate",
+      "October 7",
+      "CIMIC Line",
+      "Blue"
+    ],
+    "abstract": "Written by a French Army officer deployed with UNIFIL, this article argues that UNIFIL faces an existential crisis after 46 years, operating under an outdated Chapter VI mandate in the shadow of post-October 7 hostilities. The author contends that despite structural inertia and financial constraints, UNIFIL retains unique assets—embeddedness, impartiality, established liaison networks—to serve as the linchpin of a broader multilateral de-escalation initiative, provided the international community supplies the necessary political will and capacity support to the Lebanese Armed Forces.",
+    "key_arguments": [
+      "UNIFIL's Chapter VI mandate and operational framework are structurally outdated and lack adaptive mechanisms to respond to active, below-war-threshold hostilities without external political impetus.",
+      "Since October 7, 2023, UNIFIL has detected over 14,000 aerial trajectories, 2,500 air-space violations, and ~600 aerial attacks in South Lebanon, yet its tripartite liaison mechanism is effectively frozen and joint operations with both the LAF and IDF are stalled.",
+      "UNIFIL's embeddedness, impartiality, and existing network with Lebanese Armed Forces make it the indispensable convergence point for any future peace plan, but this requires a 'Marshall Plan' for the LAF and strict voluntary implementation of Resolution 1701 by contributing nations.",
+      "Financial constraints—UN arrears of $537 million for UNIFIL, an 11% cut to the UN operations budget by 2025—severely limit UNIFIL's ability to harden its posture or expand its role."
+    ],
+    "bias_flag": "The author is an active French Army officer and graduate of the École de Guerre, deployed within UNIFIL at the time of writing. This insider perspective provides operational detail but introduces an institutional bias toward justifying and reinforcing UNIFIL's continued relevance and a French-European strategic vision for the mission. The article was published in a French defence-specialist outlet (DSI/Areion Group), which caters to a professional military and policy audience and generally reflects mainstream French strategic culture.",
+    "thematic_clusters": [
+      "Mandate evolution",
+      "Force protection & safety",
+      "Tripartite Liaison Mechanism & Liaison",
+      "Relations with non-state armed actors",
+      "Relations with Host State",
+      "CIMIC & community relations",
+      "Operational adaptation & innovation",
+      "Member State, P5, UNSC Dynamics",
+      "Monitoring, reporting & technology"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978",
+        "event": "UNIFIL established",
+        "category": "UNIFIL",
+        "description": "UNIFIL deployed in March 1978 following Israeli military operations in Lebanon. The author notes its creation did not prevent subsequent conflicts of varying intensity."
+      },
+      {
+        "date": "2000",
+        "event": "Israeli withdrawal from South Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israel withdrew its forces from South Lebanon in 2000, after which UNIFIL became the only functional institution in the area, playing a key stabilisation role."
+      },
+      {
+        "date": "2006",
+        "event": "2006 Lebanon War and adoption of UNSC Resolution 1701",
+        "category": "UNIFIL",
+        "description": "Following the 2006 conflict, Resolution 1701 established an enhanced UNIFIL mandate requiring the disarmament of armed groups and withdrawal of forces south of the Litani River, becoming the cornerstone of UNIFIL's current mission."
+      },
+      {
+        "date": "2023-10-07",
+        "event": "Hamas attack on Israel and opening of northern front by Hezbollah",
+        "category": "Hezbollah",
+        "description": "Following Hamas's attack on Israel, Hezbollah opened a 'support front' on the northern Israeli border on 8 October 2023, launching anti-tank missiles and rockets, triggering sustained Israeli air and artillery responses in South Lebanon."
+      },
+      {
+        "date": "2023-08-31",
+        "event": "Adoption of UNSC Resolution 2695",
+        "category": "UNIFIL",
+        "description": "Resolution 2695 renewed UNIFIL's mandate and notably emphasised the need to counter disinformation and promote sustainable development projects in South Lebanon."
+      },
+      {
+        "date": "2024-03",
+        "event": "European chiefs of staff meeting in Rome on LAF capacity",
+        "category": "International",
+        "description": "European army chiefs of staff met in Rome in March 2024 to discuss coordinated capacity-building support for the Lebanese Armed Forces, proposing a Lebanon coordination cell as a first step."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "UNIFIL's Chapter VI mandate, formulated in response to a Lebanese government request and renewed annually, lacks systemic mechanisms to adapt operations in real time during active below-war-threshold hostilities; only an external political impulse from the international community can prevent the force from being instrumentalised by belligerents.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "The tripartite liaison mechanism, the operational centre of gravity of the UNIFIL mission, became effectively frozen after October 7, with only a minimal communication line preserved with the IDF; maintaining and protecting this mechanism under crisis conditions should be treated as a non-negotiable operational priority.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Long-standing operational vigilance allowed UNIFIL to rapidly reinforce its security posture and harden base infrastructure after October 7—recording roughly 60 collateral damage incidents across bases while sustaining only one serious casualty—demonstrating that continuous operational readiness in protracted missions yields measurable force protection dividends.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "UN budget constraints and large arrears (over $537 million owed to UNIFIL) structurally inhibit the mission's ability to harden its posture or expand operational capacity; sustainable financing frameworks and burden-sharing among contributing nations are prerequisites for any meaningful mandate adaptation.",
+        "tag": "ANALYTICAL INFERENCE"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "Hezbollah",
+      "Lebanese Armed Forces (LAF / FAL)",
+      "Israel Defense Forces (IDF / Tsahal)",
+      "Lebanese Government",
+      "Prime Minister Najib Mikati",
+      "UN Security Council",
+      "France",
+      "United States",
+      "European contributing nations",
+      "UNSCOL",
+      "UNTSO",
+      "UNDOF",
+      "MINUSMA",
+      "MONUSCO",
+      "UNRWA",
+      "Hamas",
+      "Hassan Nasrallah",
+      "General Pellégrini",
+      "Jean-Pierre Lacroix",
+      "Stéphane Séjourné",
+      "Kofi Annan"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/jocsan_2024.pdf"
   }
 ]

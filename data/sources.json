@@ -4059,5 +4059,115 @@
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/chagnollaud_2007.pdf"
+  },
+  {
+    "id": "meier_2017",
+    "author": "Daniel Meier",
+    "title": "Au Sud-Liban, la Blue Line comme marqueur du post-conflit ? (In South Lebanon, the Blue Line as a tag of the post-conflict era?)",
+    "source_type": "Academic",
+    "year": 2017,
+    "publisher": "L'Espace Politique – Revue en ligne de géographie politique et de géopolitique",
+    "url": "https://journals.openedition.org/espacepolitique/4451",
+    "tags": [
+      "Blue Line",
+      "South Lebanon",
+      "UNIFIL",
+      "post-conflict",
+      "border studies",
+      "Hezbollah",
+      "Israel",
+      "tripartite meetings",
+      "bordering",
+      "Resolution 1701"
+    ],
+    "abstract": "Using border studies concepts (bordering, ordering, othering), this article examines the Blue Line in South Lebanon as a post-conflict device imposed by the UN following Israel's 2000 withdrawal and reinforced after the 2006 war via Resolution 1701. It argues that UNIFIL's physical marking of the Blue Line through tripartite meetings normalises ongoing conflict while imposing a transitional post-conflict political geography on the belligerents. Conflict and post-conflict dynamics are simultaneous processes rather than sequential phases, and the Blue Line's structural weakness lies in the absence of a broader Israel-Lebanon peace settlement.",
+    "key_arguments": [
+      "The Blue Line is not merely a technical withdrawal line but a politically charged instrument that imposes a 'post-conflict' geographic order on belligerents while simultaneously normalising the continuation of low-intensity conflict.",
+      "UNIFIL's initiative to physically mark the Blue Line through tripartite meetings (launched February 2007) created a novel confidence-building mechanism that brought Israeli and Lebanese military officers into regular structured dialogue, moderating but not resolving the conflict.",
+      "The post-2006 deployment of enhanced UNIFIL under Resolution 1701 constrained Hezbollah's military freedom of manoeuvre in the south but did not eliminate the underlying causes of conflict, displacing confrontation to contested areas such as the Shebaa Farms."
+    ],
+    "bias_flag": "Daniel Meier is a researcher affiliated with PACTE-Grenoble and the Graduate Institute Geneva. His work is grounded in critical political geography and border studies, which tends to foreground the political construction of 'technical' UN instruments and may underemphasise operational or security perspectives. His extended fieldwork and interviews with UNIFIL officers, Lebanese military officials, and UN staff lend empirical depth, but his analytical framework (bordering/ordering/othering) is theoretically committed to revealing power asymmetries, which may colour his reading of UN neutrality claims.",
+    "thematic_clusters": [
+      "Mandate evolution",
+      "Tripartite Liaison Mechanism & Liaison",
+      "Monitoring, reporting & technology",
+      "Relations with non-state armed actors",
+      "Relations with Host State",
+      "De-mining"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978-03",
+        "event": "Israeli Operation Litani and UNIFIL establishment",
+        "category": "Israel-Lebanon",
+        "description": "Israel invaded southern Lebanon in March 1978 (Operation Litani). The UN Security Council passed Resolution 425, establishing UNIFIL to verify Israeli withdrawal and assist the Lebanese government in restoring authority over the south."
+      },
+      {
+        "date": "1982",
+        "event": "Israeli invasion of Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israel launched a full-scale invasion of Lebanon in 1982, expelling the PLO and occupying the southern half of the country, which generated new resistance forces including Hezbollah."
+      },
+      {
+        "date": "2000-05-22",
+        "event": "Israeli unilateral withdrawal and creation of the Blue Line",
+        "category": "Israel-Lebanon",
+        "description": "Israel withdrew unilaterally from occupied South Lebanon; the UN demarcated a 'line of withdrawal' known as the Blue Line, based on 198 electronic coordinates, as a technical (not frontier) boundary between the two states."
+      },
+      {
+        "date": "2006-07",
+        "event": "2006 Lebanon War and adoption of UN Resolution 1701",
+        "category": "Israel-Lebanon",
+        "description": "Following a Hezbollah ambush and kidnapping of Israeli soldiers on the Blue Line, Israel launched a 33-day war. Resolution 1701 expanded UNIFIL to 15,000 troops, called for Lebanese Army deployment to the south, and demanded disarmament of non-state actors."
+      },
+      {
+        "date": "2007-02",
+        "event": "First tripartite meeting proposing Blue Line ground marking",
+        "category": "UNIFIL",
+        "description": "UNIFIL's force command proposed the physical ground-marking of the Blue Line to both belligerents at a tripartite meeting in February 2007, initiating a systematic technical process of border demarcation."
+      },
+      {
+        "date": "2010-08",
+        "event": "Adaisseh incident on the Blue Line",
+        "category": "Israel-Lebanon",
+        "description": "A Lebanese soldier shot an Israeli soldier who crossed the Israeli technical fence to cut a tree branch south of the Blue Line; Israel's retaliatory fire killed three Lebanese soldiers and a journalist, exposing the volatility of contested Blue Line segments."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "UNIFIL's framing of Blue Line marking as a 'purely technical' process through tripartite meetings successfully depoliticised the boundary question enough to secure belligerent participation, but also masked deeper sovereignty disputes that periodically erupted into violence (e.g., Adaisseh 2010). Peacekeeping operations should ensure that technical confidence-building mechanisms are complemented by political tracks addressing underlying disputes.",
+        "tag": "ANALYTICAL INFERENCE"
+      },
+      {
+        "text": "The Geographic Information Service (GIS) played a central role in Blue Line marking by generating 741 precise coordinates (later reduced to 470 actionable points), enabling verifiable ground truth between parties. Precision geospatial technology is a critical enabler for boundary management and incident prevention in complex peacekeeping environments.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "UNIFIL's de-mining of access routes to Blue Line marking points was a prerequisite for technical demarcation activities; by end-2014, 313 points had been demined out of 527 identified, underscoring that de-mining capacity is a limiting factor for border stabilisation operations.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Resolution 1701's expansion of UNIFIL and deployment of the Lebanese Armed Forces to the south constrained Hezbollah's operational freedom but did not address the underlying causes of conflict. Mandate expansion without a parallel political process risks producing a frozen status quo rather than genuine post-conflict transition.",
+        "tag": "ANALYTICAL INFERENCE"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "Israel Defense Forces",
+      "Lebanese Armed Forces",
+      "Hezbollah",
+      "United Nations",
+      "Syrian government",
+      "Palestinian Liberation Organization (PLO)",
+      "South Lebanon Army (ALS)",
+      "Lebanese government",
+      "Iranian government",
+      "United States government",
+      "UNIFIL Geographic Information Service (GIS)"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/meier_2017.pdf"
   }
 ]

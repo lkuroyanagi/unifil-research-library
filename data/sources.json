@@ -4169,5 +4169,163 @@
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/meier_2017.pdf"
+  },
+  {
+    "id": "issa_2019",
+    "author": "Alex Issa",
+    "title": "La Force intérimaire des Nations Unies au Liban : Essai d'explication de la pérennité institutionnelle",
+    "source_type": "Academic",
+    "year": 2019,
+    "publisher": "Institut d'études politiques de Paris (Sciences Po) – Thèse de doctorat",
+    "url": "https://sciencespo.hal.science/tel-03659557",
+    "tags": [
+      "UNIFIL",
+      "institutional longevity",
+      "peacekeeping",
+      "Lebanon",
+      "TCC interests",
+      "CIMIC",
+      "NATO influence",
+      "local legitimacy",
+      "Security Council",
+      "host state consent"
+    ],
+    "abstract": "This doctoral thesis examines the institutional longevity of UNIFIL through a dual analytical framework: external factors (UN peacekeeping norms and regional insecurity) and internal factors identified through empirical field sociology. Based on 70 interviews conducted in South Lebanon (Sept. 2017–Jan. 2018), the thesis argues that UNIFIL persists because multiple actors—P5 states, TCCs, international staff, Lebanese political actors, and local populations—all derive distinct political, economic, or professional interests from its continuation. It also identifies a process of 'NATOization' shaping UNIFIL's operational culture.",
+    "key_arguments": [
+      "UNIFIL's institutional longevity is explained by a convergence of interests among all stakeholders: P5 members, troop-contributing countries, international staff (military and civilian), and Lebanese political actors including Hezbollah, all benefit from UNIFIL's continuation for distinct political, economic, and security reasons.",
+      "A process of 'NATOization' has taken hold within UNIFIL since 2006, whereby NATO-experienced European commanders (France, Italy, Spain) and their military cultures have progressively shaped UNIFIL's decision-making and operational practices, creating tensions with UN civilian staff and with the DPKO in New York.",
+      "UNIFIL's Naqoura headquarters has developed significant institutional autonomy from UN headquarters in New York, with the Force Commander playing a critical role in mediating between field realities and political constraints imposed by the Security Council and the Secretary-General's office.",
+      "Local legitimation of UNIFIL is sustained through CIMIC activities, economic dependency, security provision (Blue Line monitoring, demining, tripartite mechanism), and social interactions—all of which create stakeholder constituencies that actively lobby for mandate renewal."
+    ],
+    "bias_flag": "The author is a Lebanese political scientist affiliated with Sciences Po Paris (CERI). The research is based on field interviews in South Lebanon and may reflect a generally sympathetic view of UNIFIL's presence. The Lebanese background of the author and access to Hezbollah deputies and Lebanese ministry officials may introduce a pro-Lebanese sovereign framing, particularly on the question of Israeli violations and Hezbollah's role. The thesis does not appear to have an institutional sponsor with direct operational interest in UNIFIL, suggesting moderate academic independence, though the Sciences Po-CERI environment has historically been engaged with French foreign policy debates relevant to Lebanon.",
+    "thematic_clusters": [
+      "Member State, P5, UNSC Dynamics",
+      "TCC/Command",
+      "CIMIC & community relations",
+      "Tripartite Liaison Mechanism & Liaison",
+      "Relations with Host State",
+      "Relations with non-state armed actors",
+      "De-mining",
+      "Mandate evolution",
+      "Maritime Task Force",
+      "Operational adaptation & innovation"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978",
+        "event": "UNIFIL established by UN Security Council",
+        "category": "UNIFIL",
+        "description": "UNIFIL was created following the first Israeli invasion of Lebanon, initially deploying approximately 2,000 troops under Chapter VI of the UN Charter. Norway, Finland, and Sweden were among the founding contributing countries."
+      },
+      {
+        "date": "1982",
+        "event": "Second Israeli invasion of Lebanon and creation of Hezbollah",
+        "category": "Hezbollah",
+        "description": "Israel's second invasion of Lebanon led to the emergence of Hezbollah as an armed resistance movement against Israeli occupation of South Lebanon, fundamentally reshaping the security environment in UNIFIL's area of operations."
+      },
+      {
+        "date": "1992",
+        "event": "Creation of UN Department of Peacekeeping Operations (DPKO)",
+        "category": "International",
+        "description": "Following Boutros Boutros-Ghali's election as UN Secretary-General, DPKO was formally established to plan, manage and conduct UN peacekeeping operations, replacing ad hoc oversight by the Department of Political Affairs."
+      },
+      {
+        "date": "2000",
+        "event": "Israeli withdrawal from South Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israel withdrew its forces from most of South Lebanon in May 2000, though Lebanon maintains Israel still occupies the Shebaa Farms and Kfarchouba hills. This allowed the Lebanese Armed Forces to redeploy to the south after three decades of absence."
+      },
+      {
+        "date": "2006-08-11",
+        "event": "UN Security Council Resolution 1701 adopted",
+        "category": "UNIFIL",
+        "description": "Resolution 1701 ended the July 2006 Israel-Hezbollah war, expanded UNIFIL's authorized strength to 15,000 troops, and established the Maritime Task Force—transforming UNIFIL into a 'robust' peacekeeping operation under General Pellegrini's command."
+      },
+      {
+        "date": "2007",
+        "event": "UNIFIL proposes and marks the Blue Line",
+        "category": "UNIFIL",
+        "description": "UNIFIL proposed marking the withdrawal line of Israeli forces using blue barrels, accepted by both Lebanon and Israel. The Blue Line became the key monitoring reference for UNIFIL's border stabilization role."
+      },
+      {
+        "date": "2013-02",
+        "event": "UNIFIL and Lebanese Armed Forces sign Joint Strategic Dialogue Plan",
+        "category": "UNIFIL",
+        "description": "Formalizing a coordination mechanism recommended in January 2010, UNIFIL and the LAF signed a joint strategic dialogue plan to coordinate land and maritime activities and support Lebanese sovereignty implementation under Resolution 1701."
+      },
+      {
+        "date": "2017-08-30",
+        "event": "Security Council unanimously adopts Resolution 2373 renewing UNIFIL mandate",
+        "category": "UNIFIL",
+        "description": "Despite US pressure for a more robust mandate targeting Hezbollah, the Security Council unanimously renewed UNIFIL's mandate without modification, following active Lebanese diplomatic lobbying. Ambassador Nikki Haley called on UNIFIL to do more against Hezbollah rearmament."
+      },
+      {
+        "date": "2018-08-31",
+        "event": "Security Council unanimously adopts Resolution 2433 renewing UNIFIL mandate",
+        "category": "UNIFIL",
+        "description": "For another year, the Security Council unanimously renewed UNIFIL's mandate without substantive change, following continued Lebanese diplomatic engagement with P5 capitals, particularly Paris as lead pen-holder."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "UNIFIL's institutional persistence is not primarily explained by mandate effectiveness but by the convergence of diverse stakeholder interests—including TCC national interests, individual staff career incentives, and local economic dependency—that together sustain political support for annual mandate renewal regardless of operational outcomes.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "The growing presence of NATO-experienced European commanders and contingents (France, Italy, Spain) since 2006 has introduced NATO operational cultures into UNIFIL, generating civil-military tensions within the mission and risking a gap between UN peacekeeping norms and field practices; TCC selection and pre-deployment socialization in UN doctrine requires stronger enforcement.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "UNIFIL's legitimacy in the local community is reinforced by sustained CIMIC activities and economic contributions (second largest employer in South Lebanon), but this creates a structural dependency that may compromise impartiality and conflate peacekeeping with development roles—a dynamic that requires deliberate management.",
+        "tag": "ANALYTICAL INFERENCE"
+      },
+      {
+        "text": "The Tripartite Liaison Mechanism (UNIFIL, LAF, IDF) established after 2006 has functioned as an effective de-escalation tool, preventing localized incidents from escalating into armed conflict between Lebanon and Israel; its continuation and strengthening should be prioritized in mandate renewals.",
+        "tag": "SOURCE-DERIVED"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "United Nations Security Council",
+      "DPKO (Department of Peacekeeping Operations)",
+      "Lebanese Armed Forces (LAF)",
+      "Hezbollah",
+      "Government of Lebanon",
+      "Israel Defense Forces (IDF)",
+      "France",
+      "Italy",
+      "Spain",
+      "United States",
+      "Russia",
+      "China",
+      "United Kingdom",
+      "Indonesia",
+      "India",
+      "Nepal",
+      "Ghana",
+      "Malaysia",
+      "Ireland",
+      "Finland",
+      "Norway",
+      "South Korea",
+      "Germany",
+      "General Alain Pellegrini",
+      "General Claudio Graziano",
+      "General Alberto Asarta Cuevas",
+      "General Paolo Serra",
+      "General Luciano Portolano",
+      "General Michael Berry",
+      "General Stefano Del Col",
+      "Jean-Pierre Lacroix",
+      "Nikki Haley",
+      "Nawaf Moussaoui",
+      "Ali Khreiss",
+      "Andrea Tenenti",
+      "UNMAS"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/issa_2019.pdf"
   }
 ]

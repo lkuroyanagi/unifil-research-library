@@ -4327,5 +4327,129 @@
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/issa_2019.pdf"
+  },
+  {
+    "id": "issa_2019_v2",
+    "author": "Alex Issa",
+    "title": "La Force intérimaire des Nations Unies au Liban : Essai d'explication de la pérennité institutionnelle",
+    "source_type": "Academic",
+    "year": 2019,
+    "publisher": "Sciences Po Paris (IEP de Paris), doctoral thesis",
+    "url": "https://sciencespo.hal.science/tel-03659557",
+    "tags": [
+      "UNIFIL",
+      "institutional longevity",
+      "peacekeeping",
+      "Lebanon",
+      "South Lebanon",
+      "CIMIC",
+      "local legitimacy",
+      "host community",
+      "sociology of peacekeeping",
+      "mandate renewal"
+    ],
+    "abstract": "This doctoral thesis examines the factors explaining UNIFIL's institutional longevity since its creation in 1978. Combining IR theory with field ethnography conducted in South Lebanon (2017–2018), it argues that external factors (UN peacekeeping norm evolution, regional insecurity) are insufficient explanations. Internal factors—institutional dynamics, TCC interests, P5 positions, and crucially local legitimation by South Lebanese populations through security, economic, and social benefits—are equally essential to explaining why the mission, originally conceived as temporary, has persisted for over four decades.",
+    "key_arguments": [
+      "UNIFIL's longevity cannot be explained by external factors (UN norm evolution and regional insecurity) alone; internal institutional dynamics and the interests of diverse actors—P5 members, TCCs, UNIFIL staff, and local populations—are equally decisive.",
+      "Local legitimation is a critical and under-studied factor: South Lebanese populations (excluding pro-Hezbollah communities) support mandate renewal because UNIFIL provides employment, economic stimulus, medical care, school rehabilitation, and physical security, creating a dependency that compels local authorities to lobby Beirut and New York for renewal.",
+      "UNIFIL's institutional autonomy from UN HQ New York, the 'NATO-ization' of its practices under European command, and TCC national interest calculations (French Francophonie promotion, Italian gastrodiplomacy, South Korean technology export) have embedded the mission beyond its original interposition mandate."
+    ],
+    "bias_flag": "The author is a Lebanese Shia from South Lebanon with personal ties to the community studied, which facilitated ethnographic access but may have introduced sympathetic framing toward UNIFIL and certain local communities. The thesis was conducted within the Sciences Po CERI framework under a French supervisor, which may subtly favor European TCC perspectives. The author acknowledges that pro-Hezbollah communities were less accessible and their views less fully represented.",
+    "thematic_clusters": [
+      "Mandate evolution",
+      "Member State, P5, UNSC Dynamics",
+      "TCC/Command",
+      "Relations with Host State",
+      "CIMIC & community relations",
+      "Protection of Civilians",
+      "Relations with non-state armed actors",
+      "De-mining",
+      "Maritime Task Force"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978-03-19",
+        "event": "UNIFIL established by UN Security Council Resolution 425",
+        "category": "UNIFIL",
+        "description": "Following Israel's invasion of South Lebanon, the Security Council created UNIFIL as a temporary interposition force to confirm Israeli withdrawal and restore Lebanese sovereignty."
+      },
+      {
+        "date": "1982",
+        "event": "Second Israeli invasion of Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israel launched a second major offensive, occupying South Lebanon until 2000; UNIFIL was unable to prevent the invasion but continued operating in the occupied zone."
+      },
+      {
+        "date": "1985",
+        "event": "Opening of Khiam detention centre by ALS",
+        "category": "Israel-Lebanon",
+        "description": "The South Lebanon Army, backed by Israel, opened the Khiam detention centre, described by Lebanese civilians as a concentration camp where torture was documented."
+      },
+      {
+        "date": "1996-04",
+        "event": "Operation Grapes of Wrath and Qana massacre",
+        "category": "Israel-Lebanon",
+        "description": "Israeli military launched Operation Grapes of Wrath against Hezbollah; the bombing of a UNIFIL camp at Qana killed 106 civilians who had sought refuge with Fijian peacekeepers."
+      },
+      {
+        "date": "2000",
+        "event": "Israeli withdrawal from South Lebanon",
+        "category": "Israel-Lebanon",
+        "description": "Israeli forces withdrew from South Lebanon after 22 years of occupation; Hezbollah assumed control of the zone between 2000 and 2006, and UNIFIL's mandate continued to be renewed annually."
+      },
+      {
+        "date": "2006-07",
+        "event": "34-day war between Israel and Hezbollah",
+        "category": "Israel-Lebanon",
+        "description": "A 33-day war between Israel and Hezbollah resulted in over 1,200 Lebanese dead (mostly civilians) and massive infrastructure destruction in South Lebanon."
+      },
+      {
+        "date": "2006-08-11",
+        "event": "UN Security Council Resolution 1701 adopted",
+        "category": "UNIFIL",
+        "description": "Resolution 1701 ended the 2006 war, significantly expanded UNIFIL's mandate and troop ceiling (from 2,000 to over 10,500), authorized civilian protection, and tasked UNIFIL with supporting the Lebanese Armed Forces' return to the south."
+      },
+      {
+        "date": "2007-06-24",
+        "event": "Car bomb attack kills six UNIFIL soldiers near Khiam",
+        "category": "UNIFIL",
+        "description": "The last major lethal attack against UNIFIL peacekeepers; a car bomb killed six soldiers hours after Lebanese army killed Islamic militants in Tripoli; perpetrators were never identified."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "External factors (UN norm evolution and regional insecurity) are necessary but insufficient to explain UNIFIL's institutional persistence; understanding mandate renewal requires systematic analysis of the interests of TCCs, P5 members, local populations, and UNIFIL staff through field-level sociological inquiry.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Local legitimation through economic, social, and security benefits to host communities is a critical and under-leveraged mechanism sustaining UNIFIL's mandate; CIMIC activities, local employment, and medical assistance create constituencies that actively lobby for renewal—but this also risks entrenching Lebanese state disengagement from the south.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "Cultural proximity between contingent nationalities and local religious communities (e.g., Spanish soldiers with Maronite Catholics, Indonesian soldiers with Shia Muslims, Serbian soldiers with Greek Orthodox communities) significantly shapes the quality of civil-military interaction and local legitimacy; mission-level pre-deployment training should address this dynamic explicitly.",
+        "tag": "ANALYTICAL INFERENCE"
+      },
+      {
+        "text": "UNIFIL's increasing institutional autonomy from UN HQ New York—driven by dominant European TCCs applying NATO operational cultures—poses a tension between mission adaptation and adherence to UN peacekeeping principles, particularly regarding the use of force and impartiality perceptions among pro-Hezbollah communities.",
+        "tag": "SOURCE-DERIVED"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "UNSC",
+      "Lebanese Armed Forces",
+      "Hezbollah",
+      "Amal Movement",
+      "Israel",
+      "South Lebanon Army (ALS)",
+      "PLO",
+      "UNTSO",
+      "UNMAS",
+      "Lebanese Centre for Mine Action"
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/issa_2019_v2.pdf"
   }
 ]

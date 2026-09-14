@@ -3839,67 +3839,48 @@
     "id": "chagnollaud_2007",
     "author": "Jean-Paul Chagnollaud",
     "title": "Liban : La Résolution 1701 en sursis",
-    "source_type": "Academic",
+    "source_type": "Opinion / Primary",
     "year": 2007,
     "publisher": "Confluences Méditerranée, N°61, Association soutien à la revue Confluences Méditerranée",
     "url": "https://shs.cairn.info/revue-confluences-mediterranee-2007-2-page-21?lang=fr",
     "tags": [
-      "Resolution 1701",
-      "UNIFIL",
       "Lebanon",
-      "Hezbollah",
+      "Resolution 1701",
       "mandate reinforcement",
-      "political process",
-      "regional actors",
-      "European contingents",
-      "maritime task force"
+      "political process"
     ],
-    "abstract": "Written in spring 2007, this article assesses UNSC Resolution 1701 adopted in August 2006 as a necessary but fragile compromise. Chagnollaud argues that while UNIFIL's reinforced mandate (up to 15,000 troops, robust rules of engagement, European contingents, German maritime component) provides a valuable stabilisation tool, it remains on borrowed time without a credible political process. The article surveys the paralysis of European diplomacy, US unilateralism, Lebanese governmental weakness, Syrian destabilisation, Israeli political crisis, Palestinian divisions, and continued Hezbollah rearmament as compounding obstacles.",
+    "abstract": "Chagnollaud argues that Resolution 1701 is a real but structurally unbalanced achievement. It substantially reinforced UNIFIL's troop strength and mandate, drawing contingents from over 25 nations, while placing Lebanese and Israeli responsibility for the war's damage on the same plane despite the disproportion he sees in Israel's response. He documents the reinforced force's actual scope of action, authorized to use force to keep its zone free of illegal weapons and to respond to attacks on itself, but bound by strict proportionality and limited, when Hezbollah fighters are spotted armed in the zone, to reporting them to the Lebanese army rather than acting directly. He then argues the apparent calm five months into the ceasefire is shallow rather than settled, since Hezbollah and Israel are already testing its edges from opposite directions, and traces this fragility to a broader absence of political will he finds across the board: European diplomacy deferring upward instead of acting, American strategy favoring force over dialogue, and every regional actor, Lebanon, Syria, Israel, the Palestinians, Hezbollah, too weakened or entrenched to initiate a genuine process. His conclusion is that the missing element is not a lack of known solutions, which he says are already outlined in Kofi Annan's own report and in 1701's closing clause, but the political will to pursue them, leaving the resolution's achievement in reprieve rather than secured.",
     "key_arguments": [
-      "Resolution 1701 is a compromise that disproportionately favours Israel by equating responsibilities on both sides, despite Lebanon bearing the greater destruction from a disproportionate Israeli response.",
-      "The reinforced UNIFIL (up to 15,000 troops, robust ROE including use of force authorisation under UNSC para. 12, European contingents, German maritime task force) represents a significant operational upgrade but can only buy time and cannot substitute for a genuine political process.",
-      "The absence of political will among all key actors—European states paralysed by internal contradictions, a US administration wedded to military force, a weakened Lebanese government, a destabilising Syria, a politically paralysed Israel, divided Palestinians, and a rearming Hezbollah—condemns the mission to a precarious and indefinite 'stay of execution'."
+      "1701's reinforcement of UNIFIL is real but structurally unbalanced, since it places Lebanese and Israeli responsibility for the war's damage on the same plane despite what the author sees as Israel's disproportionate response.",
+      "The reinforced force's authority is bounded by strict proportionality in practice: it protests Israeli airspace violations rather than firing on them, and can only report armed Hezbollah fighters to the Lebanese army rather than act directly.",
+      "European diplomacy is structurally self-paralyzing, repeatedly deferring responsibility upward to the Quartet, in practice to the United States, which the author calls a deliberate avoidance mechanism that lets states register concern without committing to action."
     ],
-    "bias_flag": "Jean-Paul Chagnollaud is a French academic specialising in the Arab world and Middle Eastern politics. The article displays a clear critical stance toward Israeli military conduct and US policy under Bush, characterising Israel's response as 'disproportionate' and US strategy as 'deliberately mendacious'.",
+    "bias_flag": "ean-Paul Chagnollaud is a French academic specializing in the Arab world and Middle Eastern politics. The article takes a clear critical stance toward Israeli conduct and US policy under the Bush administration, describing Israel's response as \"disproportionate\" and Bush's Iraq war justification as resting on \"a deliberately lying argument.\" The US and European sections in particular draw mainly on critics of the Bush administration; treat the geopolitical diagnosis as argued commentary rather than as an empirical or balanced account.",
     "thematic_clusters": [
       "Mandate evolution",
       "Member State, P5, UNSC Dynamics",
-      "Relations with non-state armed actors",
-      "Force protection & safety",
-      "Maritime Task Force",
-      "Relations with Host State",
-      "Protection of Civilians"
+      "Relations with Host State"
     ],
     "timeline_events": [
       {
         "date": "2006-08-11",
-        "event": "Adoption of UNSC Resolution 1701",
-        "category": "UNIFIL",
-        "description": "After difficult negotiations, the UN Security Council adopted Resolution 1701 ending the Israel-Hezbollah war and significantly reinforcing UNIFIL's mandate and troop ceiling to approximately 15,000 personnel."
+        "event": "Adoption of UNSC Resolution 1701"
       },
       {
         "date": "2006-11",
-        "event": "France-Spain-Italy diplomatic initiative",
-        "category": "International",
-        "description": "France, Spain and Italy launched a joint diplomatic initiative aimed at stabilising the broader region, including addressing the Israeli-Palestinian conflict, but the effort failed to gain EU Council endorsement."
+        "event": "France-Spain-Italy diplomatic initiative"
       },
       {
         "date": "2006-12",
-        "event": "UN Secretary-General report on the Middle East",
-        "category": "International",
-        "description": "Kofi Annan's December 2006 report stated that the enlarged UNIFIL primarily serves to buy time and cannot replace genuine political progress at the national and regional level."
+        "event": "UN Secretary-General report on the Middle East"
       },
       {
         "date": "2007-01",
-        "event": "Interview with General Pellegrini, UNIFIL Force Commander",
-        "category": "UNIFIL",
-        "description": "General Pellegrini, Force Commander until February 2007, described UNIFIL's new robust capabilities including armour, drones, and freedom of action between the Litani River and the Blue Line, with authority to use force under precise rules of engagement."
+        "event": "Interview with General Pellegrini, UNIFIL Force Commander"
       },
       {
         "date": "2007-02",
-        "event": "Saudi-mediated Mecca Agreement between Hamas and Fatah",
-        "category": "Regional",
-        "description": "Saudi mediation produced a fragile agreement between Hamas and Fatah in February 2007, raising limited hopes for a Palestinian unity government but leaving fundamental political divisions unresolved."
+        "event": "Saudi-mediated Mecca Agreement between Hamas and Fatah"
       }
     ],
     "lessons_learned": [
@@ -3910,40 +3891,24 @@
       {
         "text": "UNIFIL's operational limitations regarding arms smuggling via the Syria-Lebanon border—where the force can only act upon explicit request from the Lebanese government—expose a significant mandate gap that undermines the disarmament objectives of Resolution 1701.",
         "tag": "SOURCE-DERIVED"
-      },
-      {
-        "text": "The deployment of a German-led Maritime Task Force to prevent illegal arms deliveries by sea represented an innovative operational expansion of UNIFIL's mandate, but its effectiveness was constrained by the absence of complementary land-border monitoring capacity.",
-        "tag": "ANALYTICAL INFERENCE"
-      },
-      {
-        "text": "The presence of a UN political adviser within the UNIFIL command structure reporting independently to UN Headquarters, rather than solely to the Force Commander, creates potential tensions in mission coherence and command unity that merit institutional attention.",
-        "tag": "SOURCE-DERIVED"
       }
     ],
     "actors": [
       "UNIFIL",
+      "General Pellegrini",
       "Hezbollah",
       "Israel",
       "Lebanon",
-      "Lebanese Armed Forces",
       "Syria",
-      "Iran",
-      "United States (Bush Administration)",
-      "European Union",
-      "France",
-      "Italy",
-      "Spain",
-      "Germany",
-      "UNSC",
-      "Kofi Annan",
-      "Fouad Siniora",
-      "Hamas",
-      "Fatah"
+      "the United States",
+      "George W. Bush",
+      "the Quartet"
     ],
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
-    "pdf_file": "data/pdfs/chagnollaud_2007.pdf"
+    "pdf_file": "data/pdfs/chagnollaud_2007.pdf",
+    "analytical_notes": []
   },
   {
     "id": "meier_2017",

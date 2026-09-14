@@ -3667,8 +3667,6 @@
     "url": "https://shs.cairn.info/revue-maghreb-machrek-2012-4-page-85?lang=fr",
     "tags": [
       "CIMIC",
-      "DPKO",
-      "South Lebanon",
       "TCC",
       "UNIFIL II",
       "civil-military cooperation",
@@ -3680,15 +3678,13 @@
       "CIMIC activities within UNIFIL II primarily serve force integration and military objectives rather than civilian populations, fundamentally distinguishing them from genuine humanitarian action.",
       "The multinational composition of UNIFIL II (36 TCCs) creates incoherence in civil-military cooperation, as each contingent applies divergent national CIMIC doctrines and priorities, often advancing bilateral national interests rather than a unified UN approach.",
       "UNIFIL's contribution to post-2006 reconstruction is residual compared to Gulf state donors (Iran, Qatar, Kuwait, UAE), whose direct funding bypasses Lebanese state institutions and limits UNIFIL's influence.",
-      "UNIFIL's 2006 Strategic Military Cell served as a model for the re-militarisation of DPO, inspiring the creation of the Bureau of Military Affairs (BAM) and increasing military weight within UN peacekeeping structures."
+      "UNIFIL's 2006 Strategic Military Cell, created at France's request, is credited by the Secretary-General's own review as the model that justified strengthening DPKO's Office of Military Affairs, which doubled to 92 officers by 2010 and saw its military adviser post elevated to Under-Secretary-General rank, meaning one mission's structural innovation reshaped how the UN organizes military expertise at headquarters level."
     ],
     "bias_flag": "Julie Chapuis is a PhD researcher at EHESS (Paris) affiliated with the Institut de Recherche Stratégique de l'École Militaire (IRSEM) and funded by the DGA (French Defence procurement agency). Her institutional ties to French defence structures may incline the analysis toward a favourable view of French contingent activities and French institutional contributions to UNIFIL. The article draws heavily on interviews with French military officers and officials, which may skew the qualitative evidence.",
     "thematic_clusters": [
       "CIMIC & community relations",
       "TCC/Command",
-      "Mandate evolution",
-      "Relations with Host State",
-      "DPKO-DPPA integration"
+      "Mandate evolution"
     ],
     "timeline_events": [
       {
@@ -3736,30 +3732,9 @@
     ],
     "actors": [
       "UNIFIL",
-      "Lebanese Armed Forces",
-      "France",
-      "Italy",
-      "Spain",
-      "BELUFIL",
-      "Turkey",
-      "South Korea",
       "ICRC",
-      "UNDP",
-      "OCHA",
-      "UNHCR",
-      "Caritas International",
       "DPKO / Bureau of Military Affairs",
-      "Hezbollah",
-      "Israel",
-      "Lebanon",
-      "Iran",
-      "Qatar",
-      "Kuwait",
-      "United Arab Emirates",
-      "Fouad Siniora",
-      "Ban Ki-moon",
-      "Boutros Boutros-Ghali",
-      "Fondation Sadr"
+      "France"
     ],
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",

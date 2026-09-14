@@ -3751,76 +3751,61 @@
     "publisher": "Areion Group / DSI (Défense et Sécurité Internationale)",
     "url": "https://www.jstor.org/stable/48793931",
     "tags": [
-      "UNIFIL",
-      "South Lebanon",
-      "Hezbollah",
-      "Resolution 1701",
-      "LAF",
-      "force protection",
-      "mandate",
-      "October 7",
+      "Blue",
       "CIMIC Line",
-      "Blue"
+      "Hezbollah",
+      "LAF",
+      "October 7",
+      "Resolution 1701",
+      "South Lebanon",
+      "UNIFIL",
+      "force protection",
+      "mandate"
     ],
-    "abstract": "Written by a French Army officer deployed with UNIFIL, this article argues that UNIFIL faces an existential crisis after 46 years, operating under an outdated Chapter VI mandate in the shadow of post-October 7 hostilities. The author contends that despite structural inertia and financial constraints, UNIFIL retains unique assets—embeddedness, impartiality, established liaison networks—to serve as the linchpin of a broader multilateral de-escalation initiative, provided the international community supplies the necessary political will and capacity support to the Lebanese Armed Forces.",
+    "abstract": "Jocsan opens by placing FINUL in an existential crisis, 46 years into its mandate and in the shadow of MINUSMA's and MONUSCO's recent disengagement, then argues the mission could still become an indispensable tool for de-escalation rather than a mission whose long duration makes it look more like it is accompanying crises than resolving them. The article moves through four stages: first, a review of FINUL's history and legal architecture (the Blue Line's creation, the Chapter VI mandate, Resolution 1701's cornerstone role) and a note that this framework is now dated against the post-October 2023 reality. Second, a detailed situation report on FINUL's operating environment since Hezbollah opened its front on 8 October 2023, troop postures, casualty and displacement figures, incident counts. Third, an analysis of what makes FINUL's mandate structurally singular (sole military-commanded peacekeeping operation, coordination centered on the Lebanese Armed Forces, the frozen tripartite mechanism) paired with the political paralysis in Beirut that constrains it. The article closes by shifting from diagnosis to prescription, arguing FINUL's existing assets, presence, equipment, international consensus, LAF relationships, make it the natural vehicle for a specific proposed framework (a reinforced fire exclusion zone along the Blue Line backed by a \"Marshall Plan\" for the LAF) if political will materializes.",
     "key_arguments": [
       "UNIFIL's Chapter VI mandate and operational framework are structurally outdated and lack the adaptive mechanisms to respond to active, below-war-threshold hostilities without external political impetus. The author cites the tripartite mechanism as concrete evidence, it is now \"at a standstill,\" with meetings between UNIFIL's command and Israeli authorities frozen and only a bare operational communication line preserved between the IDF and UNIFIL to warn of bombardment, because neither the Lebanese Armed Forces nor Israel has received the strategic order to act coercively in the area. He concludes this paralysis is a political choice by the parties, not a capacity failure inside UNIFIL, and that only an impulse from the international community can prevent the force from being instrumentalized by the belligerents.",
-      "UNIFIL's embeddedness, impartiality, and existing network with Lebanese Armed Forces make it the indispensable convergence point for any future peace plan, but this requires a 'Marshall Plan' for the LAF and strict voluntary implementation of Resolution 1701 by contributing nations.",
-      "Financial constraints—UN arrears of $537 million for UNIFIL, an 11% cut to the UN operations budget by 2025—severely limit UNIFIL's ability to harden its posture or expand its role."
+      "UNIFIL's embeddedness, impartiality, and existing network with the Lebanese Armed Forces position it as the natural anchor for a future peace framework, but the author is explicit this is conditional: it requires a \"Marshall Plan\" for the LAF built on the 2023 UNIFIL Military Capability Study, strict and voluntarist implementation of Resolution 1701, and a coherent, willing international community backed by benevolent Western powers to activate the framework in the first place.",
+      "Financial constraints are, in the author's assessment, an underappreciated but binding limit on UNIFIL's options: its $537 million share of the UN's $6.33 billion annual peacekeeping budget sits within a broader picture of $859 million in peacekeeping arrears (only 82.3% recovered in 2023) and a projected 11% cut to the UN's overall operations budget by 2025. He concludes plainly that the cost of hardening UNIFIL's posture is no longer something the UN can itself absorb.",
+      "UNIFIL's tactical posture has adapted rapidly within its constrained mandate, even as the author judges its overall structure \"terribly inertial.\" He documents reinforced operational centers ensuring permanent command by branch, what he calls a \"major qualitative leap\" in digital tracking of the tactical situation, and rapid infrastructure hardening carried out by detachments with no engineering expertise, evidence he ties directly to a self-protection record he considers relatively effective, one serious injury across roughly 60 recorded incidents of collateral damage on UNIFIL bases since the conflict began."
     ],
     "bias_flag": "The author is an active French Army officer and graduate of the École de Guerre, deployed within UNIFIL at the time of writing. This insider perspective provides operational detail but introduces an institutional bias toward justifying and reinforcing UNIFIL's continued relevance and a French-European strategic vision for the mission. The article was published in a French defence-specialist outlet (DSI/Areion Group), which caters to a professional military and policy audience and generally reflects mainstream French strategic culture.",
     "thematic_clusters": [
       "Mandate evolution",
-      "Force protection & safety",
       "Tripartite Liaison Mechanism & Liaison",
       "Relations with non-state armed actors",
       "Relations with Host State",
-      "CIMIC & community relations",
-      "Operational adaptation & innovation",
-      "Member State, P5, UNSC Dynamics",
-      "Monitoring, reporting & technology"
+      "Operational adaptation & innovation"
     ],
     "timeline_events": [
       {
         "date": "1978",
-        "event": "UNIFIL established",
-        "category": "UNIFIL",
-        "description": "UNIFIL deployed in March 1978 following Israeli military operations in Lebanon. The author notes its creation did not prevent subsequent conflicts of varying intensity."
+        "event": "UNIFIL established"
       },
       {
         "date": "2000",
-        "event": "Israeli withdrawal from South Lebanon",
-        "category": "Israel-Lebanon",
-        "description": "Israel withdrew its forces from South Lebanon in 2000, after which UNIFIL became the only functional institution in the area, playing a key stabilisation role."
+        "event": "Israeli withdrawal from South Lebanon"
       },
       {
         "date": "2006",
-        "event": "2006 Lebanon War and adoption of UNSC Resolution 1701",
-        "category": "UNIFIL",
-        "description": "Following the 2006 conflict, Resolution 1701 established an enhanced UNIFIL mandate requiring the disarmament of armed groups and withdrawal of forces south of the Litani River, becoming the cornerstone of UNIFIL's current mission."
+        "event": "2006 Lebanon War and adoption of UNSC Resolution 1701"
       },
       {
         "date": "2023-10-07",
-        "event": "Hamas attack on Israel and opening of northern front by Hezbollah",
-        "category": "Hezbollah",
-        "description": "Following Hamas's attack on Israel, Hezbollah opened a 'support front' on the northern Israeli border on 8 October 2023, launching anti-tank missiles and rockets, triggering sustained Israeli air and artillery responses in South Lebanon."
+        "event": "Hamas attack on Israel and opening of northern front by Hezbollah"
       },
       {
         "date": "2023-08-31",
-        "event": "Adoption of UNSC Resolution 2695",
-        "category": "UNIFIL",
-        "description": "Resolution 2695 renewed UNIFIL's mandate and notably emphasised the need to counter disinformation and promote sustainable development projects in South Lebanon."
+        "event": "Adoption of UNSC Resolution 2695"
       },
       {
         "date": "2024-03",
-        "event": "European chiefs of staff meeting in Rome on LAF capacity",
-        "category": "International",
-        "description": "European army chiefs of staff met in Rome in March 2024 to discuss coordinated capacity-building support for the Lebanese Armed Forces, proposing a Lebanon coordination cell as a first step."
+        "event": "European chiefs of staff meeting in Rome on LAF capacity"
       }
     ],
     "lessons_learned": [
       {
-        "text": "UNIFIL's Chapter VI mandate, formulated in response to a Lebanese government request and renewed annually, lacks systemic mechanisms to adapt operations in real time during active below-war-threshold hostilities; only an external political impulse from the international community can prevent the force from being instrumentalised by belligerents.",
+        "text": "UNIFIL's Chapter VI mandate, lacks systemic mechanisms to adapt operations in real time during active below-war-threshold hostilities; only an external political impulse from the international community can prevent the force from being instrumentalised by belligerents.",
         "tag": "SOURCE-DERIVED"
       },
       {
@@ -3839,31 +3824,16 @@
     "actors": [
       "UNIFIL",
       "Hezbollah",
-      "Lebanese Armed Forces (LAF / FAL)",
-      "Israel Defense Forces (IDF / Tsahal)",
-      "Lebanese Government",
-      "Prime Minister Najib Mikati",
-      "UN Security Council",
-      "France",
-      "United States",
-      "European contributing nations",
-      "UNSCOL",
-      "UNTSO",
-      "UNDOF",
-      "MINUSMA",
-      "MONUSCO",
-      "UNRWA",
-      "Hamas",
-      "Hassan Nasrallah",
-      "General Pellégrini",
-      "Jean-Pierre Lacroix",
-      "Stéphane Séjourné",
-      "Kofi Annan"
+      "Israel/IDF",
+      "Lebanese Armed Forces (LAF)",
+      "Lebanon",
+      "the UNSC"
     ],
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
-    "pdf_file": "data/pdfs/jocsan_2024.pdf"
+    "pdf_file": "data/pdfs/jocsan_2024.pdf",
+    "analytical_notes": []
   },
   {
     "id": "chagnollaud_2007",

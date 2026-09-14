@@ -3587,31 +3587,22 @@
     "tags": [
       "Hezbollah",
       "Lebanon",
-      "Maritime Task Force",
-      "Quick Reaction Force",
       "Resolution 1701",
-      "UNIFIL",
-      "force protection",
       "mandate",
       "robust peacekeeping"
     ],
     "abstract": "This article assesses the 'enhanced UNIFIL' deployed after the 2006 war under UNSC Resolution 1701. It traces the failure of the pre-2006 UNIFIL, analyses the political and military reinforcement introduced by Resolution 1701, and argues that despite genuine improvements, UNIFIL operates within a fragile ceasefire rather than a peace agreement. The article concludes that military means alone cannot resolve political problems, and that mandate adaptation must accompany continuous diplomatic effort.",
     "key_arguments": [
-      "The pre-2006 UNIFIL failed due to chronic understaffing (only ~1,990 troops for 750 km²), inadequate equipment, and political inaction by TCCs and the UN despite a deteriorating security environment between 2000 and 2006.",
+      "The pre-2006 UNIFIL failed due to a combination of insufficient troop density (roughly 1,990 troops across 750 km², a ratio of two men per km² against a NATO Kosovo benchmark of five), inadequate equipment (no modern armored vehicles, weak command and intelligence capacity), a terrain that structurally favored small, mobile, autonomous units over a linear interposition force, and political inaction by TCCs and the UN despite a deteriorating security environment from 2000 to 2006.",
       "Resolution 1701 introduced substantive improvements: troop numbers rising toward 15,000, a Quick Reaction Force with heavy equipment, a Maritime Task Force, reinforced command structures, and tripartite liaison mechanisms — collectively shifting UNIFIL toward 'robust peacekeeping'.",
       "The post-2006 statu quo is inherently fragile: it reflects a ceasefire between parties that each interpret Resolution 1701 selectively; Hezbollah tolerates UNIFIL only insofar as it deters Israeli intervention, while continuing to rearm south of the Litani; Lebanese political dysfunction prevents full LAF deployment; and Israeli airspace violations undermine UNIFIL credibility.",
-      "Military reinforcement has reached its practical ceiling; future effectiveness requires continuous diplomatic effort and adaptive mandate evolution, as military action supports but cannot replace political solutions."
+      "Military reinforcement has reached its practical ceiling: although Hezbollah has observed the ceasefire since 2006, the author explicitly declines to credit this to UNIFIL's deterrent capacity, noting it may equally reflect Hezbollah's own choice to shift its contest onto political terrain while rebuilding militarily. He concludes that military action can support a political solution but cannot substitute for one, and that any future mandate adaptation must be paired with continuous diplomatic effort."
     ],
     "bias_flag": "The author is a French military officer (chef d'escadrons) and researcher at Ifri's Centre des études de sécurité, who served on the UNIFIL staff in 2009. France is UNIFIL's second-largest TCC and commands the Quick Reaction Force. This dual insider/institutional affiliation may produce a bias favouring the robustness of the enhanced UNIFIL and the role of European TCCs (France, Italy, Spain), while potentially understating operational failures attributable to TCC national caveats or Western diplomatic interests. The article is broadly analytical but carries an implicit endorsement of the French-British push for more pragmatic peacekeeping doctrine.",
     "thematic_clusters": [
       "Mandate evolution",
-      "Tripartite Liaison Mechanism & Liaison",
-      "TCC/Command",
       "Relations with Host State",
-      "Operational adaptation & innovation",
-      "Relations with non-state armed actors",
-      "Maritime Task Force",
-      "Monitoring, reporting & technology"
+      "Relations with non-state armed actors"
     ],
     "timeline_events": [
       {
@@ -3651,33 +3642,14 @@
       {
         "text": "Tripartite liaison mechanisms — including permanent liaison officers exchanged between UNIFIL, the Lebanese Armed Forces, and the IDF, alongside periodic tripartite meetings — significantly improved communication and incident management across the Blue Line, and should be institutionalised as a core component of interposition operations.",
         "tag": "SOURCE-DERIVED"
-      },
-      {
-        "text": "When a non-state armed actor such as Hezbollah retains political leverage within the host-state government and popular legitimacy in the area of operations, peacekeepers face a structural constraint: any activity perceived as targeting that actor risks triggering hostility from the local population and from host-state institutions, progressively eroding the force's freedom of action and credibility.",
-        "tag": "ANALYTICAL INFERENCE"
       }
     ],
     "actors": [
       "UNIFIL",
-      "United Nations Security Council",
       "Hezbollah",
       "Israel Defense Forces",
       "Lebanese Armed Forces",
-      "Lebanese Government",
-      "France",
-      "Italy",
-      "Spain",
-      "Germany",
-      "United States",
-      "Syria",
-      "Special Tribunal for Lebanon",
-      "Rafic Hariri",
-      "Hassan Nasrallah",
-      "Michel Sleiman",
-      "Michel Aoun",
-      "Alain Le Roy",
-      "UNTSO",
-      "Maritime Task Force"
+      "Lebanese Government"
     ],
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",

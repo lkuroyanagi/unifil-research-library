@@ -4166,22 +4166,21 @@
     "publisher": "Sciences Po Paris (IEP de Paris), doctoral thesis",
     "url": "https://sciencespo.hal.science/tel-03659557",
     "tags": [
-      "UNIFIL",
-      "institutional longevity",
-      "peacekeeping",
-      "Lebanon",
-      "South Lebanon",
       "CIMIC",
-      "local legitimacy",
+      "South Lebanon",
+      "UNIFIL",
       "host community",
-      "sociology of peacekeeping",
+      "institutional longevity",
+      "local legitimacy",
+      "local staff/ national staff",
       "mandate renewal"
     ],
-    "abstract": "This doctoral thesis examines the factors explaining UNIFIL's institutional longevity since its creation in 1978. Combining IR theory with field ethnography conducted in South Lebanon (2017–2018), it argues that external factors (UN peacekeeping norm evolution, regional insecurity) are insufficient explanations. Internal factors—institutional dynamics, TCC interests, P5 positions, and crucially local legitimation by South Lebanese populations through security, economic, and social benefits—are equally essential to explaining why the mission, originally conceived as temporary, has persisted for over four decades.",
+    "abstract": "Alex Issa's 2019 doctoral thesis asks why UNIFIL has persisted institutionally for over four decades. The thesis argues that external, system-level explanations, drawn from the international relations literature on the evolving UN peacekeeping norm and regional insecurity, are necessary but insufficient, and must be supplemented by an internal, sociologically grounded account of the concrete interests different actors hold in the mission's continuation.\nPart I traces the external explanatory factors: first, the genesis and doctrinal evolution of UN peacekeeping itself, from its Cold War origins as an instrument for interstate conflict management through the institutionalization of humanitarian law and the post-Cold War affirmation of more robust, multidimensional peacekeeping doctrine; second, the specific texture of Middle Eastern insecurity, working through the complexity of Lebanon's civil wars (1975-1990), the persistent uncertainty of Israeli-Lebanese relations, and peacekeeping's role as the UN's recurring institutional response to Arab-Israeli conflict. Issa uses negative comparison cases throughout, UNTSO's survival without any mandate evolution, UNEF's 1967 withdrawal at Egypt's request despite ongoing regional tension, to show that neither factor, mandate evolution nor persistent regional instability, reliably predicts whether a mission endures.\nPart II turns to the internal factors this literature neglects, built on original fieldwork including a six-month ethnographic residency in Tyr, South Lebanon (September 2017-January 2018), combining interviews with participant observation. The first internal chapter examines UNIFIL's own institutional dynamics: the growing autonomy of the Naqoura headquarters relative to UN Headquarters in New York, the career and financial interests of UNIFIL's international staff, the particular interests individual troop-contributing states pursue through the mission (cited examples include French francophonie promotion, Italian gastrodiplomacy, and South Korean technology exports), and the Lebanese political actors, including Hezbollah, who lobby for the mandate's continuation. The second internal chapter, \"la légitimation de la FINUL par le local,\" examines how local populations and FINUL's own local staff derive concrete security, economic, and social benefits from the mission's presence, benefits that get communicated to local officials and translated into sustained pressure on the Lebanese government to request the mandate's annual renewal at the UN.\nThe thesis concludes that both external and internal factors are necessary but neither is independently sufficient: UNIFIL's institutional permanence rests on a convergence of Security Council politics, troop-contributing-nation interests, and grounded local legitimation that conventional peacekeeping scholarship, focused on system-level variables, has largely failed to capture. ",
     "key_arguments": [
-      "UNIFIL's longevity cannot be explained by external factors (UN norm evolution and regional insecurity) alone; internal institutional dynamics and the interests of diverse actors—P5 members, TCCs, UNIFIL staff, and local populations—are equally decisive.",
-      "Local legitimation is a critical and under-studied factor: South Lebanese populations (excluding pro-Hezbollah communities) support mandate renewal because UNIFIL provides employment, economic stimulus, medical care, school rehabilitation, and physical security, creating a dependency that compels local authorities to lobby Beirut and New York for renewal.",
-      "UNIFIL's institutional autonomy from UN HQ New York, the 'NATO-ization' of its practices under European command, and TCC national interest calculations (French Francophonie promotion, Italian gastrodiplomacy, South Korean technology export) have embedded the mission beyond its original interposition mandate."
+      "UNIFIL's command has been progressively \"NATO-ized\" since 2004, and Issa documents this as a structural pattern rather than an impression. Every Force Commander from 2004 to 2018 was European, and every one before the 2016 Irish appointment came from a NATO member state with prior NATO deployment experience (Bosnia, Afghanistan, Kosovo, Iraq). He ties this to concrete friction: a civilian UNIFIL staffer describes French, Spanish, and Italian battalions as harder to access than Nepalese or Indian ones, and General Pellegrini, interviewed directly, states he wanted to apply Resolution 1701 \"in all its rigor\" from the outset in a NATO-style posture, only to be constrained by troop contributing nations unwilling to risk casualties.",
+      "A Force Commander's practical autonomy from UN Headquarters depends heavily on personal rapport with the Under-Secretary-General for Peacekeeping Operations, a post held by a French national continuously since 1997, rather than on any stable institutional delegation of authority. Pellegrini states this outright: having a French Under-Secretary-General \"helped me a lot,\" and frames New York's involvement as driven by member-state visibility concerns rather than operational effectiveness, meaning the same formal chain of command can produce very different real autonomy depending on who occupies it.",
+      "CIMIC and humanitarian activity function as an engine of Lebanese state disengagement, a finding Issa treats as double-edged rather than a straightforward achievement. The same activity that builds local legitimacy for the mission's renewal actively discourages the Lebanese state from ever building durable economic, health, or social policy of its own, meaning a UNIFIL withdrawal would now carry serious consequences precisely because that capacity was never built.",
+      "ocal FINUL staff combine local knowledge with genuine technical expertise, which Issa argues breaks from Autesserre's Peaceland model where local staff hold only the former and international staff, valued more highly, hold the latter and the influence that comes with it. He evidences this with named staff like Mohamed Abou Jahjah, who bring prior NGO, UNICEF, and UNHCR experience on top of local knowledge, and with the mission's progressive shift of posts once reserved for international staff toward local hires, which he reads as this expertise translating into real decision-making weight rather than token consultation."
     ],
     "bias_flag": "The author is a Lebanese Shia from South Lebanon with personal ties to the community studied, which facilitated ethnographic access but may have introduced sympathetic framing toward UNIFIL and certain local communities. The thesis was conducted within the Sciences Po CERI framework under a French supervisor, which may subtly favor European TCC perspectives. The author acknowledges that pro-Hezbollah communities were less accessible and their views less fully represented.",
     "thematic_clusters": [
@@ -4190,68 +4189,45 @@
       "TCC/Command",
       "Relations with Host State",
       "CIMIC & community relations",
-      "Protection of Civilians",
-      "Relations with non-state armed actors",
-      "De-mining",
-      "Maritime Task Force"
+      "Protection of Civilians"
     ],
     "timeline_events": [
       {
         "date": "1978-03-19",
-        "event": "UNIFIL established by UN Security Council Resolution 425",
-        "category": "UNIFIL",
-        "description": "Following Israel's invasion of South Lebanon, the Security Council created UNIFIL as a temporary interposition force to confirm Israeli withdrawal and restore Lebanese sovereignty."
+        "event": "UNIFIL established by UN Security Council Resolution 425"
       },
       {
         "date": "1982",
-        "event": "Second Israeli invasion of Lebanon",
-        "category": "Israel-Lebanon",
-        "description": "Israel launched a second major offensive, occupying South Lebanon until 2000; UNIFIL was unable to prevent the invasion but continued operating in the occupied zone."
+        "event": "Second Israeli invasion of Lebanon"
       },
       {
         "date": "1985",
-        "event": "Opening of Khiam detention centre by ALS",
-        "category": "Israel-Lebanon",
-        "description": "The South Lebanon Army, backed by Israel, opened the Khiam detention centre, described by Lebanese civilians as a concentration camp where torture was documented."
+        "event": "Opening of Khiam detention centre by ALS"
       },
       {
         "date": "1996-04",
-        "event": "Operation Grapes of Wrath and Qana massacre",
-        "category": "Israel-Lebanon",
-        "description": "Israeli military launched Operation Grapes of Wrath against Hezbollah; the bombing of a UNIFIL camp at Qana killed 106 civilians who had sought refuge with Fijian peacekeepers."
+        "event": "Operation Grapes of Wrath and Qana massacre"
       },
       {
         "date": "2000",
-        "event": "Israeli withdrawal from South Lebanon",
-        "category": "Israel-Lebanon",
-        "description": "Israeli forces withdrew from South Lebanon after 22 years of occupation; Hezbollah assumed control of the zone between 2000 and 2006, and UNIFIL's mandate continued to be renewed annually."
+        "event": "Israeli withdrawal from South Lebanon"
       },
       {
         "date": "2006-07",
-        "event": "34-day war between Israel and Hezbollah",
-        "category": "Israel-Lebanon",
-        "description": "A 33-day war between Israel and Hezbollah resulted in over 1,200 Lebanese dead (mostly civilians) and massive infrastructure destruction in South Lebanon."
+        "event": "34-day war between Israel and Hezbollah"
       },
       {
         "date": "2006-08-11",
-        "event": "UN Security Council Resolution 1701 adopted",
-        "category": "UNIFIL",
-        "description": "Resolution 1701 ended the 2006 war, significantly expanded UNIFIL's mandate and troop ceiling (from 2,000 to over 10,500), authorized civilian protection, and tasked UNIFIL with supporting the Lebanese Armed Forces' return to the south."
+        "event": "UN Security Council Resolution 1701 adopted"
       },
       {
         "date": "2007-06-24",
-        "event": "Car bomb attack kills six UNIFIL soldiers near Khiam",
-        "category": "UNIFIL",
-        "description": "The last major lethal attack against UNIFIL peacekeepers; a car bomb killed six soldiers hours after Lebanese army killed Islamic militants in Tripoli; perpetrators were never identified."
+        "event": "Car bomb attack kills six UNIFIL soldiers near Khiam"
       }
     ],
     "lessons_learned": [
       {
-        "text": "External factors (UN norm evolution and regional insecurity) are necessary but insufficient to explain UNIFIL's institutional persistence; understanding mandate renewal requires systematic analysis of the interests of TCCs, P5 members, local populations, and UNIFIL staff through field-level sociological inquiry.",
-        "tag": "SOURCE-DERIVED"
-      },
-      {
-        "text": "Local legitimation through economic, social, and security benefits to host communities is a critical and under-leveraged mechanism sustaining UNIFIL's mandate; CIMIC activities, local employment, and medical assistance create constituencies that actively lobby for renewal—but this also risks entrenching Lebanese state disengagement from the south.",
+        "text": "Local legitimation through economic, social, and security benefits to host communities is a critical and under-leveraged mechanism sustaining UNIFIL's mandate; CIMIC activities, local employment, and medical assistance create constituencies that actively lobby for renewal, but this also risks entrenching Lebanese state disengagement from the south.",
         "tag": "SOURCE-DERIVED"
       },
       {
@@ -4265,21 +4241,23 @@
     ],
     "actors": [
       "UNIFIL",
-      "UNSC",
-      "Lebanese Armed Forces",
+      "Lebanon",
       "Hezbollah",
-      "Amal Movement",
       "Israel",
-      "South Lebanon Army (ALS)",
-      "PLO",
-      "UNTSO",
-      "UNMAS",
-      "Lebanese Centre for Mine Action"
+      "Syria",
+      "Iran",
+      "France",
+      "United States",
+      "Russia",
+      "Lebanese Armed Forces",
+      "Amal",
+      "UNSC"
     ],
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
-    "pdf_file": "data/pdfs/issa_2019_v2.pdf"
+    "pdf_file": "data/pdfs/issa_2019_v2.pdf",
+    "analytical_notes": []
   },
   {
     "id": "newby_2018",

@@ -4266,71 +4266,57 @@
     "publisher": "Third World Quarterly (Taylor & Francis)",
     "url": "https://www.tandfonline.com/doi/full/10.1080/01436597.2017.1334542",
     "tags": [
-      "local consent",
-      "TCC foreign policy",
-      "civilian-peacekeeper relations",
-      "UNIFIL",
-      "South Lebanon",
-      "peacebuilding",
-      "local turn",
+      "CIMIC",
       "Hezbollah",
+      "South Lebanon",
+      "TCC foreign policy",
+      "UNIFIL",
+      "civilian-peacekeeper relations",
       "contingent nationality",
-      "CIMIC"
+      "local consent",
+      "local turn",
+      "peacebuilding"
     ],
-    "abstract": "Drawing on 65 qualitative interviews conducted in South Lebanon in 2013 and 2016, this article examines how local civilian perceptions of troop-contributing countries' (TCCs) foreign policies affect consent for UNIFIL. It argues that heterogeneity within both the mission and local communities shapes operational outcomes. Negative TCC foreign policy perceptions—amplified by high media saturation and political messaging—erode consent, restrict patrol access, escalate local incidents, and reduce intelligence flow. Case studies of the Turkish battalion withdrawal and the EU listing of Hezbollah illustrate these dynamics.",
+    "abstract": "Drawing on 65 qualitative interviews conducted in South Lebanon in 2013 and 2016, Newby argues that local civilian consent for UNIFIL depends less on what individual battalions actually do on the ground than on local perceptions of their troop-contributing country's foreign policy, particularly its perceived alignment with Israel. This produces systematically different treatment across the mission: European battalions face greater distrust and operational friction than battalions from the Global South regardless of comparable conduct, and their consequent adoption of a more security-oriented patrol posture is locally read as arrogance, reinforcing the distrust that produced it. She shows this perception gap can be factually inaccurate, Irish foreign policy is not particularly pro-Israel yet the Irish battalion still faces distrust as a European contingent, while India's substantial trade and military ties with Israel go unnoticed and the battalion remains popular, demonstrating the mechanism tracks a locally constructed narrative rather than actual state policy. Two case studies illustrate the mechanism's range: the Turkish battalion's 2013 withdrawal, widely attributed locally to a shift in Turkish-Israeli relations and popular pressure, shows the perception gap can force a contingent's exit, while the EU's 2013 listing of Hezbollah's military wing as a terrorist organization shows the same dynamic can be contained through preemptive diplomacy between TCCs, UNIFIL, and Hezbollah, though not without cost, one municipality formally banned the Spanish battalion from patrolling in direct response.",
     "key_arguments": [
       "Local perceptions of TCC foreign policies materially affect civilian consent for UNIFIL patrols, with European contingents facing significantly higher hostility than non-European contingents due to their governments' perceived pro-Israel stances.",
       "The erosion of local consent produces three operational consequences: increased hostile incidents, reduced ability to mediate and gather local intelligence, and heightened risk of escalation that could threaten the mission's viability.",
-      "Proactive engagement—including pre-emptive communication with Hezbollah and Lebanese political forces before politically sensitive decisions (e.g., EU terrorist listing)—can mitigate backlash, whereas reactive management (as with Turkey) results in forced withdrawal.",
-      "Local perceptions of TCC politics are not always accurate and are subject to manipulation by local political elites, highlighting the need for UNIFIL to actively manage its public narrative while maintaining the fiction of UN unity."
+      "Proactive engagement, including pre-emptive communication with Hezbollah and Lebanese political forces before politically sensitive decisions (e.g., the EU's Hezbollah terror listing), appears to mitigate backlash, whereas the Turkish battalion's 2013 withdrawal was widely perceived locally, though never publicly confirmed by UNIFIL, as having been driven by a comparable erosion of consent following Turkey's shift on Israel.",
+      "These perceptions can be factually inaccurate: Ireland is distrusted as a European contingent despite a foreign policy not particularly pro-Israel, while India remains popular despite substantial trade and military ties with Israel, showing the mechanism tracks a locally constructed narrative rather than actual state policy. Newby raises, without resolving, the open question of how far local political elites are able to shape these perceptions among ordinary civilians.",
+      "European battalions' awareness of facing higher security threats leads them to adopt a more security-oriented patrol posture, which local civilians interpret as arrogance, for example throwing sweets to children from moving vehicles rather than stopping to hand them out, reinforcing the distrust that produced the posture in the first place.",
+      "Contestation of UNIFIL's mandate concentrates specifically around the clause calling for a weapons-free zone between the Blue Line and the Litani river, which parts of the Shia community read as targeting Hezbollah's disarmament, meaning local consent varies significantly by village and community rather than being a uniform regional variable."
     ],
-    "bias_flag": "The author is a Visiting Fellow at the Australian National University with no declared conflict of interest. Research was conducted partly under a Griffith University PhD and as a Visiting Researcher at the American University of Beirut. The qualitative methodology relies heavily on interviews with UNIFIL staff and pro-engagement civilians in South Lebanon; Hezbollah and Israeli perspectives are not directly represented. The framing is broadly sympathetic to the operational challenges of peacekeepers and may understate structural critiques of the UNIFIL mandate itself.",
+    "bias_flag": "The author is a Visiting Fellow at the Australian National University. Research was conducted partly under a Griffith University PhD and as a Visiting Researcher at the American University of Beirut. The qualitative methodology relies heavily on interviews with UNIFIL staff and pro-engagement civilians in South Lebanon; Hezbollah and Israeli perspectives are not directly represented. The framing is broadly sympathetic to the operational challenges of peacekeepers and may understate structural critiques of the UNIFIL mandate itself.",
     "thematic_clusters": [
       "CIMIC & community relations",
       "Relations with non-state armed actors",
-      "TCC/Command",
-      "Force protection & safety",
-      "Member State, P5, UNSC Dynamics"
+      "TCC/Command"
     ],
     "timeline_events": [
       {
         "date": "2006-08-14",
-        "event": "UNSC Resolution 1701 enters into force",
-        "category": "UNIFIL",
-        "description": "Resolution 1701 ended the six-week war between Hezbollah and Israel and significantly expanded UNIFIL's mandate and troop ceiling to up to 15,000 personnel. The arrival of large European contingents was perceived by some local communities as a Western intervention in the Arab/Muslim world."
+        "event": "UNSC Resolution 1701 enters into force"
       },
       {
         "date": "2007-06-24",
-        "event": "IED attack kills six Spanish UNIFIL peacekeepers near Al-Khiam",
-        "category": "UNIFIL",
-        "description": "A Spanish battalion patrol was struck by an improvised explosive device on the road to Al-Khiam, killing six peacekeepers. The attack was believed to be a warning by Hezbollah related to Spanish monitoring activities north of the Litani River."
+        "event": "IED attack kills six Spanish UNIFIL peacekeepers near Al-Khiam"
       },
       {
         "date": "2012-05",
-        "event": "Kidnapping of 11 Shia pilgrims in northern Syria",
-        "category": "Regional",
-        "description": "Eleven Shia pilgrims were seized in northern Syria; Lebanese Shia communities believed Turkish security services were complicit, triggering a deterioration of local sentiment toward the Turkish UNIFIL battalion."
+        "event": "Kidnapping of 11 Shia pilgrims in northern Syria"
       },
       {
         "date": "2013-08-09",
-        "event": "Turkish battalion announces withdrawal from UNIFIL",
-        "category": "UNIFIL",
-        "description": "Following the kidnapping of two Turkish Airlines pilots in Beirut in retaliation for the held Shia hostages, Turkey warned its citizens to leave Lebanon and announced its UNIFIL contingent would withdraw the following month. Local civilians broadly perceived the withdrawal as driven by popular pressure."
+        "event": "Turkish battalion announces withdrawal from UNIFIL"
       },
       {
         "date": "2013-07-22",
-        "event": "EU lists Hezbollah military wing as terrorist organisation",
-        "category": "International",
-        "description": "The European Union voted to designate Hezbollah's military wing as a terrorist organisation, a decision European TCCs had long feared would endanger their troops in UNIFIL. Pre-emptive diplomatic engagement with Hezbollah and Lebanese political forces helped limit immediate security repercussions, though localised restrictions on European patrols followed."
+        "event": "EU lists Hezbollah military wing as terrorist organisation"
       }
     ],
     "lessons_learned": [
       {
         "text": "TCCs' home-country foreign policies are perceived and judged by local communities in the mission area, independently of troops' on-the-ground behaviour; UNIFIL must therefore monitor and respond to international political developments in real time to prevent erosion of local consent and patrol access.",
-        "tag": "SOURCE-DERIVED"
-      },
-      {
-        "text": "Proactive pre-decisional engagement with local political actors and armed groups—as demonstrated by European TCCs before the EU Hezbollah listing—can significantly reduce operational blowback compared to reactive crisis management, as shown by the Turkish withdrawal case.",
         "tag": "SOURCE-DERIVED"
       },
       {
@@ -4345,8 +4331,8 @@
     "actors": [
       "UNIFIL",
       "Hezbollah",
-      "Lebanese Armed Forces (LAF)",
-      "Israel Defence Forces (IDF)",
+      "LAF",
+      "IDF",
       "European Union",
       "Turkey (UNIFIL contingent)",
       "Spain (UNIFIL contingent)",
@@ -4363,7 +4349,8 @@
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
-    "pdf_file": "data/pdfs/newby_2018.pdf"
+    "pdf_file": "data/pdfs/newby_2018.pdf",
+    "analytical_notes": []
   },
   {
     "id": "duran_2024",

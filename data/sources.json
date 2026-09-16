@@ -4361,25 +4361,20 @@
     "publisher": "Defense & Security Analysis (Taylor & Francis / Routledge), Vol. 40, No. 4, pp. 499–518",
     "url": "https://www.tandfonline.com/doi/full/10.1080/14751798.2024.2398268",
     "tags": [
-      "local legitimacy",
-      "UNIFIL II",
-      "Spain",
       "CIMIC",
-      "QIPs",
-      "peacebuilding",
-      "civil-military relations",
-      "state-building",
       "Lebanon",
-      "local turn",
-      "soft power",
-      "cultural awareness"
+      "QIPs",
+      "TCC",
+      "local legitimacy",
+      "soft power"
     ],
-    "abstract": "Using a bottom-up micro-approach, this article examines how Spanish peacekeepers in UNIFIL II (2010–2016) built local legitimacy for the Lebanese state through material actions (provision of security, public goods, Quick Impact Projects) and non-material actions (cultural respect, cross-cultural awareness, narrative management). Based on 85 interviews and two focus groups with Spanish military and Lebanese local actors, the study finds that both tangible service delivery and ideational engagement with subnational elites strengthened host-state legitimacy and fostered trust, providing transferable lessons for other stabilisation missions.",
+    "abstract": "This article examines how Spanish peacekeepers in UNIFIL II (2010–2016) built local legitimacy for the Lebanese state through material actions (provision of security, public goods, Quick Impact Projects) and non-material actions (cultural respect, cross-cultural awareness, narrative management). Based on 85 interviews and two focus groups with Spanish military and Lebanese local actors, the study finds that both tangible service delivery and ideational engagement with subnational elites strengthened host-state legitimacy and fostered trust, providing transferable lessons for other stabilisation missions.",
     "key_arguments": [
       "Local legitimacy in peacekeeping cannot be assumed from international or national mandate legitimacy alone; it must be actively constructed through bottom-up material and non-material actions directed at local communities and subnational elites.",
-      "Spanish peacekeepers' extensive CIMIC activities—particularly Quick Impact Projects (645 QIPs between 2006 and 2016 in the Marjayoun district)—built trust and visibility for the Lebanese state by filling public-service gaps, with local authorities publicly claiming credit to reinforce their own legitimacy.",
-      "Non-material actions—cultural awareness, empathy, respect for local protocols, and understanding of mythical versus rational narratives used by subnational elites—are equally essential to material delivery and help peacekeepers avoid manipulation and sustain long-term local acceptance.",
-      "Spain's soft-power military culture and its continuous command of the Eastern multinational brigade since 2006 gave it a distinct advantage in building durable relationships with the Lebanese Armed Forces and local communities, reducing perceived cultural distance despite real socio-cultural differences."
+      "Spanish peacekeepers' extensive CIMIC activities—particularly Quick Impact Projects (645 QIPs between 2006 and 2016 in the Marjayoun district)—generated trust and visibility for the Lebanese state by filling public-service gaps, with local authorities publicly claiming credit to reinforce their own legitimacy.",
+      "An international mandate does not necessarily imply a legitimization of it by the local comunity. Authority must instead be maintained with the consent and acceptance of the local population.",
+      "Spain's soft-power military culture and its continuous command of the Eastern multinational brigade since 2006 gave it a distinct advantage in building durable relationships with the Lebanese Armed Forces and local communities, reducing perceived cultural distance despite real socio-cultural differences.",
+      "The author argues that CIMIC is valuable not only because it delivers public goods but because it generates durable institutional knowledge and civilian relationships that survive personnel turnover, thereby mitigating the continuity problems inherent in peacekeeping rotation cycles."
     ],
     "bias_flag": "The authors are academics at the University of Granada whose empirical data were partly collected under research projects co-funded with the Spanish Army's Training and Doctrine Command (MADOC) and the University of Granada–MADOC Mixed Centre (CEMIX). Interview access to Spanish military personnel was channelled through the Spanish Army's General Staff. While the methodology is rigorous and findings are balanced, the institutional partnership with the Spanish Armed Forces and the exclusive focus on the Spanish contingent may predispose the analysis toward a positive reading of Spain's operational performance in UNIFIL II. No comparable critical assessment from Hezbollah-aligned or non-Western perspectives is incorporated.",
     "thematic_clusters": [
@@ -4387,39 +4382,28 @@
       "Relations with Host State",
       "TCC/Command",
       "Protection of Civilians",
-      "Operational adaptation & innovation",
-      "Relations with non-state armed actors"
+      "Operational adaptation & innovation"
     ],
     "timeline_events": [
       {
         "date": "1978",
-        "event": "UNIFIL established (original mandate)",
-        "category": "UNIFIL",
-        "description": "The United Nations Interim Force in Lebanon was first created in 1978 with a mandate to confirm Israeli withdrawal and restore peace. This original mandate predated the expanded UNIFIL II mission."
+        "event": "UNIFIL established (original mandate)"
       },
       {
         "date": "2006-08-12",
-        "event": "UN Security Council Resolution 1701 adopted unanimously",
-        "category": "UNIFIL",
-        "description": "UNSCR 1701 ended the Israel-Hezbollah war and expanded UNIFIL's mandate to strengthen Lebanese state sovereignty, monitor the cessation of hostilities, and assist the Lebanese Armed Forces in southern Lebanon."
+        "event": "UN Security Council Resolution 1701 adopted unanimously"
       },
       {
         "date": "2006",
-        "event": "UNIFIL II deployed; Spanish contingent takes command of Eastern brigade",
-        "category": "UNIFIL",
-        "description": "Following UNSCR 1701, UNIFIL was expanded to over 10,000 troops. Spain assumed responsibility for the Eastern multinational brigade (approx. 3,500 troops from 9 nationalities), a role it has maintained continuously."
+        "event": "UNIFIL II deployed; Spanish contingent takes command of Eastern brigade"
       },
       {
         "date": "2007",
-        "event": "Hezbollah attack kills six Spanish peacekeepers",
-        "category": "UNIFIL",
-        "description": "An IED attack attributed to Hezbollah killed six Spanish UNIFIL peacekeepers in southern Lebanon. Despite this setback, Spanish forces continued operations and subsequently improved local community relations."
+        "event": "Hezbollah attack kills six Spanish peacekeepers"
       },
       {
         "date": "2022",
-        "event": "Spanish General assumes UNIFIL Force Commander position",
-        "category": "UNIFIL",
-        "description": "Spain, having twice previously held mission command, again took the UNIFIL Force Commander role in 2022, reflecting its sustained leadership contribution to the mission."
+        "event": "Spanish General assumes UNIFIL Force Commander position"
       }
     ],
     "lessons_learned": [
@@ -4455,6 +4439,7 @@
     "added_by_first_name": "Toscane",
     "added_by_last_name": "Barraque",
     "added_by": "Toscane Barraque",
-    "pdf_file": "data/pdfs/duran_2024.pdf"
+    "pdf_file": "data/pdfs/duran_2024.pdf",
+    "analytical_notes": []
   }
 ]

@@ -141,6 +141,14 @@ def save_source(updated):
     save_sources(sources)
 
 
+def delete_source(source_id):
+    """Remove one record by id and persist the remaining list via
+    save_sources() (see save_source() above for why it re-reads first)."""
+    sources = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+    sources = [s for s in sources if s["id"] != source_id]
+    save_sources(sources)
+
+
 def _tag_input(label, sid, field_key, initial_items):
     opts_key    = f"e_{field_key}_opts_{sid}"
     ms_key      = f"e_{field_key}_ms_{sid}"
@@ -359,11 +367,55 @@ def render_source_edit(s, all_tags):
         st.rerun()
 
     st.markdown('<div style="margin-top:1rem;"></div>', unsafe_allow_html=True)
-    btn_col1, btn_col2, _ = st.columns([1, 1, 2])
+    btn_col1, btn_col2, btn_col3 = st.columns([1, 1, 2])
     with btn_col1:
         save_clicked = st.button("💾 Save", key=f"e_save_{sid}")
     with btn_col2:
         cancel_clicked = st.button("Cancel", key=f"e_cancel_{sid}")
+    with btn_col3:
+        delete_clicked = st.button("🗑 Delete source", key=f"e_delete_{sid}")
+
+    confirm_key = f"e_confirm_delete_{sid}"
+    if delete_clicked:
+        st.session_state[confirm_key] = True
+
+    if st.session_state.get(confirm_key):
+        st.markdown(
+            '<div style="margin-top:0.75rem;padding:0.75rem 1rem;background:#FDECEA;'
+            'border:1px solid #F0B8B0;border-radius:6px;color:#7A2E22;font-size:0.85rem;">'
+            f'Delete “{s.get("title", sid)}” permanently? This cannot be undone.</div>',
+            unsafe_allow_html=True,
+        )
+        dc1, dc2, _ = st.columns([1, 1, 2])
+        with dc1:
+            confirm_delete = st.button("Yes, delete permanently", key=f"e_confirm_delete_btn_{sid}")
+        with dc2:
+            abort_delete = st.button("No, keep it", key=f"e_abort_delete_{sid}")
+        if confirm_delete:
+            try:
+                delete_source(sid)
+            except GitHubSaveError as e:
+                st.error(str(e))
+                st.stop()
+            st.session_state.pop(confirm_key, None)
+            st.session_state.selected_source_id = None
+            st.session_state.editing_source_id = None
+            n_a = st.session_state.pop(f"e_args_count_{sid}", 0)
+            for i in range(n_a):
+                st.session_state.pop(f"e_arg_{sid}_{i}", None)
+            n_l = len(s.get("lessons_learned", []))
+            for i in range(n_l):
+                st.session_state.pop(f"e_ll_text_{sid}_{i}", None)
+                st.session_state.pop(f"e_ll_tag_{sid}_{i}", None)
+            st.session_state.pop(f"e_te_count_{sid}", None)
+            for _fk in ("tags", "clusters"):
+                st.session_state.pop(f"e_{_fk}_opts_{sid}", None)
+                st.session_state.pop(f"e_{_fk}_ms_{sid}", None)
+            st.success("Source deleted.")
+            st.rerun()
+        if abort_delete:
+            st.session_state.pop(confirm_key, None)
+            st.rerun()
 
     if save_clicked:
         updated = dict(s)

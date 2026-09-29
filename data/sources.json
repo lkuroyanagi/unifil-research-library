@@ -4285,5 +4285,142 @@
     "added_by": "Toscane Barraque",
     "pdf_file": "data/pdfs/duran_2024.pdf",
     "analytical_notes": []
+  },
+  {
+    "id": "ishizuka_2026",
+    "author": "Katsumi Ishizuka",
+    "title": "Legitimacy of UN Peacekeeping in Southern Lebanon: Expectation from Successful UN Peacekeeping Operations",
+    "source_type": "Academic",
+    "year": 2026,
+    "publisher": "Athens Journal of Politics & International Affairs",
+    "url": "",
+    "tags": [
+      "Legitimacy",
+      "peacekeeping effectiveness",
+      "mandate",
+      "disarmament",
+      "local consent",
+      "tripartite mechanism",
+      "LAF",
+      "Blue Line",
+      "humanitarian assistance",
+      "CIMIC",
+      "termination."
+    ],
+    "abstract": "Ishizuka evaluates UNIFIL's legitimacy across its 48-year deployment in southern Lebanon by weighing documented negative aspects (non-implementation of the original 1978 mandate in its early years, repeated failure to prevent Israeli invasions from 1982 through 2023-2025, and inability to disarm Hezbollah) against positive contributions in the post-2006 period (deterrence and management of minor Blue Line incidents, humanitarian and CIMIC assistance, Lebanese Armed Forces capacity-building, and the tripartite liaison mechanism). Rather than simply tallying these, the article reframes each negative as a structural mismatch between what a minimum-force, consent-based mandate can deliver and what critics expected of it, attributing early failures to the absence of local consent and political will at establishment, invasion prevention to the mismatch between traditional peacekeeping and interstate conflict involving a militarily significant state, and non-disarmament to Hezbollah's political entrenchment and the repeated failure of prior international agreements predating UNIFIL. The evidentiary basis is asymmetric: the negative case draws on UN Secretary-General reports and established historical sources, while the positive case relies mainly on secondary interview-based studies by other authors rather than original fieldwork. On this reframed standard, the article concludes UNIFIL, though imperfect, functioned as a necessary stabilizing buffer, and that the UN Security Council's 2026 decision to terminate the mission by end of year, attributed to US and Israeli political pressure, was premature, risking a Hezbollah resurgence and renewed conflict that specialists warned of and that the article states had partly begun to materialize even before withdrawal. The conclusion generalizes beyond UNIFIL to argue UN peacekeeping operations broadly should be expected to maintain fragile peace and provide humanitarian assistance rather than achieve political settlement, and that establishment without full mandate suitability, consent, or great-power backing is a recurring and largely inevitable feature of such operations.",
+    "key_arguments": [
+      "UNIFIL's early failures (1978-1982) stemmed from hasty establishment without local consent, a substitute Israeli militia (DFF) occupying 30 percent of its operational area, and an absence of great-power political will, making mandate implementation structurally impossible rather than purely an operational failure.",
+      "Post-2006 UNIFIL produced a measurable deterrent effect on minor, escalation-prone incidents along the Blue Line, evidenced by Bardalai's survey of UNIFIL officers, in which a majority credited the mission with timely control of such incidents, and by a documented decline in stone-throwing, weapon-pointing, and rocket-fire incidents through the 2010s. The author frames this as an \"invisible\" effect, since it consists of prevented rather than observed events, and cites Newby's characterization of such minor incidents as capable of igniting a larger existential conflict to argue their containment is substantive, not trivial.",
+      "UNIFIL's support to the Lebanese Armed Forces and the tripartite liaison mechanism produced concrete stabilizing results despite UNIFIL's lack of coercive authority: the LAF removed 96 percent of unauthorized weapons caches referred to it by UNIFIL as of the November 2025 reporting period, and the 2013 Secretary-General's report characterized the tripartite mechanism, the only official channel through which the LAF and IDF meet, as \"the most significant stabilizing factor within the framework of resolution 1701.\"",
+      "Disarming Hezbollah and preventing large-scale Israeli military operations are beyond the structural competence of a traditional peacekeeping force operating under minimum-force principles; these are international diplomatic and political challenges, evidenced by five successive failed international agreements on Hezbollah's disarmament since 1989 and by Hezbollah's entrenched parliamentary and social position, that cannot be attributed as UNIFIL failures.",
+      "UNIFIL's legitimacy should be judged against what a minimum-force, consent-dependent mandate can realistically deliver rather than against war prevention or disarmament, a standard the author generalizes beyond UNIFIL to argue UN peacekeeping operations in general should be expected to maintain fragile peace and provide humanitarian assistance rather than achieve political settlement.",
+      "The UN Security Council's decision to terminate UNIFIL by end of 2026, driven primarily by US and Israeli political pressure, was premature: specialists warned a sudden withdrawal risked a Hezbollah resurgence and renewed Israeli operations, and the article states some of these scenarios had already begun to materialize even before the actual withdrawal."
+    ],
+    "bias_flag": "The author, Katsumi Ishizuka, is a professor at Kyoei University (Japan) with a prior publication record on Hezbollah-UNIFIL relations and is broadly sympathetic to UNIFIL's continued deployment. The article draws on the author's own fieldwork interviews at Irish UNIFIL headquarters (2019), introducing potential selection bias toward pro-UNIFIL perspectives. The framing of the UNSC termination decision as driven by 'political influence of Israel and the US' reflects a normative stance, though this is grounded in cited evidence. No explicit institutional funding conflict is disclosed. Overall, the piece presents a balanced review but leans toward defending UNIFIL's legitimacy.",
+    "thematic_clusters": [
+      "Mandate evolution",
+      "Tripartite Liaison Mechanism & Liaison",
+      "Relations with non-state armed actors",
+      "CIMIC & community relations"
+    ],
+    "timeline_events": [
+      {
+        "date": "1978-03-11",
+        "event": "PLO coastal road attack triggers Israeli invasion",
+        "category": "Israel-Lebanon",
+        "description": "A PLO commando raid on an Israeli bus near Tel Aviv killed 37 and wounded 76, prompting Israeli military invasion of southern Lebanon on 14/15 March 1978."
+      },
+      {
+        "date": "1978-03-19",
+        "event": "UNSC Resolution 425 establishes UNIFIL",
+        "category": "UNIFIL",
+        "description": "The UN Security Council adopted Resolution 425 (1978), establishing UNIFIL with a mandate to confirm Israeli withdrawal, restore international peace and security, and assist Lebanese governmental authority."
+      },
+      {
+        "date": "1978-06-13",
+        "event": "IDF transfers positions to De Facto Forces (DFF)",
+        "category": "Israel-Lebanon",
+        "description": "During its final withdrawal phase, the IDF transferred its remaining positions in southern Lebanon to Major Saad Haddad's Christian militia (DFF), occupying 30% of UNIFIL's intended area and creating a de facto Israeli security belt."
+      },
+      {
+        "date": "1982-06-06",
+        "event": "Israeli Operation Peace for Galilee",
+        "category": "Israel-Lebanon",
+        "description": "The IDF launched a large-scale invasion of Lebanon targeting PLO bases, killing approximately 18,000 people; UNIFIL became the first UN mission operating in a country occupied by a foreign army."
+      },
+      {
+        "date": "1989",
+        "event": "Ta'if Agreement",
+        "category": "Lebanese Politics",
+        "description": "Negotiated in Saudi Arabia to end Lebanon's civil war, the Ta'if Agreement demanded disbanding of all militias but allowed Hezbollah to remain armed as a resistance force against Israel."
+      },
+      {
+        "date": "1993-07",
+        "event": "Israeli Operation Accountability",
+        "category": "Israel-Lebanon",
+        "description": "Israel launched Operation Accountability against Hezbollah in southern Lebanon, resulting in the displacement of approximately 300,000 civilians."
+      },
+      {
+        "date": "1996-04-18",
+        "event": "Qana massacre",
+        "category": "UNIFIL",
+        "description": "During Operation Grapes of Wrath, IDF shelling struck UNIFIL's base at Qana, killing more than 100 civilians who had sought shelter there."
+      },
+      {
+        "date": "2006-08-11",
+        "event": "UNSC Resolution 1701 and UNIFIL expansion",
+        "category": "UNIFIL",
+        "description": "Following the 2006 Israel-Hezbollah war, Resolution 1701 was adopted, expanding UNIFIL from approximately 2,000 to 15,000 troops and adding humanitarian tasks and LAF assistance to the mandate."
+      },
+      {
+        "date": "2023-10-07",
+        "event": "Hamas attack and onset of Gaza war; Hezbollah-Israel exchange begins",
+        "category": "Regional",
+        "description": "Hamas attacked Israel killing 1,200; Israel's retaliatory assault on Gaza caused 41,000 Palestinian deaths. On 8 October, Hezbollah began rocket exchanges with Israel, leading to prolonged conflict in southern Lebanon."
+      },
+      {
+        "date": "2024-10-13",
+        "event": "Netanyahu demands UNIFIL withdrawal",
+        "category": "UNIFIL",
+        "description": "Israeli Prime Minister Netanyahu called on the UN Secretary-General to relocate UNIFIL troops from 'harm's way,' claiming they had become 'human shields' for Hezbollah; UNIFIL refused and subsequently sustained casualties from Israeli attacks."
+      },
+      {
+        "date": "2025-08-28",
+        "event": "UNSC votes to terminate UNIFIL",
+        "category": "UNIFIL",
+        "description": "The UN Security Council voted unanimously to terminate UNIFIL at the end of 2026, a decision the author attributes primarily to political pressure from the United States and Israel."
+      }
+    ],
+    "lessons_learned": [
+      {
+        "text": "UNIFIL's early mandate failures (1978-1982) were structurally predetermined: the mission was deployed without a prior ceasefire, without local consent from either Israel or the PLO, and with an operationally unrealistic mandate. Hasty UNSC mandate-setting without basic peacekeeping preconditions (consent, impartiality, minimum-force credibility) makes operational failure almost inevitable.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "UNIFIL's tripartite meetings (UNIFIL-LAF-IDF) have been identified as \"the most significant stabilizing factor\" under Resolution 1701, serving as the only official forum for LAF-IDF communication, confidence-building, and incident de-escalation along the Blue Line. Institutionalizing such liaison mechanisms is critical to sustaining relative stability even absent a formal peace agreement.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "UNIFIL's Quick Impact Projects and civil-military cooperation (CIMIC) activities generated measurable local acceptance, economic benefit (an estimated US$40 million annual contribution to the Lebanese economy), and population trust, demonstrating that community-oriented activities are not peripheral to peacekeeping but integral to mission legitimacy and local acceptance.",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "text": "The termination of a long-standing peacekeeping mission driven primarily by US and Israeli political and financial pressure, rather than a genuine assessment of mission effectiveness or security conditions on the ground, risks creating a security vacuum. Member state dynamics within the UNSC can override operational and humanitarian considerations, with potentially destabilizing consequences.",
+        "tag": "ANALYTICAL INFERENCE"
+      }
+    ],
+    "actors": [
+      "UNIFIL",
+      "Israel",
+      "Hezbollah",
+      "Lebanese Armed Forces",
+      "Lebanese government",
+      "UN Security Council",
+      "United States."
+    ],
+    "added_by_first_name": "Toscane",
+    "added_by_last_name": "Barraque",
+    "added_by": "Toscane Barraque",
+    "pdf_file": "data/pdfs/ishizuka_2026.pdf"
   }
 ]
